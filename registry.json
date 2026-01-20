@@ -23,23 +23,23 @@
       "description": "The Puck editor main config object with all component configurations.",
       "dependencies": ["@puckeditor/core", "@puckeditor/ai-types"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-configs-components-header.json",
-        "http://localhost:3000/r/shadcn-configs-components-hero.json",
-        "http://localhost:3000/r/shadcn-configs-components-customers.json",
-        "http://localhost:3000/r/shadcn-configs-components-testimonials.json",
-        "http://localhost:3000/r/shadcn-configs-components-two-column.json",
-        "http://localhost:3000/r/shadcn-configs-components-bento.json",
-        "http://localhost:3000/r/shadcn-configs-components-feature-cards.json",
-        "http://localhost:3000/r/shadcn-configs-components-card-grid.json",
-        "http://localhost:3000/r/shadcn-configs-components-cta.json",
-        "http://localhost:3000/r/shadcn-configs-components-articles.json",
-        "http://localhost:3000/r/shadcn-configs-components-article-card.json",
-        "http://localhost:3000/r/shadcn-configs-components-pricing.json",
-        "http://localhost:3000/r/shadcn-configs-components-faq.json",
-        "http://localhost:3000/r/shadcn-configs-components-contact-us.json",
-        "http://localhost:3000/r/shadcn-configs-components-footer.json",
-        "http://localhost:3000/r/shadcn-configs-components-stats.json",
-        "http://localhost:3000/r/shadcn-configs-root.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-header.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-hero.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-customers.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-testimonials.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-two-column.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-bento.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-feature-cards.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-card-grid.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-cta.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-articles.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-article-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-pricing.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-faq.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-contact-us.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-footer.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-components-stats.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-root.json"
       ],
       "files": [
         {
@@ -56,10 +56,10 @@
       "description": "Field configs for shadcn twblocks components.",
       "dependencies": ["@puckeditor/core", "lucide-react"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-components-form.json",
-        "http://localhost:3000/r/shadcn-components-field.json",
-        "http://localhost:3000/r/shadcn-ui-color-picker.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-form.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-field.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-color-picker.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -76,9 +76,9 @@
       "description": "Component config for the shadcn twblocks Article Card component.",
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-components-article-card.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-article-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -100,11 +100,11 @@
       "description": "Component config for the shadcn twblocks Articles component.",
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-components-article-card.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-article-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -127,11 +127,11 @@
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-components-card.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -154,11 +154,11 @@
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-components-card.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -180,11 +180,11 @@
       "description": "Component config for the shadcn twblocks Contact Us component.",
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-components-form.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-form.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -207,10 +207,10 @@
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -233,12 +233,12 @@
       "dependencies": ["@puckeditor/core", "react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
-        "http://localhost:3000/r/shadcn-ui-carousel.json",
-        "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-carousel.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -261,11 +261,11 @@
       "dependencies": ["@puckeditor/core", "react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-accordion.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-accordion.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -287,11 +287,11 @@
       "description": "Component config for the shadcn twblocks Feature Cards component.",
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-article-card.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-article-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -313,9 +313,9 @@
       "description": "Component config for the shadcn twblocks Footer component.",
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -338,11 +338,11 @@
       "dependencies": ["react", "lucide-react", "@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-button.json",
-        "http://localhost:3000/r/shadcn-ui-navigation-menu.json",
-        "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-navigation-menu.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -365,13 +365,13 @@
       "dependencies": ["react", "motion", "@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-badge.json",
-        "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-badge.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -394,13 +394,13 @@
       "dependencies": ["lucide-react", "@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-card.json",
-        "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-types.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-card.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-types.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -423,10 +423,10 @@
       "dependencies": ["lucide-react", "@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -449,13 +449,13 @@
       "dependencies": ["react", "lucide-react", "@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-carousel.json",
-        "http://localhost:3000/r/shadcn-ui-avatar.json",
-        "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-carousel.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-avatar.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -478,12 +478,12 @@
       "dependencies": ["@puckeditor/core"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-carousel.json",
-        "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-carousel.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-content.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -505,8 +505,8 @@
       "description": "Component config for the shadcn twblocks page root.",
       "dependencies": ["react", "@puckeditor/core"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-configs-fields.json",
-        "http://localhost:3000/r/shadcn-styles.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-configs-fields.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-styles.json"
       ],
       "files": [
         {
@@ -608,7 +608,7 @@
       "dependencies": ["react", "embla-carousel-react", "lucide-react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-button.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-button.json"
       ],
       "files": [
         {
@@ -623,7 +623,7 @@
       "title": "Color Picker",
       "description": "A color picker component that allows users to select a color from a predefined set of colors or input a custom hex color code.",
       "dependencies": ["lucide-react", "react", "@puckeditor/core"],
-      "registryDependencies": ["http://localhost:3000/r/lib-is-hex-color.json"],
+      "registryDependencies": ["https://shadcn-registry-testing.vercel.app/r/lib-is-hex-color.json"],
       "files": [
         {
           "path": "registry/shadcn/components/ui/color-picker/index.tsx",
@@ -755,8 +755,8 @@
       "description": "A card component to showcase articles with an image, heading, description, and a call-to-action button.",
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-components-button.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json"
       ],
       "files": [
         {
@@ -773,7 +773,7 @@
       "dependencies": ["lucide-react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-badge.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-badge.json"
       ],
       "files": [
         {
@@ -790,8 +790,8 @@
       "dependencies": ["lucide-react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-ui-button.json",
-        "http://localhost:3000/r/shadcn-types.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-types.json"
       ],
       "files": [
         {
@@ -808,8 +808,8 @@
       "dependencies": ["lucide-react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-types.json",
-        "http://localhost:3000/r/shadcn-components-button.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-types.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json"
       ],
       "files": [
         {
@@ -840,9 +840,9 @@
       "dependencies": ["lucide-react"],
       "registryDependencies": [
         "utils",
-        "http://localhost:3000/r/shadcn-components-badge.json",
-        "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-types.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-badge.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-types.json"
       ],
       "files": [
         {
@@ -857,8 +857,8 @@
       "title": "Field",
       "description": "A form field component that includes a label and an input element.",
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-ui-label.json",
-        "http://localhost:3000/r/shadcn-ui-input.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-label.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-input.json"
       ],
       "files": [
         {
@@ -873,8 +873,8 @@
       "title": "Form",
       "description": "A form component that accepts multiple fields, a form action endpoint, a submit button, and the HTTP method to be used when submitting.",
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-components-field.json",
-        "http://localhost:3000/r/shadcn-components-button.json"
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-field.json",
+        "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json"
       ],
       "files": [
         {
