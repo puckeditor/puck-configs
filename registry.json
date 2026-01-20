@@ -1,0 +1,887 @@
+{
+  "$schema": "http://ui.shadcn.com/schema/registry.json",
+  "name": "puck-configs",
+  "homepage": "http://configs.puckeditor.com",
+  "items": [
+    {
+      "name": "lib-is-hex-color",
+      "type": "registry:lib",
+      "title": "Hex Color Utility",
+      "description": "A utility function to check if a string is a valid hex color.",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/lib/is-hex-color.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs",
+      "type": "registry:lib",
+      "title": "Puck Component Config Object",
+      "description": "The Puck editor main config object with all component configurations.",
+      "dependencies": ["@puckeditor/core", "@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-configs-components-header.json",
+        "http://localhost:3000/r/shadcn-configs-components-hero.json",
+        "http://localhost:3000/r/shadcn-configs-components-customers.json",
+        "http://localhost:3000/r/shadcn-configs-components-testimonials.json",
+        "http://localhost:3000/r/shadcn-configs-components-two-column.json",
+        "http://localhost:3000/r/shadcn-configs-components-bento.json",
+        "http://localhost:3000/r/shadcn-configs-components-feature-cards.json",
+        "http://localhost:3000/r/shadcn-configs-components-card-grid.json",
+        "http://localhost:3000/r/shadcn-configs-components-cta.json",
+        "http://localhost:3000/r/shadcn-configs-components-articles.json",
+        "http://localhost:3000/r/shadcn-configs-components-article-card.json",
+        "http://localhost:3000/r/shadcn-configs-components-pricing.json",
+        "http://localhost:3000/r/shadcn-configs-components-faq.json",
+        "http://localhost:3000/r/shadcn-configs-components-contact-us.json",
+        "http://localhost:3000/r/shadcn-configs-components-footer.json",
+        "http://localhost:3000/r/shadcn-configs-components-stats.json",
+        "http://localhost:3000/r/shadcn-configs-root.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-fields",
+      "type": "registry:lib",
+      "title": "Puck Field Config Objects",
+      "description": "Field configs for shadcn twblocks components.",
+      "dependencies": ["@puckeditor/core", "lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-form.json",
+        "http://localhost:3000/r/shadcn-components-field.json",
+        "http://localhost:3000/r/shadcn-ui-color-picker.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/fields.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/fields.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-article-card",
+      "type": "registry:lib",
+      "title": "Puck Article Card Config",
+      "description": "Component config for the shadcn twblocks Article Card component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-components-article-card.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/article-card/article-card.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/article-card/article-card.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/article-card/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/article-card/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-articles",
+      "type": "registry:lib",
+      "title": "Puck Articles Config",
+      "description": "Component config for the shadcn twblocks Articles component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-components-article-card.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/articles/articles.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/articles/articles.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/articles/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/articles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-bento",
+      "type": "registry:lib",
+      "title": "Puck Bento Config",
+      "description": "Component config for the shadcn twblocks Bento component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-card.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/bento/bento.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/bento/bento.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/bento/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/bento/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-card-grid",
+      "type": "registry:lib",
+      "title": "Puck Card Grid Config",
+      "description": "Component config for the shadcn twblocks Card Grid component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-card.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/card-grid/card-grid.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/card-grid/card-grid.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/card-grid/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/card-grid/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-contact-us",
+      "type": "registry:lib",
+      "title": "Puck Contact Us Config",
+      "description": "Component config for the shadcn twblocks Contact Us component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-form.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/contact-us/contact-us.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/contact-us/contact-us.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/contact-us/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/contact-us/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-cta",
+      "type": "registry:lib",
+      "title": "Puck CTA Config",
+      "description": "Component config for the shadcn twblocks CTA component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/cta/cta.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/cta/cta.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/cta/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/cta/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-customers",
+      "type": "registry:lib",
+      "title": "Puck Customers Config",
+      "description": "Component config for the shadcn twblocks Customers component.",
+      "dependencies": ["@puckeditor/core", "react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/customers/customers.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/customers/customers.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/customers/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/customers/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-faq",
+      "type": "registry:lib",
+      "title": "Puck FAQ Config",
+      "description": "Component config for the shadcn twblocks FAQ component.",
+      "dependencies": ["@puckeditor/core", "react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-accordion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/faq/faq.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/faq/faq.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/faq/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/faq/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-feature-cards",
+      "type": "registry:lib",
+      "title": "Puck Feature Cards Config",
+      "description": "Component config for the shadcn twblocks Feature Cards component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-article-card.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/feature-cards/feature-cards.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/feature-cards/feature-cards.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/feature-cards/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/feature-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-footer",
+      "type": "registry:lib",
+      "title": "Puck Footer Config",
+      "description": "Component config for the shadcn twblocks Footer component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/footer/footer.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/footer/footer.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/footer/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/footer/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-header",
+      "type": "registry:lib",
+      "title": "Puck Header Config",
+      "description": "Component config for the shadcn twblocks Header component.",
+      "dependencies": ["react", "lucide-react", "@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-ui-navigation-menu.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/header/header.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/header/header.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/header/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/header/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-hero",
+      "type": "registry:lib",
+      "title": "Puck Hero Config",
+      "description": "Component config for the shadcn twblocks Hero component.",
+      "dependencies": ["react", "motion", "@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-badge.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/hero/hero.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/hero/hero.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/hero/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/hero/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-pricing",
+      "type": "registry:lib",
+      "title": "Puck Pricing Config",
+      "description": "Component config for the shadcn twblocks Pricing component.",
+      "dependencies": ["lucide-react", "@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-card.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-types.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/pricing/pricing.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/pricing/pricing.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/pricing/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/pricing/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-stats",
+      "type": "registry:lib",
+      "title": "Puck Stats Config",
+      "description": "Component config for the shadcn twblocks Stats component.",
+      "dependencies": ["lucide-react", "@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/stats/stats.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/stats/stats.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/stats/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/stats/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-testimonials",
+      "type": "registry:lib",
+      "title": "Puck Testimonials Config",
+      "description": "Component config for the shadcn twblocks Testimonials component.",
+      "dependencies": ["react", "lucide-react", "@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-avatar.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/testimonials/testimonials.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/testimonials/testimonials.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/testimonials/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/testimonials/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-components-two-column",
+      "type": "registry:lib",
+      "title": "Puck Two Column Config",
+      "description": "Component config for the shadcn twblocks Two Column component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/components/two-column/two-column.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/two-column/two-column.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/components/two-column/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/components/two-column/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-configs-root",
+      "type": "registry:lib",
+      "title": "Puck Root Config",
+      "description": "Component config for the shadcn twblocks page root.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-configs-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/configs/root/index.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/root/index.tsx"
+        },
+        {
+          "path": "registry/shadcn/configs/root/root.module.css",
+          "type": "registry:lib",
+          "target": "~/puck/configs/root/root.module.css"
+        },
+        {
+          "path": "registry/shadcn/configs/root/theme.ts",
+          "type": "registry:lib",
+          "target": "~/puck/configs/root/theme.ts"
+        },
+        {
+          "path": "registry/shadcn/configs/root/font-links.tsx",
+          "type": "registry:lib",
+          "target": "~/puck/configs/root/font-links.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-hooks-use-prefers-reduced-motion",
+      "type": "registry:hook",
+      "title": "usePrefersReducedMotion Hook",
+      "description": "A React hook that detects if the user has enabled the 'prefers-reduced-motion' setting in their system preferences.",
+      "dependencies": ["react"],
+      "files": [
+        {
+          "path": "registry/hooks/use-prefers-reduced-motion.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-types",
+      "type": "registry:lib",
+      "title": "Shadcn twblocks reusable types",
+      "description": "Type definitions for shadcn components.",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/shadcn/types.ts",
+          "type": "registry:lib",
+          "target": "~/puck/types.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-styles",
+      "type": "registry:lib",
+      "title": "Shadcn twblocks styles",
+      "description": "Styles needed for shadcn twblocks configs and components.",
+      "devDependencies": ["tailwindcss", "tw-animate-css"],
+      "files": [
+        {
+          "path": "registry/shadcn/styles.css",
+          "type": "registry:lib",
+          "target": "~/puck/styles.css"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "An accordion component that allows users to toggle the visibility of sections of content.",
+      "dependencies": ["react", "@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "A set of avatar components that display user profile images or initials.",
+      "dependencies": ["react", "@radix-ui/react-avatar"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "A carousel component that allows users to scroll through a set of items horizontally or vertically.",
+      "dependencies": ["react", "embla-carousel-react", "lucide-react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-color-picker",
+      "type": "registry:ui",
+      "title": "Color Picker",
+      "description": "A color picker component that allows users to select a color from a predefined set of colors or input a custom hex color code.",
+      "dependencies": ["lucide-react", "react", "@puckeditor/core"],
+      "registryDependencies": ["http://localhost:3000/r/lib-is-hex-color.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/color-picker/index.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/color-picker/index.tsx"
+        },
+        {
+          "path": "registry/shadcn/components/ui/color-picker/color-field.module.css",
+          "type": "registry:file",
+          "target": "components/ui/color-picker/color-field.module.css"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-badge",
+      "type": "registry:ui",
+      "title": "Base Badge",
+      "description": "A base badge component with predefined styles and variants to be used as a building block for other badge components.",
+      "dependencies": ["react", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/base-badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-button",
+      "type": "registry:ui",
+      "title": "Base Button",
+      "description": "A base button component with predefined styles and variants to be used as a building block for other button components.",
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "react"
+      ],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/base-button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A set of card components with predefined styles and variants to be used as building blocks for cards.",
+      "dependencies": ["react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-image",
+      "type": "registry:ui",
+      "title": "Image",
+      "description": "An image component that displays an image with optional alt text and styling.",
+      "dependencies": [],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/image.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "An input component with predefined styles for consistent appearance across the application.",
+      "dependencies": ["react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "A label component with predefined styles for consistent appearance across the application.",
+      "dependencies": [
+        "@radix-ui/react-label",
+        "class-variance-authority",
+        "react"
+      ],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "A set of navigation menu components to build menus in navbars and more.",
+      "dependencies": [
+        "react",
+        "@radix-ui/react-navigation-menu",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-article-card",
+      "type": "registry:component",
+      "title": "Article Card",
+      "description": "A card component to showcase articles with an image, heading, description, and a call-to-action button.",
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/article-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-badge",
+      "type": "registry:component",
+      "title": "Badge",
+      "description": "A badge component that displays a label with different variants and optional link functionality.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-badge.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-button",
+      "type": "registry:component",
+      "title": "Button",
+      "description": "A customizable button component with various styles and sizes.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-types.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-card",
+      "type": "registry:component",
+      "title": "Card",
+      "description": "A card component that combines an icon, heading, description, and a button into a cohesive card layout.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-types.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-container",
+      "type": "registry:component",
+      "title": "Container",
+      "description": "A flexible container component that provides padding and centers its content within the viewport.",
+      "dependencies": ["react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/shadcn/components/container.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-content",
+      "type": "registry:component",
+      "title": "Content",
+      "description": "A versatile content component that can display a badge, heading, description, features list, and action buttons with customizable layout options.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "utils",
+        "http://localhost:3000/r/shadcn-components-badge.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-types.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/content.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-field",
+      "type": "registry:component",
+      "title": "Field",
+      "description": "A form field component that includes a label and an input element.",
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-ui-label.json",
+        "http://localhost:3000/r/shadcn-ui-input.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-form",
+      "type": "registry:component",
+      "title": "Form",
+      "description": "A form component that accepts multiple fields, a form action endpoint, a submit button, and the HTTP method to be used when submitting.",
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-field.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/components/form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
