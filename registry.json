@@ -393,7 +393,6 @@
       "description": "Component config for the shadcn twblocks Pricing component.",
       "dependencies": ["lucide-react", "@puckeditor/core"],
       "registryDependencies": [
-        "utils",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-card.json",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-components-button.json",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-components-container.json",
@@ -448,7 +447,6 @@
       "description": "Component config for the shadcn twblocks Testimonials component.",
       "dependencies": ["react", "lucide-react", "@puckeditor/core"],
       "registryDependencies": [
-        "utils",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-carousel.json",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-avatar.json",
         "https://shadcn-registry-testing.vercel.app/r/shadcn-ui-image.json",

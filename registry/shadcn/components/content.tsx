@@ -1,6 +1,6 @@
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import { Badge, BadgeProps } from "@/registry/shadcn/components/badge";
 import { Button, ButtonProps } from "@/registry/shadcn/components/button";
 import { Feature } from "@/registry/shadcn/types";

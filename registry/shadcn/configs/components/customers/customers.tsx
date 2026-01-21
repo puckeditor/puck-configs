@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import { usePrefersReducedMotion } from "@/registry/hooks/use-prefers-reduced-motion";
 import {
   Carousel,

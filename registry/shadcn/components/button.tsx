@@ -1,6 +1,6 @@
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import {
   BaseButton,
   BaseButtonProps,

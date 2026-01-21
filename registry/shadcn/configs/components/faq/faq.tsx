@@ -1,6 +1,6 @@
 "use client";
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import {
   Accordion,
   AccordionContent,

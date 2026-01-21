@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 
 type PaddingLevel = "none" | "small" | "medium" | "large";
 

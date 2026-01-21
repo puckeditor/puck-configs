@@ -2,7 +2,7 @@
 import { Fragment, useState } from "react";
 import { Menu, MoveRight, X } from "lucide-react";
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import { BaseButton } from "@/registry/shadcn/components/ui/base-button";
 import {
   NavigationMenu,

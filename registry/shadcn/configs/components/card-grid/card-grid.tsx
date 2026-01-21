@@ -5,7 +5,7 @@ import {
   Container,
   ContainerProps,
 } from "@/registry/shadcn/components/container";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 
 export interface CardGridProps extends ContentProps {
   padding?: ContainerProps["padding"];

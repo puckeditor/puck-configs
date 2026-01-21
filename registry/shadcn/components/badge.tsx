@@ -4,7 +4,7 @@ import {
   baseBadgeVariants,
   BaseBadgeProps,
 } from "@/registry/shadcn/components/ui/base-badge";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 
 export interface BadgeProps {
   label: string;

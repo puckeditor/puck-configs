@@ -1,6 +1,6 @@
 import { DynamicIcon } from "lucide-react/dynamic";
 import { IconName } from "@/registry/shadcn/types";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/lib/utils";
 import { Button, ButtonProps } from "@/registry/shadcn/components/button";
 
 export interface CardProps {
