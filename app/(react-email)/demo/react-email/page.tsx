@@ -1,7 +1,7 @@
 import Renderer from "./client";
 
 export const metadata = {
-  title: "react-email Puck Render Demo",
+  title: "React Email Puck Demo",
   description: "Demo of a page with react-email components built using Puck.",
 };
 
