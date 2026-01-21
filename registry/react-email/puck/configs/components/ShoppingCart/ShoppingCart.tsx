@@ -1,10 +1,10 @@
 import { CSSProperties } from "react";
 import { Section, Text, Img, Row, Column } from "@react-email/components";
 
-import Heading from "@/registry/react-email/components/heading";
 import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/link";
 import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image";
 import Link from "@/registry/react-email/components/link";
+import Heading from "@/registry/react-email/components/heading";
 import theme from "@/registry/react-email/lib/constants/theme";
 
 export type ShoppingCartProps = {
