@@ -1,12 +1,12 @@
 import { WithPuckProps } from "@puckeditor/core";
 import { DynamicIcon } from "lucide-react/dynamic";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/registry/shadcn/components/ui/card";
+  BaseCard,
+  BaseCardContent,
+  BaseCardDescription,
+  BaseCardHeader,
+  BaseCardTitle,
+} from "@/registry/shadcn/components/ui/base-card";
 import { Button, ButtonProps } from "@/registry/shadcn/components/button";
 import {
   Container,
@@ -42,16 +42,16 @@ export const Pricing = (props: WithPuckProps<PricingProps>) => (
       />
       <div className="grid pt-20 text-left grid-cols-1 lg:grid-cols-3 w-full gap-8">
         {props.tiers.map((tier, index) => (
-          <Card key={index} className="w-full rounded-md">
-            <CardHeader>
-              <CardTitle>
+          <BaseCard key={index} className="w-full rounded-md">
+            <BaseCardHeader>
+              <BaseCardTitle>
                 <span className="flex flex-row gap-4 items-center font-normal">
                   {tier.name}
                 </span>
-              </CardTitle>
-              <CardDescription>{tier.description}</CardDescription>
-            </CardHeader>
-            <CardContent>
+              </BaseCardTitle>
+              <BaseCardDescription>{tier.description}</BaseCardDescription>
+            </BaseCardHeader>
+            <BaseCardContent>
               <div className="flex flex-col gap-8 justify-start">
                 <p className="flex flex-row items-center gap-2 text-xl">
                   <span className="text-4xl">{tier.cost}</span>
@@ -82,8 +82,8 @@ export const Pricing = (props: WithPuckProps<PricingProps>) => (
                   disableNavigation={props.puck?.isEditing}
                 />
               </div>
-            </CardContent>
-          </Card>
+            </BaseCardContent>
+          </BaseCard>
         ))}
       </div>
     </div>
