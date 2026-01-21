@@ -1,0 +1,5 @@
+import "@/registry/shadcn/styles.css";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}

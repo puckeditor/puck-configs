@@ -9,7 +9,9 @@ export default function Home() {
           A shadcn registry for distributing puck configs.
         </p>
       </header>
-      <main className="flex flex-col flex-1 gap-8"></main>
+      <main className="flex flex-col flex-1 gap-8">
+        TODO: Add registry docs
+      </main>
     </div>
   );
 }
