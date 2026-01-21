@@ -1,9 +1,9 @@
-import { ComponentConfig, Slot } from "@puckeditor/core";
+import { ComponentConfig } from "@puckeditor/core";
 
 import sectionTextField, {
   defaultSectionTextValue,
 } from "@/registry/react-email/puck/configs/fields/section-text";
-import cardField, { defaultCardProps } from "@/registry/react-email/puck/configs/fields/card";
+import cardField, { defaultCardProps } from "@/registry/react-email/puck/configs/fields/card-content";
 
 import CardsGrid, { CardsGridProps } from "./CardsGrid";
 

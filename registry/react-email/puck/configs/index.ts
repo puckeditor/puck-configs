@@ -1,25 +1,21 @@
 import { Config as PuckConfig, Data as PuckData } from "@puckeditor/core";
 
-import root, { RootProps } from "@/registry/react-email/puck/configs/root";
-import Header, { HeaderProps } from "@/registry/react-email/puck/configs/components/Header";
-import Footer, { FooterProps } from "@/registry/react-email/puck/configs/components/Footer";
-import Heading, { HeadingProps } from "@/registry/react-email/puck/configs/components/Heading";
-import Text, { TextProps } from "@/registry/react-email/puck/configs/components/Text";
-import BentoGrid, { BentoGridProps } from "@/registry/react-email/puck/configs/components/BentoGrid";
-import CardsGrid, { CardsGridProps } from "@/registry/react-email/puck/configs/components/CardsGrid";
-import ContentItem, {
-  ContentItemProps,
-} from "@/registry/react-email/puck/configs/components/ContentItem";
-import FeatureList, {
-  FeatureListProps,
-} from "@/registry/react-email/puck/configs/components/FeatureList";
-import Pricing, { PricingProps } from "@/registry/react-email/puck/configs/components/Pricing";
+import root, { RootProps } from "./root";
+import Header, { HeaderProps } from "./components/header";
+import Footer, { FooterProps } from "./components/footer";
+import Heading, { HeadingProps } from "./components/heading";
+import Text, { TextProps } from "./components/text";
+import BentoGrid, { BentoGridProps } from "./components/bento-grid";
+import CardsGrid, { CardsGridProps } from "./components/cards-grid";
+import ContentItem, { ContentItemProps } from "./components/content-item";
+import FeatureList, { FeatureListProps } from "./components/feature-list";
+import Pricing, { PricingProps } from "./components/pricing";
 import PricingTier, {
   PricingTierProps,
-} from "@/registry/react-email/puck/configs/components/PricingTier";
-import ShoppingCart, {
-  ShoppingCartProps,
-} from "@/registry/react-email/puck/configs/components/ShoppingCart";
+} from "./components/pricing/pricing-tier-config";
+import ShoppingCart, { ShoppingCartProps } from "./components/shopping-cart";
+
+import "@puckeditor/ai-types";
 
 export type Props = {
   Header: HeaderProps;

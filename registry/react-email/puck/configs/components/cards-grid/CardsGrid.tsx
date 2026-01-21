@@ -2,7 +2,7 @@ import { PropsWithChildren, ReactNode } from "react";
 import { Column, Row } from "@react-email/components";
 
 import { SectionTextFieldProps } from "@/registry/react-email/puck/configs/fields/section-text";
-import { CardFieldProps } from "@/registry/react-email/puck/configs/fields/card";
+import { CardFieldProps } from "@/registry/react-email/puck/configs/fields/card-content";
 import ContentSection from "@/registry/react-email/components/content-section";
 import Card from "@/registry/react-email/components/card";
 

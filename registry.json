@@ -34,7 +34,7 @@
       "type": "registry:lib",
       "title": "Puck React Email Config Object",
       "description": "The Puck editor main config object for react-email with all component configs.",
-      "dependencies": ["@puckeditor/core"],
+      "dependencies": ["@puckeditor/core", "@puckeditor/ai-types"],
       "registryDependencies": [
         "http://localhost:3000/r/react-email-configs-root.json",
         "http://localhost:3000/r/react-email-configs-components-header.json",
@@ -46,7 +46,6 @@
         "http://localhost:3000/r/react-email-configs-components-content-item.json",
         "http://localhost:3000/r/react-email-configs-components-feature-list.json",
         "http://localhost:3000/r/react-email-configs-components-pricing.json",
-        "http://localhost:3000/r/react-email-configs-components-pricing-tier.json",
         "http://localhost:3000/r/react-email-configs-components-shopping-cart.json"
       ],
       "files": [
@@ -152,35 +151,35 @@
     },
     {
       "name": "react-email-configs-fields-types",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Field Types",
       "description": "TypeScript types for Puck field resolvers (to be called in resolveField) in react-email configs.",
       "dependencies": ["@puckeditor/core"],
       "files": [
         {
           "path": "registry/react-email/puck/configs/fields/types.ts",
-          "type": "registry:lib",
+          "type": "registry:item",
           "target": "~/puck/configs/fields/types.ts"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-image",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Image Field",
       "description": "Puck field config object for image properties (src and alt) in react-email components.",
       "dependencies": ["@puckeditor/core"],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/image/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/image/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/image.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/image.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-link",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Link Field",
       "description": "Puck field config object for link properties with label, href, and icon in react-email components.",
       "dependencies": ["@puckeditor/core"],
@@ -189,15 +188,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/link/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/link/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/link.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/link.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-logo",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Logo Field",
       "description": "Puck field config object for logo properties with label and image in react-email components.",
       "dependencies": ["@puckeditor/core"],
@@ -206,29 +205,29 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/logo/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/logo/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/logo.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/logo.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-section-text",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Section Text Field",
       "description": "Puck field config object for section text properties with tag, title, and description.",
       "dependencies": ["@puckeditor/core"],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/section-text/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/section-text/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/section-text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/section-text.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-width",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Width Field",
       "description": "Puck field config object for width properties with full width/max width toggle.",
       "dependencies": ["@puckeditor/core"],
@@ -237,15 +236,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/width/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/width/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/width.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/width.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-fields-card",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Card Field",
       "description": "Puck field config object for card properties supporting product and article types and inline or featured variants.",
       "dependencies": ["@puckeditor/core"],
@@ -256,15 +255,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/card/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/fields/card/index.tsx"
+          "path": "registry/react-email/puck/configs/fields/card-content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/card-content.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-root",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Root Config",
       "description": "Puck root config object for react-email with width settings for the whole email.",
       "dependencies": ["@puckeditor/core", "@react-email/components"],
@@ -274,14 +273,14 @@
       "files": [
         {
           "path": "registry/react-email/puck/configs/root/index.tsx",
-          "type": "registry:lib",
+          "type": "registry:item",
           "target": "~/puck/configs/root/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-header",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Header Config",
       "description": "Component config for the react-email Header component with logo, navigation links, and layout variants.",
       "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
@@ -295,20 +294,20 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/Header/Header.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Header/Header.tsx"
+          "path": "registry/react-email/puck/configs/components/header/Header.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/header/Header.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/Header/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Header/index.tsx"
+          "path": "registry/react-email/puck/configs/components/header/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/header/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-footer",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Footer Config",
       "description": "Component config for the react-email Footer component with logo, tagline, links, and address.",
       "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
@@ -322,20 +321,20 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/Footer/Footer.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Footer/Footer.tsx"
+          "path": "registry/react-email/puck/configs/components/footer/Footer.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/Footer.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/Footer/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Footer/index.tsx"
+          "path": "registry/react-email/puck/configs/components/footer/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-heading",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Heading Config",
       "description": "Component config for the react-email Heading component with configurable heading levels.",
       "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
@@ -344,39 +343,39 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/Heading/Heading.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Heading/Heading.tsx"
+          "path": "registry/react-email/puck/configs/components/heading/Heading.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/heading/Heading.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/Heading/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Heading/index.tsx"
+          "path": "registry/react-email/puck/configs/components/heading/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/heading/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-text",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Text Config",
       "description": "Component config for the react-email Text component with editable content.",
       "dependencies": ["@puckeditor/core", "@react-email/components"],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/Text/Text.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Text/Text.tsx"
+          "path": "registry/react-email/puck/configs/components/text/Text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/text/Text.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/Text/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Text/index.tsx"
+          "path": "registry/react-email/puck/configs/components/text/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/text/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-bento-grid",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Bento Grid Config",
       "description": "Component config for the react-email Bento Grid component displaying a main content and product grid.",
       "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
@@ -390,20 +389,20 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/BentoGrid/BentoGrid.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/BentoGrid/BentoGrid.tsx"
+          "path": "registry/react-email/puck/configs/components/bento-grid/BentoGrid.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/bento-grid/BentoGrid.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/BentoGrid/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/BentoGrid/index.tsx"
+          "path": "registry/react-email/puck/configs/components/bento-grid/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/bento-grid/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-cards-grid",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Cards Grid Config",
       "description": "Component config for the react-email Cards Grid component displaying multiple cards in a grid layout.",
       "dependencies": ["@puckeditor/core", "@react-email/components"],
@@ -415,20 +414,20 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/CardsGrid/CardsGrid.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/CardsGrid/CardsGrid.tsx"
+          "path": "registry/react-email/puck/configs/components/cards-grid/CardsGrid.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/cards-grid/CardsGrid.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/CardsGrid/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/CardsGrid/index.tsx"
+          "path": "registry/react-email/puck/configs/components/cards-grid/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/cards-grid/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-content-item",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Content Item Config",
       "description": "Component config for the react-email Card component for displaying one off product or article cards.",
       "dependencies": ["@puckeditor/core"],
@@ -440,20 +439,20 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/ContentItem/ContentItem.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/ContentItem/ContentItem.tsx"
+          "path": "registry/react-email/puck/configs/components/content-item/ContentItem.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/content-item/ContentItem.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/ContentItem/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/ContentItem/index.tsx"
+          "path": "registry/react-email/puck/configs/components/content-item/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/content-item/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-feature-list",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Feature List Config",
       "description": "Component config for the react-email Feature List component displaying a list of features with titles and descriptions.",
       "dependencies": ["@puckeditor/core", "@react-email/components"],
@@ -466,70 +465,57 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/FeatureList/FeatureList.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/FeatureList/FeatureList.tsx"
+          "path": "registry/react-email/puck/configs/components/feature-list/FeatureList.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/feature-list/FeatureList.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/FeatureList/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/FeatureList/index.tsx"
+          "path": "registry/react-email/puck/configs/components/feature-list/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/feature-list/index.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-pricing",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Pricing Config",
       "description": "Component config for the react-email Pricing component that accepts nested pricing tiers.",
       "dependencies": ["@puckeditor/core", "@react-email/components"],
       "registryDependencies": [
         "http://localhost:3000/r/react-email-configs-fields-width.json",
         "http://localhost:3000/r/react-email-components-heading.json",
-        "http://localhost:3000/r/react-email-configs-components-pricing-tier.json",
-        "http://localhost:3000/r/react-email-lib-constants-theme.json"
-      ],
-      "files": [
-        {
-          "path": "registry/react-email/puck/configs/components/Pricing/Pricing.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Pricing/Pricing.tsx"
-        },
-        {
-          "path": "registry/react-email/puck/configs/components/Pricing/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/Pricing/index.tsx"
-        }
-      ]
-    },
-    {
-      "name": "react-email-configs-components-pricing-tier",
-      "type": "registry:lib",
-      "title": "Puck Pricing Tier Config",
-      "description": "Component config for the react-email Pricing Tier component displaying individual pricing plans. Used inside the Pricing component.",
-      "dependencies": ["@puckeditor/core", "@react-email/components"],
-      "registryDependencies": [
+        "http://localhost:3000/r/react-email-lib-constants-theme.json",
         "http://localhost:3000/r/lib-create-summary-func.json",
         "http://localhost:3000/r/react-email-configs-fields-link.json",
-        "http://localhost:3000/r/react-email-components-link.json",
-        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+        "http://localhost:3000/r/react-email-components-link.json"
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/PricingTier/PricingTier.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/PricingTier/PricingTier.tsx"
+          "path": "registry/react-email/puck/configs/components/pricing/Pricing.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/pricing/Pricing.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/PricingTier/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/PricingTier/index.tsx"
+          "path": "registry/react-email/puck/configs/components/pricing/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/pricing/index.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/configs/components/pricing/PricingTier.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/pricing/PricingTier.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/configs/components/pricing/pricing-tier-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/pricing/pricing-tier-config.tsx"
         }
       ]
     },
     {
       "name": "react-email-configs-components-shopping-cart",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck Shopping Cart Config",
       "description": "Component config for the react-email Shopping Cart component displaying cart items with images, quantities, prices, and a CTA.",
       "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
@@ -543,14 +529,14 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/components/ShoppingCart/ShoppingCart.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/ShoppingCart/ShoppingCart.tsx"
+          "path": "registry/react-email/puck/configs/components/shopping-cart/ShoppingCart.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/shopping-cart/ShoppingCart.tsx"
         },
         {
-          "path": "registry/react-email/puck/configs/components/ShoppingCart/index.tsx",
-          "type": "registry:lib",
-          "target": "~/puck/configs/components/ShoppingCart/index.tsx"
+          "path": "registry/react-email/puck/configs/components/shopping-cart/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/shopping-cart/index.tsx"
         }
       ]
     },
@@ -1159,9 +1145,7 @@
       "title": "Color Picker",
       "description": "A color picker component that allows users to select a color from a predefined set of colors or input a custom hex color code.",
       "dependencies": ["lucide-react", "react", "@puckeditor/core"],
-      "registryDependencies": [
-        "http://localhost:3000/r/lib-is-hex-color.json"
-      ],
+      "registryDependencies": ["http://localhost:3000/r/lib-is-hex-color.json"],
       "files": [
         {
           "path": "registry/shadcn/components/ui/color-picker/index.tsx",

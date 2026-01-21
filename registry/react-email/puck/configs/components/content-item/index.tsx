@@ -3,7 +3,7 @@ import { ComponentConfig } from "@puckeditor/core";
 import cardField, {
   defaultCardProps,
   resolveCardFields,
-} from "@/registry/react-email/puck/configs/fields/card";
+} from "@/registry/react-email/puck/configs/fields/card-content";
 
 import ContentItem, { ContentItemProps } from "./ContentItem";
 

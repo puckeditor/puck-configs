@@ -1,15 +1,12 @@
 import { ComponentConfig, Slot } from "@puckeditor/core";
 
-import {
-  defaultTier,
-  PricingTierProps,
-} from "@/registry/react-email/puck/configs/components/PricingTier";
 import widthField, {
   defaultWidthValue,
   resolveWidthValue,
 } from "@/registry/react-email/puck/configs/fields/width";
 
 import Pricing, { PricingProps as PricingWithSlotComponents } from "./Pricing";
+import { defaultTier, PricingTierProps } from "./pricing-tier-config";
 
 export type PricingProps = { tiers: Slot } & Omit<
   PricingWithSlotComponents,
