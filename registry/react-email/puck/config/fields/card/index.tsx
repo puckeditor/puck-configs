@@ -5,7 +5,7 @@ import {
   cardTypes,
   CardVariant,
   cardVariants,
-} from "@/registry/react-email/puck/components/card";
+} from "@/registry/react-email/components/card";
 import imageField, { ImageFieldProps } from "@/registry/react-email/puck/config/fields/image";
 import linkField, {
   defaultLinkValue,

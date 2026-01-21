@@ -1,9 +1,9 @@
 import { Container, Hr, Section, Text } from "@react-email/components";
 import { SlotComponent } from "@puckeditor/core";
 
-import Heading from "@/registry/react-email/puck/components/heading";
+import Heading from "@/registry/react-email/components/heading";
 import { WidthFieldProps } from "@/registry/react-email/puck/config/fields/width";
-import theme from "@/registry/react-email/puck/constants/theme";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 export type PricingProps = {
   title: string;

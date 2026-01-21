@@ -4,7 +4,7 @@ import FeatureList, { FeatureListProps } from "./FeatureList";
 import sectionTextField, {
   defaultSectionTextValue,
 } from "@/registry/react-email/puck/config/fields/section-text";
-import createSummaryFunc from "@/registry/react-email/puck/lib/create-summary-func";
+import createSummaryFunc from "@/registry/lib/create-summary-func";
 
 export type { FeatureListProps };
 

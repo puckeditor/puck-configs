@@ -3,9 +3,9 @@ import { Section, Img, Text, Row, Column } from "@react-email/components";
 
 import { LogoFieldProps } from "@/registry/react-email/puck/config/fields/logo";
 import { LinkFieldProps } from "@/registry/react-email/puck/config/fields/link";
-import Link from "@/registry/react-email/puck/components/link";
-import Logo from "@/registry/react-email/puck/components/logo";
-import theme from "@/registry/react-email/puck/constants/theme";
+import Link from "@/registry/react-email/components/link";
+import Logo from "@/registry/react-email/components/logo";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 export const footerVariants = ["column", "row"] as const;
 

@@ -2,7 +2,7 @@ import { ComponentConfig } from "@puckeditor/core";
 
 import linkField, { defaultLinkValue } from "@/registry/react-email/puck/config/fields/link";
 import logoField, { defaultLogoValue } from "@/registry/react-email/puck/config/fields/logo";
-import createSummaryFunc from "@/registry/react-email/puck/lib/create-summary-func";
+import createSummaryFunc from "@/registry/lib/create-summary-func";
 
 import Footer, { FooterProps, footerVariants } from "./Footer";
 

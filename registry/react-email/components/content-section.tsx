@@ -1,8 +1,8 @@
 import { PropsWithChildren } from "react";
 import { Section, Text } from "@react-email/components";
 
-import Heading from "@/registry/react-email/puck/components/heading";
-import theme from "@/registry/react-email/puck/constants/theme";
+import Heading from "@/registry/react-email/components/heading";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 export type ContentSectionProps = {
   tag: string;

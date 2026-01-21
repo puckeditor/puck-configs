@@ -1,9 +1,9 @@
 import { JSXElementConstructor } from "react";
 import { Section, Img, Text } from "@react-email/components";
 
-import Heading from "@/registry/react-email/puck/components/heading";
-import Link, { LinkProps } from "@/registry/react-email/puck/components/link";
-import theme from "@/registry/react-email/puck/constants/theme";
+import Heading from "@/registry/react-email/components/heading";
+import Link, { LinkProps } from "@/registry/react-email/components/link";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 export const cardTypes = ["product", "article"] as const;
 

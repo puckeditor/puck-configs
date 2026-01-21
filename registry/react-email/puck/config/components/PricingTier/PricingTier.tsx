@@ -1,8 +1,8 @@
 import { Section, Text } from "@react-email/components";
 
 import { LinkFieldProps } from "@/registry/react-email/puck/config/fields/link";
-import Link from "@/registry/react-email/puck/components/link";
-import theme from "@/registry/react-email/puck/constants/theme";
+import Link from "@/registry/react-email/components/link";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 export type PricingTierProps = {
   highlighted: boolean;

@@ -8,11 +8,11 @@ import {
   Img,
 } from "@react-email/components";
 
-import Heading from "@/registry/react-email/puck/components/heading";
+import Heading from "@/registry/react-email/components/heading";
 import { ImageFieldProps } from "@/registry/react-email/puck/config/fields/image";
 import { LinkFieldProps } from "@/registry/react-email/puck/config/fields/link";
-import Link from "@/registry/react-email/puck/components/link";
-import theme from "@/registry/react-email/puck/constants/theme";
+import Link from "@/registry/react-email/components/link";
+import theme from "@/registry/react-email/lib/constants/theme";
 
 type SharedProps = {
   title: string;

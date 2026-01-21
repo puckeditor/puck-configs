@@ -2,7 +2,7 @@ import { ComponentConfig } from "@puckeditor/core";
 
 import linkField, { defaultLinkValue } from "@/registry/react-email/puck/config/fields/link";
 import imageField, { defaultImageValue } from "@/registry/react-email/puck/config/fields/image";
-import createSummaryFunc from "@/registry/react-email/puck/lib/create-summary-func";
+import createSummaryFunc from "@/registry/lib/create-summary-func";
 
 import BentoGrid, { BentoGridProps } from "./BentoGrid";
 

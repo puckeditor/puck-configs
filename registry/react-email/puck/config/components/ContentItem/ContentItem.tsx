@@ -1,4 +1,4 @@
-import CardInternal, { CardType, CardVariant } from "@/registry/react-email/puck/components/card";
+import CardInternal, { CardType, CardVariant } from "@/registry/react-email/components/card";
 import { LinkFieldProps } from "@/registry/react-email/puck/config/fields/link";
 import { ImageFieldProps } from "@/registry/react-email/puck/config/fields/image";
 

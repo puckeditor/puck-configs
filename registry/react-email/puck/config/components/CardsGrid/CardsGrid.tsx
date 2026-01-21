@@ -1,10 +1,10 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, ReactNode } from "react";
 import { Column, Row } from "@react-email/components";
 
 import { SectionTextFieldProps } from "@/registry/react-email/puck/config/fields/section-text";
 import { CardFieldProps } from "@/registry/react-email/puck/config/fields/card";
-import ContentSection from "@/registry/react-email/puck/components/content-section";
-import Card from "@/registry/react-email/puck/components/card";
+import ContentSection from "@/registry/react-email/components/content-section";
+import Card from "@/registry/react-email/components/card";
 
 export type CardsGridProps = {
   cards: CardFieldProps[];
@@ -26,8 +26,8 @@ const CardGridColumn = ({ children }: PropsWithChildren) => {
 };
 
 const CardsGrid = ({ tag, title, description, cards }: CardsGridProps) => {
-  const renderedCards = [];
-  let currRow = [];
+  const renderedCards: ReactNode[] = [];
+  let currRow: ReactNode[] = [];
 
   cards.forEach((card, index) => {
     currRow.push(

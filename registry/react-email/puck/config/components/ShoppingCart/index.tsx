@@ -3,7 +3,7 @@ import { ComponentConfig } from "@puckeditor/core";
 import ShoppingCart, { ShoppingCartProps } from "./ShoppingCart";
 import linkField, { defaultLinkValue } from "@/registry/react-email/puck/config/fields/link";
 import imageField, { defaultImageValue } from "@/registry/react-email/puck/config/fields/image";
-import createSummaryFunc from "@/registry/react-email/puck/lib/create-summary-func";
+import createSummaryFunc from "@/registry/lib/create-summary-func";
 
 export type { ShoppingCartProps };
 

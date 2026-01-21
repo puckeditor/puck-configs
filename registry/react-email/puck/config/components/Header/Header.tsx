@@ -3,9 +3,9 @@ import { Section, Row, Column } from "@react-email/components";
 
 import { LogoFieldProps } from "@/registry/react-email/puck/config/fields/logo";
 import { LinkFieldProps } from "@/registry/react-email/puck/config/fields/link";
-import theme from "@/registry/react-email/puck/constants/theme";
-import Link from "@/registry/react-email/puck/components/link";
-import Logo from "@/registry/react-email/puck/components/logo";
+import theme from "@/registry/react-email/lib/constants/theme";
+import Link from "@/registry/react-email/components/link";
+import Logo from "@/registry/react-email/components/logo";
 
 export const headerVariants = ["column", "row"] as const;
 
