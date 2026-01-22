@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 import { Section, Row, Column } from "@react-email/components";
 
-import { LogoFieldProps } from "@/registry/react-email/puck/configs/fields/logo";
+import { LogoFieldProps } from "@/registry/react-email/puck/configs/fields/logo-content";
 import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
 import theme from "@/registry/react-email/lib/constants/theme";
 import Link from "@/registry/react-email/components/link";

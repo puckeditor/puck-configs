@@ -205,9 +205,9 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/logo.tsx",
+          "path": "registry/react-email/puck/configs/fields/logo-content.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/fields/logo.tsx"
+          "target": "~/puck/configs/fields/logo-content.tsx"
         }
       ]
     },
