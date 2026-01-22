@@ -4,19 +4,6 @@
   "homepage": "http://configs.puckeditor.com",
   "items": [
     {
-      "name": "lib-is-hex-color",
-      "type": "registry:lib",
-      "title": "Hex Color Utility",
-      "description": "A utility function to check if a string is a valid hex color.",
-      "dependencies": [],
-      "files": [
-        {
-          "path": "registry/lib/is-hex-color.ts",
-          "type": "registry:lib"
-        }
-      ]
-    },
-    {
       "name": "lib-create-summary-func",
       "type": "registry:item",
       "title": "Summary Function Creator",
@@ -1170,7 +1157,6 @@
       "title": "Color Picker",
       "description": "A color picker component that allows users to select a color from a predefined set of colors or input a custom hex color code.",
       "dependencies": ["lucide-react", "react", "@puckeditor/core"],
-      "registryDependencies": ["http://localhost:3000/r/lib-is-hex-color.json"],
       "files": [
         {
           "path": "registry/shadcn/components/ui/color-picker/index.tsx",
@@ -1181,6 +1167,11 @@
           "path": "registry/shadcn/components/ui/color-picker/color-field.module.css",
           "type": "registry:file",
           "target": "components/ui/color-picker/color-field.module.css"
+        },
+        {
+          "path": "registry/shadcn/components/ui/color-picker/is-hex-color.ts",
+          "type": "registry:file",
+          "target": "components/ui/color-picker/is-hex-color.ts"
         }
       ]
     },

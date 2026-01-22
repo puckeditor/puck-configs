@@ -3,8 +3,8 @@
 import { MouseEvent, useRef, useState, useId } from "react";
 import { PaintBucket } from "lucide-react";
 import { FieldLabel } from "@puckeditor/core";
-import { isHexColor } from "@/registry/lib/is-hex-color";
 
+import { isHexColor } from "./is-hex-color";
 import styles from "./color-field.module.css";
 
 const closeColorPicker = (pickerRef: HTMLInputElement) => {
