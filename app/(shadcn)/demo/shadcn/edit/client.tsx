@@ -1,28 +1,16 @@
 "use client";
 
-import { Puck } from "@puckeditor/core";
-
-import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
-import LoadingIndicator from "@/components/loading-indicator";
 import { emptyData } from "@/lib/puck-data/empty-data";
 
-import conf, { Data } from "@/registry/shadcn/puck/configs";
+import conf from "@/registry/shadcn/puck/configs";
+import LocalStorageEditor from "@/components/local-storage-editor";
 
 export default function Editor() {
-  const [initialData, saveData] = useLocalStorageJson<Data>(
-    "shadcn-puck-data",
-    emptyData,
-  );
-
-  if (!initialData) {
-    return <LoadingIndicator />;
-  }
-
   return (
-    <Puck
+    <LocalStorageEditor
+      pageUrl="/demo/shadcn"
       config={conf}
-      data={initialData}
-      onPublish={(data) => saveData(data)}
+      dataKey="shadcn-puck-data"
     />
   );
 }

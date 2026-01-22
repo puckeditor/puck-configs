@@ -5,6 +5,7 @@ import { Render } from "@puckeditor/core";
 import conf from "@/registry/shadcn/puck/configs";
 import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
 import LoadingIndicator from "@/components/loading-indicator";
+import FloatingButton from "@/components/floating-button";
 import { emptyData } from "@/lib/puck-data/empty-data";
 
 export default function Renderer() {
@@ -14,5 +15,10 @@ export default function Renderer() {
     return <LoadingIndicator />;
   }
 
-  return <Render config={conf} data={data} />;
+  return (
+    <>
+      <Render config={conf} data={data} />
+      <FloatingButton href="/demo/shadcn/edit">Edit Page</FloatingButton>
+    </>
+  );
 }
