@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { render } from "@react-email/components";
-import { Render, Data, Button } from "@puckeditor/core";
+import { Render, Data } from "@puckeditor/core";
 
 import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
 import LoadingIndicator from "@/components/loading-indicator";
