@@ -5,7 +5,7 @@ import {
 } from "react";
 import { Img, Link as ReactEmailLink } from "@react-email/components";
 
-import theme from "@/registry/react-email/lib/constants/theme";
+import theme from "../lib/constants/theme";
 
 export type LinkProps = {
   href: string;

@@ -3,8 +3,8 @@ import { ComponentConfig } from "@puckeditor/core";
 import FeatureList, { FeatureListProps } from "./FeatureList";
 import sectionTextField, {
   defaultSectionTextValue,
-} from "@/registry/react-email/puck/configs/fields/section-text";
-import createSummaryFunc from "@/registry/lib/create-summary-func";
+} from "../../fields/section-text";
+import createSummaryFunc from "../../../lib/create-summary-func";
 
 export type { FeatureListProps };
 

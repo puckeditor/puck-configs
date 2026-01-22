@@ -3,7 +3,7 @@ import { ComponentConfig, Slot } from "@puckeditor/core";
 import widthField, {
   defaultWidthValue,
   resolveWidthValue,
-} from "@/registry/react-email/puck/configs/fields/width";
+} from "../../fields/width";
 
 import Pricing, { PricingProps as PricingWithSlotComponents } from "./Pricing";
 import { defaultTier, PricingTierProps } from "./pricing-tier-config";

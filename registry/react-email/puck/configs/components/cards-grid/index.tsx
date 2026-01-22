@@ -3,8 +3,8 @@ import "@puckeditor/ai-types";
 
 import sectionTextField, {
   defaultSectionTextValue,
-} from "@/registry/react-email/puck/configs/fields/section-text";
-import cardField, { defaultCardProps } from "@/registry/react-email/puck/configs/fields/card-content";
+} from "../../fields/section-text";
+import cardField, { defaultCardProps } from "../../fields/card-content";
 
 import CardsGrid, { CardsGridProps } from "./CardsGrid";
 

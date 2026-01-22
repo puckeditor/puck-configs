@@ -1,6 +1,6 @@
 import { Img, Text } from "@react-email/components";
 
-import theme from "@/registry/react-email/lib/constants/theme";
+import theme from "../lib/constants/theme";
 
 export type LogoProps = {
   label?: string;

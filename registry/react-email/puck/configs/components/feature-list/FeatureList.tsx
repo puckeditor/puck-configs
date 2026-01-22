@@ -1,9 +1,9 @@
 import { Section, Row, Column, Text } from "@react-email/components";
 
-import Heading from "@/registry/react-email/components/heading";
-import ContentSection from "@/registry/react-email/components/content-section";
-import { SectionTextFieldProps } from "@/registry/react-email/puck/configs/fields/section-text";
-import theme from "@/registry/react-email/lib/constants/theme";
+import Heading from "../../../components/heading";
+import ContentSection from "../../../components/content-section";
+import { SectionTextFieldProps } from "../../fields/section-text";
+import theme from "../../../lib/constants/theme";
 
 export type FeatureListProps = {
   features: { title: string; description: string }[];

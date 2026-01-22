@@ -1,15 +1,15 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import linkField, { defaultLinkValue } from "@/registry/react-email/puck/configs/fields/rich-link";
-import imageField, { defaultImageValue } from "@/registry/react-email/puck/configs/fields/image-url";
-import createSummaryFunc from "@/registry/lib/create-summary-func";
+import linkField, { defaultLinkValue } from "../../fields/rich-link";
+import imageField, { defaultImageValue } from "../../fields/image-url";
+import createSummaryFunc from "../../../lib/create-summary-func";
 
 import BentoGrid, { BentoGridProps } from "./BentoGrid";
 
 export type { BentoGridProps };
 
-const bentoGrid: ComponentConfig<{ props: BentoGridProps }> = {
+const bentoGridConfig: ComponentConfig<{ props: BentoGridProps }> = {
   ai: {
     instructions:
       "A bento grid component for emails, it shows a main piece of content and two products. Use it to display a grid of 2 elements in a visually appealing way. Typically used to showcase items in a compact layout.",
@@ -56,4 +56,4 @@ const bentoGrid: ComponentConfig<{ props: BentoGridProps }> = {
   render: BentoGrid,
 };
 
-export default bentoGrid;
+export default bentoGridConfig;

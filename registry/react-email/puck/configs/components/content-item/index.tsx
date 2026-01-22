@@ -4,7 +4,7 @@ import "@puckeditor/ai-types";
 import cardField, {
   defaultCardProps,
   resolveCardFields,
-} from "@/registry/react-email/puck/configs/fields/card-content";
+} from "../../../configs/fields/card-content";
 
 import ContentItem, { ContentItemProps } from "./ContentItem";
 

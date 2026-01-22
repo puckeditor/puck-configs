@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 
-import InternalHeading from "@/registry/react-email/components/heading";
+import InternalHeading from "../../../components/heading";
 
 export const headingLevels = ["h1", "h2", "h3", "h4", "h5", "h6"] as const;
 

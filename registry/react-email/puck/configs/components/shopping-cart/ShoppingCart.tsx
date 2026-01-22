@@ -1,11 +1,11 @@
 import { CSSProperties } from "react";
 import { Section, Text, Img, Row, Column } from "@react-email/components";
 
-import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
-import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
-import Link from "@/registry/react-email/components/link";
-import Heading from "@/registry/react-email/components/heading";
-import theme from "@/registry/react-email/lib/constants/theme";
+import { LinkFieldProps } from "../../fields/rich-link";
+import { ImageFieldProps } from "../../fields/image-url";
+import Link from "../../../components/link";
+import Heading from "../../../components/heading";
+import theme from "../../../lib/constants/theme";
 
 export type ShoppingCartProps = {
   title: string;

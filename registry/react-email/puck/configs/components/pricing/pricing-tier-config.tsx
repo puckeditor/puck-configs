@@ -1,7 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 
-import linkField, { defaultLinkValue } from "@/registry/react-email/puck/configs/fields/rich-link";
-import createSummaryFunc from "@/registry/lib/create-summary-func";
+import linkField, { defaultLinkValue } from "../../fields/rich-link";
+import createSummaryFunc from "../../../lib/create-summary-func";
 
 import PricingTier, { PricingTierProps } from "./PricingTier";
 

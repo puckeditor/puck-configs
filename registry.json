@@ -18,20 +18,21 @@
     },
     {
       "name": "lib-create-summary-func",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Summary Function Creator",
       "description": "A utility function to create summary functions for array items with customizable labels and truncation.",
       "dependencies": [],
       "files": [
         {
-          "path": "registry/lib/create-summary-func.ts",
-          "type": "registry:lib"
+          "path": "registry/react-email/puck/lib/create-summary-func.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/create-summary-func.ts"
         }
       ]
     },
     {
       "name": "react-email-configs",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Puck React Email Config Object",
       "description": "The Puck editor main config object for react-email with all component configs.",
       "dependencies": ["@puckeditor/core"],
@@ -51,40 +52,42 @@
       "files": [
         {
           "path": "registry/react-email/puck/configs/index.ts",
-          "type": "registry:lib",
+          "type": "registry:item",
           "target": "~/puck/configs/index.ts"
         }
       ]
     },
     {
       "name": "react-email-lib-constants-theme",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "React Email Theme Constants",
       "description": "Theme constants for react-email components including color palette for light and dark modes.",
       "dependencies": [],
       "files": [
         {
-          "path": "registry/react-email/lib/constants/theme.ts",
-          "type": "registry:lib"
+          "path": "registry/react-email/puck/lib/constants/theme.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/constants/theme.ts"
         }
       ]
     },
     {
       "name": "react-email-components-heading",
-      "type": "registry:component",
+      "type": "registry:item",
       "title": "React Email Heading",
       "description": "A heading component wrapper for react-email with consistent font weight styling.",
       "dependencies": ["@react-email/components"],
       "files": [
         {
-          "path": "registry/react-email/components/heading.tsx",
-          "type": "registry:component"
+          "path": "registry/react-email/puck/components/heading.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/heading.tsx"
         }
       ]
     },
     {
       "name": "react-email-components-link",
-      "type": "registry:component",
+      "type": "registry:item",
       "title": "React Email Link",
       "description": "A link component for react-email with button and anchor variants, supporting optional icons.",
       "dependencies": ["react", "@react-email/components"],
@@ -93,14 +96,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/components/link.tsx",
-          "type": "registry:component"
+          "path": "registry/react-email/puck/components/link.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/link.tsx"
         }
       ]
     },
     {
       "name": "react-email-components-logo",
-      "type": "registry:component",
+      "type": "registry:item",
       "title": "React Email Logo",
       "description": "A logo component for react-email displaying an image with an optional label.",
       "dependencies": ["@react-email/components"],
@@ -109,14 +113,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/components/logo.tsx",
-          "type": "registry:component"
+          "path": "registry/react-email/puck/components/logo.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/logo.tsx"
         }
       ]
     },
     {
       "name": "react-email-components-card",
-      "type": "registry:component",
+      "type": "registry:item",
       "title": "React Email Card",
       "description": "A versatile card component for react-email supporting product and article variants with inline (row) or featured (column, big) layouts.",
       "dependencies": ["@react-email/components", "react"],
@@ -127,14 +132,15 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/components/card.tsx",
-          "type": "registry:component"
+          "path": "registry/react-email/puck/components/card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/card.tsx"
         }
       ]
     },
     {
       "name": "react-email-components-content-section",
-      "type": "registry:component",
+      "type": "registry:item",
       "title": "React Email Content Section",
       "description": "A content section component for react-email with tag, title, and description fields.",
       "dependencies": ["@react-email/components", "react"],
@@ -144,8 +150,9 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/components/content-section.tsx",
-          "type": "registry:component"
+          "path": "registry/react-email/puck/components/content-section.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/content-section.tsx"
         }
       ]
     },
@@ -1100,14 +1107,14 @@
     },
     {
       "name": "shadcn-styles",
-      "type": "registry:lib",
+      "type": "registry:item",
       "title": "Shadcn twblocks styles",
       "description": "Styles needed for shadcn twblocks configs and components.",
       "devDependencies": ["tailwindcss", "tw-animate-css"],
       "files": [
         {
           "path": "registry/shadcn/puck/styles.css",
-          "type": "registry:lib",
+          "type": "registry:item",
           "target": "~/puck/styles.css"
         }
       ]

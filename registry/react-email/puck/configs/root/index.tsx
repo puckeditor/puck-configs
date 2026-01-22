@@ -5,7 +5,7 @@ import widthField, {
   defaultWidthValue,
   resolveWidthValue,
   WidthFieldProps,
-} from "@/registry/react-email/puck/configs/fields/width";
+} from "../fields/width";
 
 export type RootProps = {
   title: string;

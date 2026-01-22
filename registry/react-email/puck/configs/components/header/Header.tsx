@@ -1,11 +1,11 @@
 import { CSSProperties } from "react";
 import { Section, Row, Column } from "@react-email/components";
 
-import { LogoFieldProps } from "@/registry/react-email/puck/configs/fields/logo-content";
-import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
-import theme from "@/registry/react-email/lib/constants/theme";
-import Link from "@/registry/react-email/components/link";
-import Logo from "@/registry/react-email/components/logo";
+import { LogoFieldProps } from "../../fields/logo-content";
+import { LinkFieldProps } from "../../fields/rich-link";
+import theme from "../../../lib/constants/theme";
+import Link from "../../../components/link";
+import Logo from "../../../components/logo";
 
 export const headerVariants = ["column", "row"] as const;
 

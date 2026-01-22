@@ -1,6 +1,9 @@
-import CardInternal, { CardType, CardVariant } from "@/registry/react-email/components/card";
-import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
-import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
+import CardInternal, {
+  CardType,
+  CardVariant,
+} from "../../../components/card";
+import { LinkFieldProps } from "../../fields/rich-link";
+import { ImageFieldProps } from "../../fields/image-url";
 
 export type ContentItemProps = {
   type: CardType;

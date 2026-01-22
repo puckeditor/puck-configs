@@ -6,14 +6,9 @@ import {
   cardTypes,
   CardVariant,
   cardVariants,
-} from "@/registry/react-email/components/card";
-import imageField, {
-  ImageFieldProps,
-} from "@/registry/react-email/puck/configs/fields/image-url";
-import linkField, {
-  defaultLinkValue,
-  LinkFieldProps,
-} from "@/registry/react-email/puck/configs/fields/rich-link";
+} from "../../components/card";
+import imageField, { ImageFieldProps } from "./image-url";
+import linkField, { defaultLinkValue, LinkFieldProps } from "./rich-link";
 
 export type CardFieldProps = {
   type: CardType;
