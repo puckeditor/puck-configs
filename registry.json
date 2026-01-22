@@ -171,9 +171,9 @@
       "dependencies": ["@puckeditor/core"],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/image.tsx",
+          "path": "registry/react-email/puck/configs/fields/image-url.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/fields/image.tsx"
+          "target": "~/puck/configs/fields/image-url.tsx"
         }
       ]
     },

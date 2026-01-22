@@ -1,6 +1,6 @@
 import { ObjectField } from "@puckeditor/core";
 
-import imageField, { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image";
+import imageField, { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
 
 export type LinkFieldProps = {
   label: string;

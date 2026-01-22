@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import { Section, Text, Img, Row, Column } from "@react-email/components";
 
 import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/link";
-import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image";
+import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
 import Link from "@/registry/react-email/components/link";
 import Heading from "@/registry/react-email/components/heading";
 import theme from "@/registry/react-email/lib/constants/theme";
