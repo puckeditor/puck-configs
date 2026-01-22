@@ -10,7 +10,7 @@ import imageField, { ImageFieldProps } from "@/registry/react-email/puck/configs
 import linkField, {
   defaultLinkValue,
   LinkFieldProps,
-} from "@/registry/react-email/puck/configs/fields/link";
+} from "@/registry/react-email/puck/configs/fields/rich-link";
 
 export type CardFieldProps = {
   type: CardType;

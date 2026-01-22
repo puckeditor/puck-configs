@@ -188,9 +188,9 @@
       ],
       "files": [
         {
-          "path": "registry/react-email/puck/configs/fields/link.tsx",
+          "path": "registry/react-email/puck/configs/fields/rich-link.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/fields/link.tsx"
+          "target": "~/puck/configs/fields/rich-link.tsx"
         }
       ]
     },

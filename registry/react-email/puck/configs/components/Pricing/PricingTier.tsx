@@ -1,6 +1,6 @@
 import { Section, Text } from "@react-email/components";
 
-import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/link";
+import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
 import Link from "@/registry/react-email/components/link";
 import theme from "@/registry/react-email/lib/constants/theme";
 

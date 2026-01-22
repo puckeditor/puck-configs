@@ -1,7 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 
 import logoField, { defaultLogoValue } from "@/registry/react-email/puck/configs/fields/logo";
-import linkField, { defaultLinkValue } from "@/registry/react-email/puck/configs/fields/link";
+import linkField, { defaultLinkValue } from "@/registry/react-email/puck/configs/fields/rich-link";
 import createSummaryFunc from "@/registry/lib/create-summary-func";
 
 import Header, { HeaderProps, headerVariants } from "./Header";

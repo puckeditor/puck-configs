@@ -1,5 +1,5 @@
 import CardInternal, { CardType, CardVariant } from "@/registry/react-email/components/card";
-import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/link";
+import { LinkFieldProps } from "@/registry/react-email/puck/configs/fields/rich-link";
 import { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
 
 export type ContentItemProps = {
