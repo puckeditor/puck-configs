@@ -1,4 +1,6 @@
 import { ComponentConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
+
 import {
   padding,
   image,

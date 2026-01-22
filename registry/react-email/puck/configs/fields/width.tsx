@@ -1,4 +1,5 @@
 import { ObjectField } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import { FieldResolver } from "@/registry/react-email/puck/configs/fields/types";
 

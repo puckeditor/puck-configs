@@ -1,4 +1,5 @@
 import { ComponentConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import cardField, {
   defaultCardProps,

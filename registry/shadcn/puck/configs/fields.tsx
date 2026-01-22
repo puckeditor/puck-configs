@@ -1,5 +1,8 @@
 import { Field } from "@puckeditor/core";
+import "@puckeditor/ai-types";
+
 import { iconNames } from "lucide-react/dynamic";
+
 import {
   FormProps,
   FormMethods,

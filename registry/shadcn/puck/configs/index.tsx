@@ -41,8 +41,6 @@ import Footer, {
 
 import Root from "./root";
 
-import "@puckeditor/ai-types";
-
 export type Props = {
   ArticleCard: ArticleCardProps;
   Header: HeaderProps;

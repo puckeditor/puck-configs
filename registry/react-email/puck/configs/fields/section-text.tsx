@@ -1,4 +1,5 @@
 import { ObjectField } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 export type SectionTextFieldProps = {
   tag: string;

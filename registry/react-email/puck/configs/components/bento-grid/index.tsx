@@ -1,4 +1,5 @@
 import { ComponentConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import linkField, { defaultLinkValue } from "@/registry/react-email/puck/configs/fields/rich-link";
 import imageField, { defaultImageValue } from "@/registry/react-email/puck/configs/fields/image-url";

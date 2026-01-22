@@ -1,4 +1,5 @@
 import { ObjectField } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import {
   CardType,
@@ -6,7 +7,9 @@ import {
   CardVariant,
   cardVariants,
 } from "@/registry/react-email/components/card";
-import imageField, { ImageFieldProps } from "@/registry/react-email/puck/configs/fields/image-url";
+import imageField, {
+  ImageFieldProps,
+} from "@/registry/react-email/puck/configs/fields/image-url";
 import linkField, {
   defaultLinkValue,
   LinkFieldProps,

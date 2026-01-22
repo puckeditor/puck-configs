@@ -15,8 +15,6 @@ import PricingTier, {
 } from "./components/pricing/pricing-tier-config";
 import ShoppingCart, { ShoppingCartProps } from "./components/shopping-cart";
 
-import "@puckeditor/ai-types";
-
 export type Props = {
   Header: HeaderProps;
   Footer: FooterProps;

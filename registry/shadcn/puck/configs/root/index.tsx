@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import { RootConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import { createColorField } from "@/registry/shadcn/puck/configs/fields";
 
