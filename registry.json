@@ -567,7 +567,7 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/index.tsx",
+          "path": "registry/shadcn/puck/configs/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/index.tsx"
         }
@@ -587,7 +587,7 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/fields.tsx",
+          "path": "registry/shadcn/puck/configs/fields.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/fields.tsx"
         }
@@ -606,12 +606,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/article-card/article-card.tsx",
+          "path": "registry/shadcn/puck/configs/components/article-card/article-card.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/article-card/article-card.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/article-card/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/article-card/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/article-card/index.tsx"
         }
@@ -632,12 +632,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/articles/articles.tsx",
+          "path": "registry/shadcn/puck/configs/components/articles/articles.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/articles/articles.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/articles/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/articles/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/articles/index.tsx"
         }
@@ -659,12 +659,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/bento/bento.tsx",
+          "path": "registry/shadcn/puck/configs/components/bento/bento.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/bento/bento.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/bento/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/bento/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/bento/index.tsx"
         }
@@ -686,12 +686,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/card-grid/card-grid.tsx",
+          "path": "registry/shadcn/puck/configs/components/card-grid/card-grid.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/card-grid/card-grid.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/card-grid/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/card-grid/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/card-grid/index.tsx"
         }
@@ -712,12 +712,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/contact-us/contact-us.tsx",
+          "path": "registry/shadcn/puck/configs/components/contact-us/contact-us.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/contact-us/contact-us.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/contact-us/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/contact-us/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/contact-us/index.tsx"
         }
@@ -738,12 +738,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/cta/cta.tsx",
+          "path": "registry/shadcn/puck/configs/components/cta/cta.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/cta/cta.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/cta/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/cta/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/cta/index.tsx"
         }
@@ -766,12 +766,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/customers/customers.tsx",
+          "path": "registry/shadcn/puck/configs/components/customers/customers.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/customers/customers.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/customers/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/customers/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/customers/index.tsx"
         }
@@ -793,12 +793,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/faq/faq.tsx",
+          "path": "registry/shadcn/puck/configs/components/faq/faq.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/faq/faq.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/faq/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/faq/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/faq/index.tsx"
         }
@@ -819,12 +819,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/feature-cards/feature-cards.tsx",
+          "path": "registry/shadcn/puck/configs/components/feature-cards/feature-cards.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/feature-cards/feature-cards.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/feature-cards/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/feature-cards/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/feature-cards/index.tsx"
         }
@@ -843,12 +843,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/footer/footer.tsx",
+          "path": "registry/shadcn/puck/configs/components/footer/footer.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/footer/footer.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/footer/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/footer/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/footer/index.tsx"
         }
@@ -870,12 +870,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/header/header.tsx",
+          "path": "registry/shadcn/puck/configs/components/header/header.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/header/header.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/header/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/header/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/header/index.tsx"
         }
@@ -899,12 +899,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/hero/hero.tsx",
+          "path": "registry/shadcn/puck/configs/components/hero/hero.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/hero/hero.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/hero/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/hero/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/hero/index.tsx"
         }
@@ -927,12 +927,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/pricing/pricing.tsx",
+          "path": "registry/shadcn/puck/configs/components/pricing/pricing.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/pricing/pricing.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/pricing/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/pricing/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/pricing/index.tsx"
         }
@@ -953,12 +953,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/stats/stats.tsx",
+          "path": "registry/shadcn/puck/configs/components/stats/stats.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/stats/stats.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/stats/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/stats/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/stats/index.tsx"
         }
@@ -981,12 +981,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/testimonials/testimonials.tsx",
+          "path": "registry/shadcn/puck/configs/components/testimonials/testimonials.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/testimonials/testimonials.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/testimonials/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/testimonials/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/testimonials/index.tsx"
         }
@@ -1009,12 +1009,12 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/components/two-column/two-column.tsx",
+          "path": "registry/shadcn/puck/configs/components/two-column/two-column.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/two-column/two-column.tsx"
         },
         {
-          "path": "registry/shadcn/configs/components/two-column/index.tsx",
+          "path": "registry/shadcn/puck/configs/components/two-column/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/components/two-column/index.tsx"
         }
@@ -1032,22 +1032,22 @@
       ],
       "files": [
         {
-          "path": "registry/shadcn/configs/root/index.tsx",
+          "path": "registry/shadcn/puck/configs/root/index.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/root/index.tsx"
         },
         {
-          "path": "registry/shadcn/configs/root/root.module.css",
+          "path": "registry/shadcn/puck/configs/root/root.module.css",
           "type": "registry:lib",
           "target": "~/puck/configs/root/root.module.css"
         },
         {
-          "path": "registry/shadcn/configs/root/theme.ts",
+          "path": "registry/shadcn/puck/configs/root/theme.ts",
           "type": "registry:lib",
           "target": "~/puck/configs/root/theme.ts"
         },
         {
-          "path": "registry/shadcn/configs/root/font-links.tsx",
+          "path": "registry/shadcn/puck/configs/root/font-links.tsx",
           "type": "registry:lib",
           "target": "~/puck/configs/root/font-links.tsx"
         }
@@ -1074,7 +1074,7 @@
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "registry/shadcn/types.ts",
+          "path": "registry/shadcn/puck/types.ts",
           "type": "registry:lib",
           "target": "~/puck/types.ts"
         }
@@ -1088,7 +1088,7 @@
       "devDependencies": ["tailwindcss", "tw-animate-css"],
       "files": [
         {
-          "path": "registry/shadcn/styles.css",
+          "path": "registry/shadcn/puck/styles.css",
           "type": "registry:lib",
           "target": "~/puck/styles.css"
         }

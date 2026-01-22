@@ -1,5 +1,5 @@
 import { DynamicIcon } from "lucide-react/dynamic";
-import { IconName } from "@/registry/shadcn/types";
+import { IconName } from "@/registry/shadcn/puck/types";
 import { cn } from "@/lib/utils";
 import { Button, ButtonProps } from "@/registry/shadcn/components/button";
 

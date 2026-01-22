@@ -6,7 +6,7 @@ import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
 import LoadingIndicator from "@/components/loading-indicator";
 import { emptyData } from "@/lib/puck-data/empty-data";
 
-import conf, { Data } from "@/registry/shadcn/configs";
+import conf, { Data } from "@/registry/shadcn/puck/configs";
 
 export default function Editor() {
   const [initialData, saveData] = useLocalStorageJson<Data>(

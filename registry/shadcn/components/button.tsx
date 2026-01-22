@@ -6,7 +6,7 @@ import {
   BaseButtonProps,
   baseButtonVariants,
 } from "@/registry/shadcn/components/ui/base-button";
-import { IconName } from "@/registry/shadcn/types";
+import { IconName } from "@/registry/shadcn/puck/types";
 
 export interface ButtonProps {
   label: string;

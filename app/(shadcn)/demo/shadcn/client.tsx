@@ -2,7 +2,7 @@
 
 import { Render } from "@puckeditor/core";
 
-import conf from "@/registry/shadcn/configs";
+import conf from "@/registry/shadcn/puck/configs";
 import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
 import LoadingIndicator from "@/components/loading-indicator";
 import { emptyData } from "@/lib/puck-data/empty-data";
