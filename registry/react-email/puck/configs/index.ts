@@ -37,7 +37,6 @@ export type Config = PuckConfig<{
   categories: ["Navigation", "Content", "Business"];
 }>;
 
-// We avoid the name config as next gets confused
 const conf: Config = {
   root,
   categories: {

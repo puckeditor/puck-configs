@@ -64,7 +64,6 @@ export type Props = {
 
 export type Config = PuckConfig<Props>;
 
-// We avoid the name config as next gets confused
 export const conf: Config = {
   categories: {
     navigation: {
