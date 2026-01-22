@@ -1073,7 +1073,7 @@
       "dependencies": ["react"],
       "files": [
         {
-          "path": "registry/hooks/use-prefers-reduced-motion.ts",
+          "path": "registry/shadcn/hooks/use-prefers-reduced-motion.ts",
           "type": "registry:hook"
         }
       ]

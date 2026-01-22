@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/registry/hooks/use-prefers-reduced-motion";
+import { usePrefersReducedMotion } from "@/registry/shadcn/hooks/use-prefers-reduced-motion";
 import {
   Carousel,
   CarouselApi,

@@ -15,7 +15,7 @@ import {
   AvatarImage,
 } from "@/registry/shadcn/components/ui/avatar";
 import { ImageProps } from "@/registry/shadcn/components/ui/image";
-import { usePrefersReducedMotion } from "@/registry/hooks/use-prefers-reduced-motion";
+import { usePrefersReducedMotion } from "@/registry/shadcn/hooks/use-prefers-reduced-motion";
 import {
   Container,
   ContainerProps,
