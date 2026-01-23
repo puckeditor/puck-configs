@@ -8,6 +8,7 @@ import Hero, { HeroProps } from "./components/hero";
 import Navbar, { NavbarProps } from "./components/navbar";
 import Stats, { StatsProps } from "./components/stats";
 import Timeline, { TimelineProps } from "./components/timeline";
+import Root from "./root";
 
 export type Props = {
   Accordion: AccordionProps;
@@ -20,7 +21,10 @@ export type Props = {
   Timeline: TimelineProps;
 };
 
-export type Config = PuckConfig<Props>;
+export type Config = PuckConfig<{
+  components: Props;
+  categories: ["Layout", "Content", "Data"];
+}>;
 
 export const conf: Config = {
   categories: {
@@ -34,18 +38,6 @@ export const conf: Config = {
       components: ["Stats", "Timeline"],
     },
   },
-  root: {
-    render: ({ children }) => {
-      return (
-        <div
-          className="overflow-auto min-h-[100dvh] [&>*]:!h-[100%] [&>*]:!min-h-[100dvh]"
-          data-theme="cupcake"
-        >
-          {children}
-        </div>
-      );
-    },
-  },
   components: {
     Accordion,
     Card,
@@ -56,6 +48,7 @@ export const conf: Config = {
     Stats,
     Timeline,
   },
+  root: Root,
 };
 
 export type UserData = Data<Props>;
