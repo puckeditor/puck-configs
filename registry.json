@@ -1420,6 +1420,151 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "daisyui-styles",
+      "type": "registry:item",
+      "title": "DaisyUI Styles",
+      "description": "Tailwind CSS configuration with DaisyUI plugin and typography support.",
+      "dependencies": ["daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/styles.css",
+          "type": "registry:item",
+          "target": "~/puck/styles.css"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-hooks-use-portal",
+      "type": "registry:item",
+      "title": "Use Portal Hook",
+      "description": "A React hook to register overlay portals for Puck components.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/hooks/use-portal.ts",
+          "type": "registry:item",
+          "target": "~/puck/hooks/use-portal.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-button",
+      "type": "registry:item",
+      "title": "Button Component",
+      "description": "A DaisyUI button component with multiple variants, and that can work as a link or a button.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/button.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-collapse",
+      "type": "registry:item",
+      "title": "Collapse Component",
+      "description": "A DaisyUI collapse component for creating expandable/collapsible items.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/collapse.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/collapse.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-content",
+      "type": "registry:item",
+      "title": "Content Component",
+      "description": "A content wrapper component for DaisyUI with title, description, and CTA buttons.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-section-text",
+      "type": "registry:item",
+      "title": "Section Text Field",
+      "description": "Puck field configuration for section text with title and description fields.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/section-text.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/section-text.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-link-button",
+      "type": "registry:item",
+      "title": "Link Button Field",
+      "description": "Puck field configuration for link buttons with label, href, and variant fields.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/link-button.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/link-button.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-accordion",
+      "type": "registry:item",
+      "title": "Accordion Config",
+      "description": "Puck component configuration for creating accordions with multiple collapsible items using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-collapse.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/accordion/accordion.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/accordion/accordion.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/accordion/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/accordion/index.tsx"
+        }
+      ]
     }
   ]
 }

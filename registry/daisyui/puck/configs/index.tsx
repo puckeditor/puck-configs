@@ -1,4 +1,4 @@
-import { Config as PuckConfig, Data, DropZone } from "@puckeditor/core";
+import { Config as PuckConfig, Data as PuckData } from "@puckeditor/core";
 
 import Accordion, { AccordionProps } from "./components/accordion";
 import Card, { CardProps } from "./components/card";
@@ -51,12 +51,6 @@ export const conf: Config = {
   root: Root,
 };
 
-export type UserData = Data<Props>;
-
-export const initialData: Record<string, UserData> = {};
-
-export const componentKey = Buffer.from(
-  `${Object.keys(conf.components).join("-")}-${JSON.stringify(initialData)}`,
-).toString("base64");
+export type Data = PuckData<Props>;
 
 export default conf;
