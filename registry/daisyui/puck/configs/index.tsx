@@ -1,13 +1,13 @@
 import { Config as PuckConfig, Data, DropZone } from "@puckeditor/core";
 
-import Accordion, { AccordionProps } from "./components/Accordion";
-import Card, { CardProps } from "./components/Card";
-import Grid, { GridProps } from "./components/Grid";
-import Footer, { FooterProps } from "./components/Footer";
-import Hero, { HeroProps } from "./components/Hero";
-import Navbar, { NavbarProps } from "./components/Navbar";
-import Stats, { StatsProps } from "./components/Stats";
-import Timeline, { TimelineProps } from "./components/Timeline";
+import Accordion, { AccordionProps } from "./components/accordion";
+import Card, { CardProps } from "./components/card";
+import Grid, { GridProps } from "./components/grid";
+import Footer, { FooterProps } from "./components/footer";
+import Hero, { HeroProps } from "./components/hero";
+import Navbar, { NavbarProps } from "./components/navbar";
+import Stats, { StatsProps } from "./components/stats";
+import Timeline, { TimelineProps } from "./components/timeline";
 
 export type Props = {
   Accordion: AccordionProps;
