@@ -11,10 +11,35 @@ export default function Home() {
       </header>
       <hr />
       <main className="flex flex-col flex-1 gap-1">
-        <p>This page is under construction, in the meantime you can check out the demos for the distributed puck configs:</p>
+        <p>
+          This page is under construction. In the meantime, you can check out
+          the{" "}
+          <a
+            href="https://puckeditor.com/docs"
+            rel="noopener noreferrer"
+            className="text-sky-800 hover:underline font-semibold"
+          >
+            docs
+          </a>{" "}
+          or demos for the distributed Puck configs:
+        </p>
         <ul className="list-disc list-inside flex flex-col">
-          <li><a href="/demo/shadcn/edit" className="text-sky-800 hover:underline font-semibold">Shadcn</a></li>
-          <li><a href="/demo/react-email/edit" className="text-sky-800 hover:underline font-semibold">React Email</a></li>
+          <li>
+            <a
+              href="/demo/shadcn/edit"
+              className="text-sky-800 hover:underline font-semibold"
+            >
+              Shadcn
+            </a>
+          </li>
+          <li>
+            <a
+              href="/demo/react-email/edit"
+              className="text-sky-800 hover:underline font-semibold"
+            >
+              React Email
+            </a>
+          </li>
         </ul>
       </main>
     </div>
