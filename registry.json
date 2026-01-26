@@ -1507,17 +1507,16 @@
       ]
     },
     {
-      "name": "daisyui-configs-fields-section-text",
+      "name": "daisyui-configs-fields-image",
       "type": "registry:item",
-      "title": "Section Text Field",
-      "description": "Puck field configuration for section text with title and description fields.",
-      "dependencies": ["react", "@puckeditor/core"],
-      "devDependencies": ["@puckeditor/ai-types"],
+      "title": "Image Field",
+      "description": "Puck field configuration for images with src and alt fields.",
+      "dependencies": ["@puckeditor/core"],
       "files": [
         {
-          "path": "registry/daisyui/puck/configs/fields/section-text.tsx",
+          "path": "registry/daisyui/puck/configs/fields/image.ts",
           "type": "registry:item",
-          "target": "~/puck/configs/fields/section-text.tsx"
+          "target": "~/puck/configs/fields/image.ts"
         }
       ]
     },
@@ -1536,6 +1535,21 @@
           "path": "registry/daisyui/puck/configs/fields/link-button.ts",
           "type": "registry:item",
           "target": "~/puck/configs/fields/link-button.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-section-text",
+      "type": "registry:item",
+      "title": "Section Text Field",
+      "description": "Puck field configuration for section text with title and description fields.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/section-text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/section-text.tsx"
         }
       ]
     },
@@ -1563,6 +1577,30 @@
           "path": "registry/daisyui/puck/configs/components/accordion/index.tsx",
           "type": "registry:item",
           "target": "~/puck/configs/components/accordion/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-footer",
+      "type": "registry:item",
+      "title": "Footer Config",
+      "description": "Puck component configuration for footer with sections, logo, and social links using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/footer/footer.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/footer.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/footer/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/index.tsx"
         }
       ]
     },
