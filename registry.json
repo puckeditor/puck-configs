@@ -1437,6 +1437,20 @@
       ]
     },
     {
+      "name": "daisyui-lib-utils",
+      "type": "registry:item",
+      "title": "Utils Library",
+      "description": "Utility functions for class name merging with clsx and tailwind-merge.",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "registry/daisyui/lib/utils.ts",
+          "type": "registry:item",
+          "target": "~/lib/utils.ts"
+        }
+      ]
+    },
+    {
       "name": "daisyui-hooks-use-portal",
       "type": "registry:item",
       "title": "Use Portal Hook",
@@ -1662,6 +1676,34 @@
           "path": "registry/daisyui/puck/configs/components/navbar/index.tsx",
           "type": "registry:item",
           "target": "~/puck/configs/components/navbar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-hero",
+      "type": "registry:item",
+      "title": "Hero Config",
+      "description": "Puck component configuration for hero sections with multiple image layout options using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/hero/hero.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/hero/hero.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/hero/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/hero/index.tsx"
         }
       ]
     }

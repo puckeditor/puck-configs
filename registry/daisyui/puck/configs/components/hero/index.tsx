@@ -1,41 +1,52 @@
 import { ComponentConfig } from "@puckeditor/core";
 
-export type HeroProps = {
-  title: string;
-  description: string;
-  cta: { label: string; href: string };
-};
+import imageField from "../../fields/image";
+import sectionTextField from "../../fields/section-text";
+import buttonField, { defaultButtonValue } from "../../fields/link-button";
+import Hero, { HeroProps } from "./hero";
 
-const conf: ComponentConfig<HeroProps> = {
+export type { HeroProps };
+
+const heroConfig: ComponentConfig<HeroProps> = {
   fields: {
-    title: { type: "text" },
-    description: { type: "textarea" },
-    cta: {
-      type: "object",
-      objectFields: {
-        label: { type: "text" },
-        href: { type: "text" },
-      },
+    ...sectionTextField.objectFields,
+    buttons: {
+      type: "array",
+      arrayFields: buttonField.objectFields,
+      defaultItemProps: { ...defaultButtonValue, variant: "ghost" },
+      max: 3,
     },
+    imageLayout: {
+      type: "select",
+      options: [
+        { label: "background", value: "background" },
+        { label: "left", value: "left" },
+        { label: "right", value: "right" },
+        { label: "bottom", value: "bottom" },
+        { label: "none", value: "none" },
+      ],
+    },
+    image: imageField,
+  },
+  resolveFields: (data, params) => {
+    const fieldsToReturn = { ...params.fields };
+
+    if (data.props.imageLayout === "none") {
+      delete fieldsToReturn.image;
+    } else {
+      fieldsToReturn.image = params.fields.image;
+    }
+
+    return fieldsToReturn;
   },
   defaultProps: {
     title: "Title",
-    description: "Lorem ipsum",
-    cta: { href: "#", label: "Learn more" },
+    description: "Description",
+    buttons: [{ ...defaultButtonValue, variant: "ghost" }],
+    imageLayout: "background",
+    image: { src: "https://placehold.co/600x400?text=%5Cn", alt: "Placeholder" },
   },
-  render: ({ title, description, cta }) => (
-    <div className="hero bg-base-200 py-24">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="text-5xl font-bold">{title}</h1>
-          <p className="py-6">{description}</p>
-          <a className="btn btn-primary" href={cta.href}>
-            {cta.label}
-          </a>
-        </div>
-      </div>
-    </div>
-  ),
+  render: Hero,
 };
 
-export default conf;
+export default heroConfig;
