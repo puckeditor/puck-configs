@@ -11,6 +11,7 @@ const accordionConfig: ComponentConfig<AccordionProps> = {
     ...sectionTextField.objectFields,
     buttons: {
       type: "array",
+      max: 3,
       arrayFields: {
         ...buttonField.objectFields,
       },
@@ -18,6 +19,7 @@ const accordionConfig: ComponentConfig<AccordionProps> = {
     },
     items: {
       type: "array",
+      max: 20,
       arrayFields: {
         title: { type: "text", contentEditable: true },
         body: { type: "richtext", contentEditable: true },
