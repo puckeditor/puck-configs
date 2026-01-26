@@ -14,10 +14,10 @@ importers:
     dependencies:
       '@puckeditor/ai-types':
         specifier: ^0.5.0
-        version: 0.5.0(@puckeditor/core@0.21.0(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0)))
+        version: 0.5.0(@puckeditor/core@0.21.1(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0)))
       '@puckeditor/core':
-        specifier: ^0.21.0
-        version: 0.21.0(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))
+        specifier: ^0.21.1
+        version: 0.21.1(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))
       '@radix-ui/react-accordion':
         specifier: ^1.2.12
         version: 1.2.12(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -649,8 +649,8 @@ packages:
     peerDependencies:
       '@puckeditor/core': ^0.21.0 || 0.21.0-canary.de0baf39
 
-  '@puckeditor/core@0.21.0':
-    resolution: {integrity: sha512-WWnQ1rgHKiGwyG9n6Hg69fsfHv1whj6Pc0kLIqhSGjFGWZWFlnLccFHy/uOxZ1uvSObQtSjxaGRyM1Wow046Qg==}
+  '@puckeditor/core@0.21.1':
+    resolution: {integrity: sha512-Mk25WAHR8QLzHk+BtOO4bOu+y3pjzo0GowMHAJKNhrbxGVh3ETJx/bAZHaxA9dv8lKyuqK9a9AeRr7HYgg/sVw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
@@ -4495,11 +4495,11 @@ snapshots:
 
   '@preact/signals-core@1.12.1': {}
 
-  '@puckeditor/ai-types@0.5.0(@puckeditor/core@0.21.0(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0)))':
+  '@puckeditor/ai-types@0.5.0(@puckeditor/core@0.21.1(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0)))':
     dependencies:
-      '@puckeditor/core': 0.21.0(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))
+      '@puckeditor/core': 0.21.1(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))
 
-  '@puckeditor/core@0.21.0(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))':
+  '@puckeditor/core@0.21.1(@floating-ui/dom@1.7.4)(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.6.0(react@19.1.0))':
     dependencies:
       '@dnd-kit/helpers': 0.1.18
       '@dnd-kit/react': 0.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0)

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { ObjectField } from "@puckeditor/core";
+import { ObjectField, RichTextMenu } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
 export type SectionTextFieldProps = {
@@ -30,8 +30,21 @@ const sectionTextField: ObjectField<SectionTextFieldProps> = {
         heading: false,
         textAlign: false,
         blockquote: false,
+        codeBlock: false,
+        listItem: false,
         bulletList: false,
         orderedList: false,
+      },
+      renderMenu: () => {
+        return (
+          <RichTextMenu>
+            <RichTextMenu.Group>
+              <RichTextMenu.Bold />
+              <RichTextMenu.Italic />
+              <RichTextMenu.Underline />
+            </RichTextMenu.Group>
+          </RichTextMenu>
+        );
       },
       ai: {
         instructions:
