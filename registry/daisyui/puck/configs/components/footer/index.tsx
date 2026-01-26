@@ -1,6 +1,8 @@
 import { ComponentConfig } from "@puckeditor/core";
 
 import imageField, { defaultImageField } from "../../fields/image";
+import logoField, { defaultLogoField } from "../../fields/logo-content";
+
 import Footer, { FooterProps } from "./footer";
 
 export type { FooterProps };
@@ -27,18 +29,7 @@ const footerConfig: ComponentConfig<FooterProps> = {
         links: [{ label: "Link", href: "#" }],
       },
     },
-    logo: {
-      type: "object",
-      objectFields: {
-        ...imageField.objectFields,
-        companyName: {
-          type: "text",
-          label: "company name",
-          contentEditable: true,
-        },
-        tagline: { type: "text", contentEditable: true },
-      },
-    },
+    logo: logoField,
     socials: {
       type: "array",
       max: 5,
@@ -59,11 +50,7 @@ const footerConfig: ComponentConfig<FooterProps> = {
       title: `Section - ${idx + 1}`,
       links: [{ label: "Link 1", href: "#" }],
     })),
-    logo: {
-      ...defaultImageField,
-      companyName: "ACME Industries Ltd.",
-      tagline: "Providing reliable tech since 1992",
-    },
+    logo: defaultLogoField,
     socials: [
       {
         href: "#",

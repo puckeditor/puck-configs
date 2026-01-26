@@ -1539,6 +1539,23 @@
       ]
     },
     {
+      "name": "daisyui-configs-fields-logo-content",
+      "type": "registry:item",
+      "title": "Logo Field",
+      "description": "Puck field configuration for logos with company name, tagline, and image fields.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-configs-fields-image.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/logo-content.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/logo-content.ts"
+        }
+      ]
+    },
+    {
       "name": "daisyui-configs-fields-section-text",
       "type": "registry:item",
       "title": "Section Text Field",
@@ -1589,7 +1606,8 @@
       "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
-        "http://localhost:3000/r/daisyui-configs-fields-image.json"
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
       ],
       "files": [
         {
@@ -1620,6 +1638,30 @@
           "path": "registry/daisyui/puck/configs/components/rich-text/index.tsx",
           "type": "registry:item",
           "target": "~/puck/configs/components/rich-text/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-navbar",
+      "type": "registry:item",
+      "title": "Navbar Config",
+      "description": "Puck component configuration for navbar with logo, cart, user account link, and navigation links using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui", "lucide-react"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/navbar.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/navbar.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/index.tsx"
         }
       ]
     }

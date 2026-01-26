@@ -1,47 +1,36 @@
 import { ComponentConfig } from "@puckeditor/core";
 
-export type NavbarProps = {
-  title: string;
-  links: {
-    label: string;
-    href: string;
-  }[];
-};
+import logoField, { defaultLogoField } from "../../fields/logo-content";
+import Navbar, { NavbarProps } from "./navbar";
+
+export type { NavbarProps };
+
+const { tagline: _taglineField, ...logoFieldsNoTagline } =
+  logoField.objectFields;
+const { tagline: _defaultTagline, ...defaultLogoFieldNoTagline } =
+  defaultLogoField;
 
 const conf: ComponentConfig<NavbarProps> = {
   fields: {
-    title: { type: "text" },
+    logo: {
+      type: "object",
+      objectFields: logoFieldsNoTagline,
+    },
     links: {
       type: "array",
+      max: 5,
       arrayFields: {
         label: { type: "text" },
-        href: { type: "textarea" },
+        href: { type: "text" },
       },
       defaultItemProps: { label: "Link", href: "#" },
     },
   },
   defaultProps: {
-    title: "Title",
-    links: [{ label: "Link", href: "#" }],
+    logo: defaultLogoFieldNoTagline,
+    links: Array.from({ length: 3 }).map((_) => ({ label: "Link", href: "#" })),
   },
-  render: ({ title, links }) => {
-    return (
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">{title}</a>
-        </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            {links.map((link, idx) => (
-              <li key={idx}>
-                <a href={link.href}>{link.label}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    );
-  },
+  render: Navbar,
 };
 
 export default conf;
