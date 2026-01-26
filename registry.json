@@ -1515,9 +1515,9 @@
       "devDependencies": ["@puckeditor/ai-types"],
       "files": [
         {
-          "path": "registry/daisyui/puck/configs/fields/section-text.ts",
+          "path": "registry/daisyui/puck/configs/fields/section-text.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/fields/section-text.ts"
+          "target": "~/puck/configs/fields/section-text.tsx"
         }
       ]
     },
@@ -1563,6 +1563,25 @@
           "path": "registry/daisyui/puck/configs/components/accordion/index.tsx",
           "type": "registry:item",
           "target": "~/puck/configs/components/accordion/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-rich-text",
+      "type": "registry:item",
+      "title": "Rich Text Config",
+      "description": "Puck component configuration for rich text content using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/rich-text/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/rich-text/index.tsx"
         }
       ]
     }

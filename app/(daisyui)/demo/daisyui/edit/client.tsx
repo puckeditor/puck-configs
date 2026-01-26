@@ -10,6 +10,13 @@ export default function Editor() {
       pageUrl="/demo/daisyui"
       config={conf}
       dataKey="daisyui-puck-data"
+      overrides={{
+        fieldTypes: {
+          richtext: ({ children }) => {
+            return <div className="prose">{children}</div>;
+          },
+        },
+      }}
     />
   );
 }

@@ -27,7 +27,7 @@ const Accordion: PuckComponent<AccordionProps> = ({
       buttons={buttons}
       disableNavigation={puck?.isEditing}
     >
-      <div className="w-full space-y-4">
+      <div className="space-y-4">
         {items.map((item, idx) => (
           <Collapse
             key={idx}

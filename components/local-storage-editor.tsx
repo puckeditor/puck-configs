@@ -1,5 +1,6 @@
 "use client";
 
+import { ComponentProps } from "react";
 import { Button, Config, Data, Puck } from "@puckeditor/core";
 
 import { emptyData } from "@/lib/puck-data/empty-data";
@@ -11,10 +12,12 @@ const LocalStorageEditor = ({
   config,
   dataKey,
   pageUrl,
+  overrides,
 }: {
   config: Config;
   dataKey: string;
   pageUrl?: string;
+  overrides?: ComponentProps<typeof Puck>["overrides"];
 }) => {
   const [initialData, saveData] = useLocalStorageJson<Data>(dataKey, emptyData);
 
@@ -35,6 +38,7 @@ const LocalStorageEditor = ({
             </>
           );
         },
+        ...overrides,
       }}
       config={config}
       data={initialData}
