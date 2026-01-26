@@ -1,19 +1,22 @@
 import { ComponentConfig } from "@puckeditor/core";
 
-export type FooterProps = {
-  sections: { title: string; links: { label: string; href: string }[] }[];
-};
+import imageField, { defaultImageField } from "../../fields/image";
+import Footer, { FooterProps } from "./footer";
 
-const conf: ComponentConfig<FooterProps> = {
+export type { FooterProps };
+
+const footerConfig: ComponentConfig<FooterProps> = {
   fields: {
     sections: {
       type: "array",
+      max: 5,
       arrayFields: {
-        title: { type: "text" },
+        title: { type: "text", contentEditable: true },
         links: {
           type: "array",
+          max: 8,
           arrayFields: {
-            label: { type: "text" },
+            label: { type: "text", contentEditable: true },
             href: { type: "text" },
           },
           defaultItemProps: { label: "Link", href: "#" },
@@ -24,26 +27,52 @@ const conf: ComponentConfig<FooterProps> = {
         links: [{ label: "Link", href: "#" }],
       },
     },
+    logo: {
+      type: "object",
+      objectFields: {
+        ...imageField.objectFields,
+        companyName: {
+          type: "text",
+          label: "company name",
+          contentEditable: true,
+        },
+        tagline: { type: "text", contentEditable: true },
+      },
+    },
+    socials: {
+      type: "array",
+      max: 5,
+      arrayFields: {
+        href: { type: "text" },
+        name: { type: "text" },
+        logo: imageField,
+      },
+      defaultItemProps: {
+        href: "#",
+        name: "Social",
+        logo: defaultImageField,
+      },
+    },
   },
   defaultProps: {
-    sections: [{ title: "Section", links: [{ label: "Link 1", href: "#" }] }],
+    sections: Array.from({ length: 4 }).map((_, idx) => ({
+      title: `Section - ${idx + 1}`,
+      links: [{ label: "Link 1", href: "#" }],
+    })),
+    logo: {
+      ...defaultImageField,
+      companyName: "ACME Industries Ltd.",
+      tagline: "Providing reliable tech since 1992",
+    },
+    socials: [
+      {
+        href: "#",
+        name: "Social",
+        logo: defaultImageField,
+      },
+    ],
   },
-  render: ({ sections }) => (
-    <footer className="pt-32">
-      <div className="footer bg-neutral text-neutral-content p-10">
-        {sections.map((section, idx) => (
-          <nav key={idx}>
-            <h6 className="footer-title">{section.title}</h6>
-            {section.links.map((link, idx) => (
-              <a key={idx} className="link link-hover">
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        ))}
-      </div>
-    </footer>
-  ),
+  render: Footer,
 };
 
-export default conf;
+export default footerConfig;
