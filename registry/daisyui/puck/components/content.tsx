@@ -1,5 +1,6 @@
 import { PropsWithChildren, ReactNode } from "react";
 import Button, { Variant } from "./button";
+import { cn } from "../../lib/utils";
 
 export interface ContentProps {
   title?: ReactNode;
@@ -10,6 +11,8 @@ export interface ContentProps {
     variant: Variant;
   }[];
   disableNavigation?: boolean;
+  textAlign?: "start" | "center" | "end";
+  className?: string;
 }
 
 const Content = ({
@@ -18,6 +21,8 @@ const Content = ({
   children,
   buttons,
   disableNavigation,
+  textAlign,
+  className,
 }: PropsWithChildren<ContentProps>) => {
   const buttonElements = buttons?.map((button, idx) => (
     <Button
@@ -32,10 +37,39 @@ const Content = ({
   ));
 
   return (
-    <div className="container flex flex-col gap-4 max-w-7xl mx-auto py-16 px-4 items-center prose">
-      {title && <h2 className="lead text-center text-3xl mb-0">{title}</h2>}
+    <div
+      className={cn(
+        "container flex flex-col gap-4 max-w-7xl mx-auto py-16 px-4 items-center prose",
+        className,
+        {
+          "md:items-start": textAlign === "start" || !textAlign,
+          "md:items-center": textAlign === "center",
+          "md:items-end": textAlign === "end",
+        },
+      )}
+    >
+      {title && (
+        <h2
+          className={cn("lead text-3xl mb-0 text-center", {
+            "md:text-start": textAlign === "start",
+            "md:text-center": textAlign === "center",
+            "md:text-end": textAlign === "end",
+          })}
+        >
+          {title}
+        </h2>
+      )}
       {description && (
-        <div className="not-prose text-center text-muted-foreground text-lg leading-relaxed tracking-tight lg:max-w-sm">
+        <div
+          className={cn(
+            "not-prose text-muted-foreground text-lg leading-relaxed tracking-tight text-center lg:max-w-xl",
+            {
+              "md:text-start": textAlign === "start",
+              "md:text-center": textAlign === "center",
+              "md:text-end": textAlign === "end",
+            },
+          )}
+        >
           {description}
         </div>
       )}

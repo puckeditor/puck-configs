@@ -1471,9 +1471,7 @@
       "description": "A DaisyUI button component with multiple variants, and that can work as a link or a button.",
       "dependencies": ["react", "daisyui"],
       "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
-      "registryDependencies": [
-        "http://localhost:3000/r/daisyui-styles.json"
-      ],
+      "registryDependencies": ["http://localhost:3000/r/daisyui-styles.json"],
       "files": [
         {
           "path": "registry/daisyui/puck/components/button.tsx",
@@ -1510,7 +1508,8 @@
       "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
-        "http://localhost:3000/r/daisyui-components-button.json"
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json"
       ],
       "files": [
         {
