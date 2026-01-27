@@ -31,26 +31,29 @@ export type Props = {
 
 export type Config = PuckConfig<{
   components: Props;
-  categories: ["Layout", "Content", "Data"];
+  categories: ["Navigation", "Introduction", "Content", "ECommerce"];
 }>;
 
 export const conf: Config = {
   categories: {
-    Layout: {
-      components: ["Footer", "Grid", "Navbar"],
+    Navigation: {
+      components: ["Footer", "Navbar"],
+    },
+    Introduction: {
+      components: ["Hero"],
     },
     Content: {
       components: [
         "Accordion",
         "Card",
-        "Hero",
         "RichText",
-        "Products",
-        "ProductCard",
+        "Grid",
+        "Stats",
+        "Timeline",
       ],
     },
-    Data: {
-      components: ["Stats", "Timeline"],
+    ECommerce: {
+      components: ["Products", "ProductCard"],
     },
   },
   components: {

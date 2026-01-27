@@ -8,12 +8,6 @@ export type CardProps = {
 };
 
 const conf: ComponentConfig<CardProps> = {
-  metadata: {
-    ai: {
-      instructions:
-        "Always place inside a 3 or 4 column Grid. Never place it outside of one.",
-    },
-  },
   fields: {
     title: { type: "text" },
     body: { type: "text" },
