@@ -3,6 +3,7 @@
   themes:
     light --default,
     cupcake,
+    nord,
     dark;
 }
 @plugin "@tailwindcss/typography";
