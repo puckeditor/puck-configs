@@ -10,7 +10,7 @@ const { tagline: _taglineField, ...logoFieldsNoTagline } =
 const { tagline: _defaultTagline, ...defaultLogoFieldNoTagline } =
   defaultLogoField;
 
-const conf: ComponentConfig<NavbarProps> = {
+const navbarConfig: ComponentConfig<NavbarProps> = {
   fields: {
     logo: {
       type: "object",
@@ -33,4 +33,4 @@ const conf: ComponentConfig<NavbarProps> = {
   render: Navbar,
 };
 
-export default conf;
+export default navbarConfig;
