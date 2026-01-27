@@ -1,33 +1,35 @@
-import { ComponentConfig } from "@puckeditor/core";
+import { ComponentConfig, ObjectField } from "@puckeditor/core";
 
 import imageField from "../../fields/image";
 import ProductCard, { ProductCardProps } from "./product-card";
 
 export type { ProductCardProps };
 
-const productCardConfig: ComponentConfig<ProductCardProps> = {
-  inline: true,
-  fields: {
+export const defaultProductValue: ProductCardProps = {
+  price: "$99",
+  name: "Product",
+  category: "Category",
+  body: "",
+  image: { src: "https://placehold.co/600x400", alt: "Placeholder image" },
+  href: "#",
+};
+
+export const productCardFields: ObjectField<ProductCardProps> = {
+  type: "object",
+  objectFields: {
     image: imageField,
     price: { type: "text", contentEditable: true },
     name: { type: "text", contentEditable: true },
     category: { type: "text", contentEditable: true },
     body: { type: "textarea", contentEditable: true },
-    link: {
-      type: "object",
-      objectFields: {
-        href: { type: "text" },
-      },
-    },
+    href: { type: "text" },
   },
-  defaultProps: {
-    price: "$99",
-    name: "Product",
-    category: "Category",
-    body: "",
-    image: { src: "https://placehold.co/600x400", alt: "Placeholder image" },
-    link: { href: "#" },
-  },
+};
+
+const productCardConfig: ComponentConfig<ProductCardProps> = {
+  inline: true,
+  fields: productCardFields.objectFields,
+  defaultProps: defaultProductValue,
   render: ProductCard,
 };
 

@@ -10,6 +10,9 @@ import Products, { ProductsProps } from "./components/products";
 import ProductCard, {
   ProductCardProps,
 } from "./components/products/product-card-config";
+import FeaturedProducts, {
+  FeaturedProductsProps,
+} from "./components/products/featured-products-config";
 import RichText, { RichTextProps } from "./components/rich-text";
 import Stats, { StatsProps } from "./components/stats";
 import Timeline, { TimelineProps } from "./components/timeline";
@@ -24,6 +27,7 @@ export type Props = {
   Navbar: NavbarProps;
   Products: ProductsProps;
   ProductCard: ProductCardProps;
+  FeaturedProducts: FeaturedProductsProps;
   RichText: RichTextProps;
   Stats: StatsProps;
   Timeline: TimelineProps;
@@ -53,7 +57,7 @@ export const conf: Config = {
       ],
     },
     ECommerce: {
-      components: ["Products", "ProductCard"],
+      components: ["Products", "ProductCard", "FeaturedProducts"],
     },
   },
   components: {
@@ -65,6 +69,7 @@ export const conf: Config = {
     Navbar,
     Products,
     ProductCard,
+    FeaturedProducts,
     Stats,
     Timeline,
     RichText,

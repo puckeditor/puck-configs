@@ -1520,6 +1520,25 @@
       ]
     },
     {
+      "name": "daisyui-components-card",
+      "type": "registry:item",
+      "title": "Card Component",
+      "description": "A reusable DaisyUI card component with optional image and link navigation.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/card.tsx"
+        }
+      ]
+    },
+    {
       "name": "daisyui-configs-fields-image",
       "type": "registry:item",
       "title": "Image Field",
@@ -1636,49 +1655,6 @@
       ]
     },
     {
-      "name": "daisyui-configs-components-rich-text",
-      "type": "registry:item",
-      "title": "Rich Text Config",
-      "description": "Puck component configuration for rich text content using DaisyUI.",
-      "dependencies": ["@puckeditor/core", "daisyui"],
-      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
-      "registryDependencies": [
-        "http://localhost:3000/r/daisyui-styles.json",
-        "http://localhost:3000/r/daisyui-components-content.json"
-      ],
-      "files": [
-        {
-          "path": "registry/daisyui/puck/configs/components/rich-text/index.tsx",
-          "type": "registry:item",
-          "target": "~/puck/configs/components/rich-text/index.tsx"
-        }
-      ]
-    },
-    {
-      "name": "daisyui-configs-components-navbar",
-      "type": "registry:item",
-      "title": "Navbar Config",
-      "description": "Puck component configuration for navbar with logo, cart, user account link, and navigation links using DaisyUI.",
-      "dependencies": ["@puckeditor/core", "daisyui", "lucide-react"],
-      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
-      "registryDependencies": [
-        "http://localhost:3000/r/daisyui-styles.json",
-        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
-      ],
-      "files": [
-        {
-          "path": "registry/daisyui/puck/configs/components/navbar/navbar.tsx",
-          "type": "registry:item",
-          "target": "~/puck/configs/components/navbar/navbar.tsx"
-        },
-        {
-          "path": "registry/daisyui/puck/configs/components/navbar/index.tsx",
-          "type": "registry:item",
-          "target": "~/puck/configs/components/navbar/index.tsx"
-        }
-      ]
-    },
-    {
       "name": "daisyui-configs-components-hero",
       "type": "registry:item",
       "title": "Hero Config",
@@ -1707,15 +1683,42 @@
       ]
     },
     {
+      "name": "daisyui-configs-components-navbar",
+      "type": "registry:item",
+      "title": "Navbar Config",
+      "description": "Puck component configuration for navbar with logo, cart, user account link, and navigation links using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui", "lucide-react"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/navbar.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/navbar.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/index.tsx"
+        }
+      ]
+    },
+    {
       "name": "daisyui-configs-components-products",
       "type": "registry:item",
       "title": "Products Config",
-      "description": "Puck component configuration for a products grid section with product cards using DaisyUI.",
+      "description": "Puck component configuration for showing products (product grid and featured products carousel) using DaisyUI.",
       "dependencies": ["react", "@puckeditor/core", "daisyui"],
       "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-card.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
         "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json",
         "http://localhost:3000/r/daisyui-configs-fields-image.json",
         "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
         "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
@@ -1735,6 +1738,35 @@
           "path": "registry/daisyui/puck/configs/components/products/product-card-config.tsx",
           "type": "registry:item",
           "target": "~/puck/configs/components/products/product-card-config.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/featured-products.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/featured-products.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/featured-products-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/featured-products-config.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-rich-text",
+      "type": "registry:item",
+      "title": "Rich Text Config",
+      "description": "Puck component configuration for rich text content using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/rich-text/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/rich-text/index.tsx"
         }
       ]
     }
