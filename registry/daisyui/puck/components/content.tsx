@@ -21,7 +21,7 @@ const Content = ({
   children,
   buttons,
   disableNavigation,
-  textAlign,
+  textAlign = "center",
   className,
 }: PropsWithChildren<ContentProps>) => {
   const buttonElements = buttons?.map((button, idx) => (
@@ -42,7 +42,7 @@ const Content = ({
         "container flex flex-col gap-4 max-w-7xl mx-auto py-16 px-4 items-center prose",
         className,
         {
-          "md:items-start": textAlign === "start" || !textAlign,
+          "md:items-start": textAlign === "start",
           "md:items-center": textAlign === "center",
           "md:items-end": textAlign === "end",
         },

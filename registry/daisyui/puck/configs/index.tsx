@@ -6,7 +6,11 @@ import Grid, { GridProps } from "./components/grid";
 import Footer, { FooterProps } from "./components/footer";
 import Hero, { HeroProps } from "./components/hero";
 import Navbar, { NavbarProps } from "./components/navbar";
-import RichText, {RichTextProps} from "./components/rich-text";
+import Products, { ProductsProps } from "./components/products";
+import ProductCard, {
+  ProductCardProps,
+} from "./components/products/product-card-config";
+import RichText, { RichTextProps } from "./components/rich-text";
 import Stats, { StatsProps } from "./components/stats";
 import Timeline, { TimelineProps } from "./components/timeline";
 import Root from "./root";
@@ -18,6 +22,8 @@ export type Props = {
   Footer: FooterProps;
   Hero: HeroProps;
   Navbar: NavbarProps;
+  Products: ProductsProps;
+  ProductCard: ProductCardProps;
   RichText: RichTextProps;
   Stats: StatsProps;
   Timeline: TimelineProps;
@@ -34,7 +40,14 @@ export const conf: Config = {
       components: ["Footer", "Grid", "Navbar"],
     },
     Content: {
-      components: ["Accordion", "Card", "Hero", "RichText"],
+      components: [
+        "Accordion",
+        "Card",
+        "Hero",
+        "RichText",
+        "Products",
+        "ProductCard",
+      ],
     },
     Data: {
       components: ["Stats", "Timeline"],
@@ -47,6 +60,8 @@ export const conf: Config = {
     Footer,
     Hero,
     Navbar,
+    Products,
+    ProductCard,
     Stats,
     Timeline,
     RichText,

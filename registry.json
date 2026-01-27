@@ -1705,6 +1705,38 @@
           "target": "~/puck/configs/components/hero/index.tsx"
         }
       ]
+    },
+    {
+      "name": "daisyui-configs-components-products",
+      "type": "registry:item",
+      "title": "Products Config",
+      "description": "Puck component configuration for a products grid section with product cards using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/products/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/product-card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/product-card.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/product-card-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/product-card-config.tsx"
+        }
+      ]
     }
   ]
 }

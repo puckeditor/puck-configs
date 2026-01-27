@@ -1,6 +1,10 @@
 import { RootConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 const rootConfig: RootConfig = {
+  ai: {
+    defaultZone: { disallow: ["ProductCard"] },
+  },
   render: ({ children }) => {
     return (
       <div

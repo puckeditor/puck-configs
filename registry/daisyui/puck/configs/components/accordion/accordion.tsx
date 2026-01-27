@@ -26,6 +26,7 @@ const Accordion: PuckComponent<AccordionProps> = ({
       description={description}
       buttons={buttons}
       disableNavigation={puck?.isEditing}
+      textAlign="center"
     >
       <div className="space-y-4">
         {items.map((item, idx) => (
