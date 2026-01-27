@@ -1691,7 +1691,8 @@
       "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
-        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json"
       ],
       "files": [
         {

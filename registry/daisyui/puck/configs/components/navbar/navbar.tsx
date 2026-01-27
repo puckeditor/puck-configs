@@ -1,6 +1,9 @@
+"use client";
+
 import { PuckComponent } from "@puckeditor/core";
 import { ShoppingCart, SquareDashed, User, MenuIcon } from "lucide-react";
 
+import usePortal from "../../../hooks/use-portal";
 import { LogoFieldProps } from "../../fields/logo-content";
 
 export type NavbarProps = {
@@ -12,6 +15,8 @@ export type NavbarProps = {
 };
 
 const Navbar: PuckComponent<NavbarProps> = ({ logo, links, puck }) => {
+  const portalRef = usePortal<HTMLDivElement>();
+
   const linkElements = links.map((link, idx) => (
     <li key={idx}>
       <a href={link.href}>{link.label}</a>
@@ -47,7 +52,7 @@ const Navbar: PuckComponent<NavbarProps> = ({ logo, links, puck }) => {
       </div>
       <div className="navbar-end gap-4">
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle" ref={portalRef}>
             <div className="indicator">
               <ShoppingCart className="h-[21px] w-[21px]" />
               <span className="badge badge-sm indicator-item">0</span>
