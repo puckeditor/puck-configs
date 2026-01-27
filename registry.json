@@ -1770,6 +1770,35 @@
           "target": "~/puck/configs/components/rich-text/index.tsx"
         }
       ]
+    },
+    {
+      "name": "daisyui-configs-components-timeline",
+      "type": "registry:item",
+      "title": "Timeline Config",
+      "description": "Puck component configuration for a timeline section displaying events chronologically using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/Timeline/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/Timeline/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/Timeline/timeline.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/Timeline/timeline.tsx"
+        }
+      ]
     }
   ]
 }
