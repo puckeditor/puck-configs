@@ -1,66 +1,74 @@
 import { ComponentConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
-export type StatsProps = {
-  title: string;
-  stats: { title: string; value: string; shortDescription: string }[];
+import buttonField, { defaultButtonValue } from "../../fields/link-button";
+import sectionTextField from "../../fields/section-text";
+
+import Stats, { StatsProps } from "./stats";
+
+export type { StatsProps };
+
+const defaultStat: StatsProps["stats"][number] = {
+  title: "Stat",
+  value: "100",
+  shortDescription: "Description",
 };
 
-const conf: ComponentConfig<StatsProps> = {
-  metadata: {
-    ai: {
-      instructions:
-        "Use Stats to convey statistics to the reader. Always use a very short description under 15 characters.",
-    },
+const statsConfig: ComponentConfig<StatsProps> = {
+  ai: {
+    instructions: "Use Stats to convey statistics to the reader.",
   },
   fields: {
-    title: { type: "text" },
+    ...sectionTextField.objectFields,
+    buttons: {
+      type: "array",
+      max: 3,
+      arrayFields: {
+        ...buttonField.objectFields,
+      },
+      defaultItemProps: defaultButtonValue,
+    },
     stats: {
       type: "array",
+      min: 1,
+      max: 4,
       arrayFields: {
         title: {
           type: "text",
-          metadata: {
-            ai: {
-              instructions: 'The title of the statistic, i.e. "Opening hours"',
-            },
+          contentEditable: true,
+          ai: {
+            instructions:
+              'The name or title of the statistic, under two or three words long, for example "Opening hours"',
           },
         },
         value: {
           type: "text",
-          metadata: {
-            ai: {
-              instructions:
-                'The value of the statistic, under 7 characters long, i.e. "24/7"',
-            },
+          contentEditable: true,
+          ai: {
+            instructions:
+              'The value of the statistic, use single short word or string, for example "24/7"',
           },
         },
-        shortDescription: { type: "text" },
+        shortDescription: {
+          type: "text",
+          contentEditable: true,
+          ai: {
+            instructions:
+              "A brief description or context for the statistic, under 6 words, for example 'Every day of the year'",
+          },
+        },
       },
-      defaultItemProps: {
-        title: "Stat",
-        value: "100",
-        shortDescription: "",
-      },
+      defaultItemProps: defaultStat,
     },
   },
   defaultProps: {
-    title: "Stats",
-    stats: [{ title: "Stat", value: "100", shortDescription: "" }],
+    title: "The numbers speak for themselves",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    buttons: [defaultButtonValue],
+    stats: Array.from({ length: 3 }, () => defaultStat),
   },
-  render: ({ title, stats }) => (
-    <div className="flex flex-col gap-4 max-w-7xl mx-auto my-16 px-4 prose">
-      <h2 className="text-center">{title}</h2>
-      <div className="stats stats-vertical lg:stats-horizontal shadow">
-        {stats.map((stat, idx) => (
-          <div className="stat" key={idx}>
-            <div className="stat-title">{stat.title}</div>
-            <div className="stat-value">{stat.value}</div>
-            <div className="stat-desc">{stat.shortDescription}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  ),
+  render: Stats,
 };
 
-export default conf;
+export default statsConfig;

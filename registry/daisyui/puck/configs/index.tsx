@@ -35,7 +35,13 @@ export type Props = {
 
 export type Config = PuckConfig<{
   components: Props;
-  categories: ["Navigation", "Introduction", "Content", "ECommerce"];
+  categories: [
+    "Navigation",
+    "Introduction",
+    "Content",
+    "ECommerce",
+    "Storytelling",
+  ];
 }>;
 
 export const conf: Config = {
@@ -47,17 +53,13 @@ export const conf: Config = {
       components: ["Hero"],
     },
     Content: {
-      components: [
-        "Accordion",
-        "Card",
-        "RichText",
-        "Grid",
-        "Stats",
-        "Timeline",
-      ],
+      components: ["Accordion", "Card", "RichText", "Grid"],
     },
     ECommerce: {
       components: ["Products", "ProductCard", "FeaturedProducts"],
+    },
+    Storytelling: {
+      components: ["Stats", "Timeline"],
     },
   },
   components: {
