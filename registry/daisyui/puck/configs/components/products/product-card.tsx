@@ -11,10 +11,33 @@ export type BaseProductCardProps = {
   body: ReactNode;
   image: ImageFieldProps;
   href?: string;
+  rating?: number;
 };
 
 export const BaseProductCard = forwardRef<HTMLDivElement, BaseProductCardProps>(
-  ({ price, name, category, body, image, href }: BaseProductCardProps, ref) => {
+  (
+    {
+      price,
+      name,
+      category,
+      body,
+      image,
+      href,
+      rating = 0,
+    }: BaseProductCardProps,
+    ref,
+  ) => {
+    const normalizedRating = rating < 0 ? 0 : rating > 5 ? 5 : rating;
+
+    const ratingStars = Array.from({ length: 5 }).map((_, index) => (
+      <div
+        className="mask mask-star"
+        key={index}
+        aria-label={`${index + 1} star`}
+        aria-current={normalizedRating === index + 1}
+      ></div>
+    ));
+
     return (
       <Card image={image} href={href} ref={ref}>
         <div className="card-title">{price}</div>
@@ -23,6 +46,7 @@ export const BaseProductCard = forwardRef<HTMLDivElement, BaseProductCardProps>(
           {category}
         </p>
         <p className="whitespace-pre-wrap">{body}</p>
+        {rating > 0 && <div className="rating">{ratingStars}</div>}
       </Card>
     );
   },
@@ -37,6 +61,7 @@ const ProductCard: PuckComponent<ProductCardProps> = ({
   body,
   image,
   href,
+  rating,
   puck,
 }) => {
   return (
@@ -48,6 +73,7 @@ const ProductCard: PuckComponent<ProductCardProps> = ({
       image={image}
       href={puck.isEditing ? undefined : href}
       ref={puck.dragRef}
+      rating={rating}
     />
   );
 };

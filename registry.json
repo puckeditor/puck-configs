@@ -1743,7 +1743,11 @@
       "title": "Products Config",
       "description": "Puck component configuration for showing products (product grid and featured products carousel) using DaisyUI.",
       "dependencies": ["react", "@puckeditor/core", "daisyui"],
-      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
         "http://localhost:3000/r/daisyui-components-card.json",
