@@ -1,6 +1,7 @@
 import { Config as PuckConfig, Data as PuckData } from "@puckeditor/core";
 
 import Accordion, { AccordionProps } from "./components/accordion";
+import Callout, { CalloutProps } from "./components/callout";
 import Card, { CardProps } from "./components/card";
 import Grid, { GridProps } from "./components/grid";
 import Footer, { FooterProps } from "./components/footer";
@@ -28,6 +29,7 @@ export type Props = {
   Products: ProductsProps;
   ProductCard: ProductCardProps;
   FeaturedProducts: FeaturedProductsProps;
+  Callout: CalloutProps;
   RichText: RichTextProps;
   Stats: StatsProps;
   Timeline: TimelineProps;
@@ -53,7 +55,7 @@ export const conf: Config = {
       components: ["Hero"],
     },
     Content: {
-      components: ["Accordion", "Card", "RichText", "Grid"],
+      components: ["Accordion", "Card", "RichText", "Grid", "Callout"],
     },
     ECommerce: {
       components: ["Products", "ProductCard", "FeaturedProducts"],
@@ -64,6 +66,7 @@ export const conf: Config = {
   },
   components: {
     Accordion,
+    Callout,
     Card,
     Grid,
     Footer,
