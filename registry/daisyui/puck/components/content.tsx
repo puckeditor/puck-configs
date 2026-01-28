@@ -19,11 +19,27 @@ const Content = ({
   title,
   description,
   children,
-  buttons,
+  buttons = [],
   disableNavigation,
   textAlign = "center",
   className,
 }: PropsWithChildren<ContentProps>) => {
+  const colPositionClassnames = cn("flex flex-col", {
+    "items-start": textAlign === "start",
+    "items-center": textAlign === "center",
+    "items-end": textAlign === "end",
+  });
+  const rowPositionClassnames = cn("flex flex-row", {
+    "justify-start": textAlign === "start",
+    "justify-center": textAlign === "center",
+    "justify-end": textAlign === "end",
+  });
+  const textAlignClassnames = cn({
+    "text-start": textAlign === "start",
+    "text-center": textAlign === "center",
+    "text-end": textAlign === "end",
+  });
+
   const buttonElements = buttons?.map((button, idx) => (
     <Button
       key={idx}
@@ -39,41 +55,35 @@ const Content = ({
   return (
     <div
       className={cn(
-        "container flex flex-col gap-4 max-w-7xl mx-auto py-16 px-4 items-center prose",
+        "container gap-4 max-w-7xl mx-auto py-16 px-4 prose",
+        colPositionClassnames,
         className,
-        {
-          "md:items-start": textAlign === "start",
-          "md:items-center": textAlign === "center",
-          "md:items-end": textAlign === "end",
-        },
       )}
     >
-      {title && (
-        <h2
-          className={cn("lead text-3xl mb-0 text-center", {
-            "md:text-start": textAlign === "start",
-            "md:text-center": textAlign === "center",
-            "md:text-end": textAlign === "end",
-          })}
-        >
-          {title}
-        </h2>
-      )}
-      {description && (
-        <div
-          className={cn(
-            "not-prose text-muted-foreground text-lg leading-relaxed tracking-tight text-center lg:max-w-xl",
-            {
-              "md:text-start": textAlign === "start",
-              "md:text-center": textAlign === "center",
-              "md:text-end": textAlign === "end",
-            },
+      {(title || description || buttons.length > 0) && (
+        <div className={cn("gap-4", colPositionClassnames)}>
+          {title && (
+            <h2 className={cn("lead text-3xl mb-0", textAlignClassnames)}>
+              {title}
+            </h2>
           )}
-        >
-          {description}
+          {description && (
+            <div
+              className={cn(
+                "not-prose text-muted-foreground text-lg leading-relaxed tracking-tight lg:max-w-xl",
+                textAlignClassnames,
+              )}
+            >
+              {description}
+            </div>
+          )}
+          {buttons.length > 0 && (
+            <div className={cn("no-prose gap-2", rowPositionClassnames)}>
+              {buttonElements}
+            </div>
+          )}
         </div>
       )}
-      {buttons && <div className="no-prose flex gap-2">{buttonElements}</div>}
       <div className="w-full">{children}</div>
     </div>
   );
