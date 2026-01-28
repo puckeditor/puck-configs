@@ -31,7 +31,7 @@ const Stats: PuckComponent<StatsProps> = ({
       className="grid grid-cols-1 lg:grid-cols-2"
     >
       <div className="flex items-center justify-center">
-        <div className="stats stats-vertical bg-base-200 not-prose">
+        <div className="stats stats-vertical bg-base-200 outline outline-base-300 not-prose">
           {statElements}
         </div>
       </div>
