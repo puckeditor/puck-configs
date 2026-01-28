@@ -1,4 +1,5 @@
 import { ObjectField } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 export type ImageFieldProps = {
   src: string;
@@ -13,7 +14,7 @@ export const defaultImageField: ImageFieldProps = {
 const imageField: ObjectField<ImageFieldProps> = {
   type: "object",
   objectFields: {
-    src: { type: "text" },
+    src: { type: "text", ai: { stream: false } },
     alt: { type: "text" },
   },
 };

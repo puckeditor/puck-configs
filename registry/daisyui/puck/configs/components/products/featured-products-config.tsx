@@ -7,6 +7,11 @@ import { defaultProductValue, productCardFields } from "./product-card-config";
 
 export type { FeaturedProductsProps };
 
+const { rating: _rating, ...productFieldsNoRating } =
+  productCardFields.objectFields;
+const { rating: _defaultRating, ...defaultProductValueNoRating } =
+  defaultProductValue;
+
 const featuredProductsConfig: ComponentConfig<FeaturedProductsProps> = {
   fields: {
     title: { type: "text", contentEditable: true },
@@ -14,13 +19,13 @@ const featuredProductsConfig: ComponentConfig<FeaturedProductsProps> = {
     products: {
       type: "array",
       max: 10,
-      arrayFields: productCardFields.objectFields,
-      defaultItemProps: defaultProductValue,
+      arrayFields: productFieldsNoRating,
+      defaultItemProps: defaultProductValueNoRating,
     },
   },
   defaultProps: {
     title: "Title",
-    products: Array.from({ length: 5 }).map(() => defaultProductValue),
+    products: Array.from({ length: 5 }).map(() => defaultProductValueNoRating),
     cta: { ...defaultButtonValue, variant: "ghost" },
   },
   render: FeaturedProducts,

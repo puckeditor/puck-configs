@@ -27,7 +27,9 @@ export const BaseProductCard = forwardRef<HTMLDivElement, BaseProductCardProps>(
     }: BaseProductCardProps,
     ref,
   ) => {
-    const normalizedRating = rating < 0 ? 0 : rating > 5 ? 5 : rating;
+    const normalizedRating = Math.round(
+      rating < 0 ? 0 : rating > 5 ? 5 : rating,
+    );
 
     const ratingStars = Array.from({ length: 5 }).map((_, index) => (
       <div
@@ -51,6 +53,8 @@ export const BaseProductCard = forwardRef<HTMLDivElement, BaseProductCardProps>(
     );
   },
 );
+
+BaseProductCard.displayName = "BaseProductCard";
 
 export type ProductCardProps = BaseProductCardProps;
 

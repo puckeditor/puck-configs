@@ -1,4 +1,5 @@
 import { ComponentConfig } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import imageField from "../../fields/image";
 import sectionTextField from "../../fields/section-text";
@@ -25,8 +26,25 @@ const heroConfig: ComponentConfig<HeroProps> = {
         { label: "bottom", value: "bottom" },
         { label: "none", value: "none" },
       ],
+      ai: {
+        instructions:
+          "Always pick the background layout unless instructed otherwise.",
+      },
     },
-    image: imageField,
+    image: {
+      ...imageField,
+      objectFields: {
+        ...imageField.objectFields,
+        src: {
+          ...imageField.objectFields.src,
+          ai: {
+            ...imageField.objectFields.src.ai,
+            instructions:
+              "Use this http://placehold.com/600x400?text=%5Cn for placeholder images.",
+          },
+        },
+      },
+    },
   },
   resolveFields: (data, params) => {
     const fieldsToReturn = { ...params.fields };
@@ -44,7 +62,10 @@ const heroConfig: ComponentConfig<HeroProps> = {
     description: "Description",
     buttons: [{ ...defaultButtonValue, variant: "ghost" }],
     imageLayout: "background",
-    image: { src: "https://placehold.co/600x400?text=%5Cn", alt: "Placeholder" },
+    image: {
+      src: "https://placehold.co/600x400?text=%5Cn",
+      alt: "Placeholder",
+    },
   },
   render: Hero,
 };

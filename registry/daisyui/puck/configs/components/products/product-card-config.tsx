@@ -48,7 +48,7 @@ export const productCardFields: ObjectField<ProductCardProps> = {
       step: 1,
       ai: {
         instructions:
-          "Provide a rating between 0 and 5 stars. 0 means no rating.",
+          "Provide a rating as an integer between 0 and 5 stars. 0 means no rating.",
       },
     },
   },

@@ -18,7 +18,7 @@ const Timeline: PuckComponent<TimelineProps> = ({
       <div className="timeline-middle">
         <div className="bg-neutral rounded-full h-5 w-5" />
       </div>
-      <div className="timeline-start mb-10 md:text-end">
+      <div className="timeline-start max-w-md mb-10 md:text-end">
         {event.date && <time className="font-mono italic">{event.date}</time>}
         {event.label && <div className="text-lg font-black">{event.label}</div>}
         {event.description}

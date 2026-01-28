@@ -1422,6 +1422,32 @@
       ]
     },
     {
+      "name": "daisyui-configs",
+      "type": "registry:item",
+      "title": "DaisyUI Puck Config Object",
+      "description": "The main Puck config object for DaisyUI. Can be passed to the Puck or Render component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-configs-components-accordion.json",
+        "http://localhost:3000/r/daisyui-configs-components-callout.json",
+        "http://localhost:3000/r/daisyui-configs-components-navbar.json",
+        "http://localhost:3000/r/daisyui-configs-components-footer.json",
+        "http://localhost:3000/r/daisyui-configs-components-hero.json",
+        "http://localhost:3000/r/daisyui-configs-components-products.json",
+        "http://localhost:3000/r/daisyui-configs-components-stats.json",
+        "http://localhost:3000/r/daisyui-configs-components-timeline.json",
+        "http://localhost:3000/r/daisyui-configs-components-rich-text.json",
+        "http://localhost:3000/r/daisyui-configs-root.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/index.tsx"
+        }
+      ]
+    },
+    {
       "name": "daisyui-styles",
       "type": "registry:item",
       "title": "DaisyUI Styles",
@@ -1544,6 +1570,7 @@
       "title": "Image Field",
       "description": "Puck field configuration for images with src and alt fields.",
       "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
       "files": [
         {
           "path": "registry/daisyui/puck/configs/fields/image.ts",
@@ -1690,7 +1717,11 @@
       "title": "Hero Config",
       "description": "Puck component configuration for hero sections with multiple image layout options using DaisyUI.",
       "dependencies": ["react", "@puckeditor/core", "daisyui"],
-      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
         "http://localhost:3000/r/daisyui-lib-utils.json",
@@ -1853,14 +1884,39 @@
       ],
       "files": [
         {
-          "path": "registry/daisyui/puck/configs/components/Timeline/index.tsx",
+          "path": "registry/daisyui/puck/configs/components/timeline/index.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/components/Timeline/index.tsx"
+          "target": "~/puck/configs/components/timeline/index.tsx"
         },
         {
-          "path": "registry/daisyui/puck/configs/components/Timeline/timeline.tsx",
+          "path": "registry/daisyui/puck/configs/components/timeline/timeline.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/components/Timeline/timeline.tsx"
+          "target": "~/puck/configs/components/timeline/timeline.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-root",
+      "type": "registry:item",
+      "title": "DaisyUI Root Config",
+      "description": "Component config for the DaisyUI twblocks page root. Supports theming.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": ["http://localhost:3000/r/daisyui-styles.json"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/root/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/root/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/root/theme.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/root/theme.ts"
         }
       ]
     }
