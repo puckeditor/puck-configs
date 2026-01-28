@@ -1777,7 +1777,11 @@
       "title": "Stats Config",
       "description": "Puck component configuration for a statistics section displaying key metrics using DaisyUI.",
       "dependencies": ["@puckeditor/core", "daisyui"],
-      "devDependencies": ["@tailwindcss/typography", "tailwindcss", "@puckeditor/ai-types"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
       "registryDependencies": [
         "http://localhost:3000/r/daisyui-styles.json",
         "http://localhost:3000/r/daisyui-components-content.json",
@@ -1791,9 +1795,9 @@
           "target": "~/puck/configs/components/stats/index.tsx"
         },
         {
-          "path": "registry/daisyui/puck/configs/components/stats/stat.tsx",
+          "path": "registry/daisyui/puck/configs/components/stats/stats.tsx",
           "type": "registry:item",
-          "target": "~/puck/configs/components/stats/stat.tsx"
+          "target": "~/puck/configs/components/stats/stats.tsx"
         }
       ]
     },
