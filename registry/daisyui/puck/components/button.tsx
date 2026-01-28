@@ -27,7 +27,7 @@ interface ButtonProps {
 }
 
 const Button = (props: PropsWithChildren<ButtonProps>) => {
-  const className = `btn ${variantMap[props.variant ?? "primary"]} ${props.className ?? ""}`;
+  const className = `btn ${variantMap[props.variant as keyof typeof variantMap] || ""} ${props.className ?? ""}`;
 
   return props.url ? (
     <a

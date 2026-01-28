@@ -7,3 +7,11 @@
     dark;
 }
 @plugin "@tailwindcss/typography";
+
+@utility scrollbar-reset {
+  scrollbar-width: auto;
+
+  &::-webkit-scrollbar {
+    display: unset;
+  }
+}

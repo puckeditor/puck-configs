@@ -46,7 +46,10 @@ const FeaturedProducts: PuckComponent<FeaturedProductsProps> = ({
           </Button>
         )}
       </div>
-      <div className="carousel carousel-center w-full space-x-4 p-4" ref={ref}>
+      <div
+        className="carousel carousel-center w-full space-x-4 p-4 scrollbar-reset"
+        ref={ref}
+      >
         {carouselCards}
       </div>
     </div>
