@@ -14,9 +14,11 @@ const richTextConfig: ComponentConfig<RichTextProps> = {
     body: "<h1>Rich Text</h1><p>Some text...</p>",
   },
   render: ({ body }) => (
-    <Content className="bg-base-content">
-      <div className="text-base-100 sm:px-0 md:px-6 prose-invert">{body}</div>
-    </Content>
+    <div className="bg-base-content">
+      <Content>
+        <div className="text-base-100 sm:px-0 md:px-6 prose-invert">{body}</div>
+      </Content>
+    </div>
   ),
 };
 
