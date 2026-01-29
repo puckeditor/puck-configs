@@ -1,4 +1,5 @@
 import { ComponentConfig, Slot } from "@puckeditor/core";
+import "@puckeditor/ai-types";
 
 import sectionTextField, {
   defaultSectionTextValue,
@@ -6,11 +7,21 @@ import sectionTextField, {
 import Content, { ContentProps } from "../../../components/content";
 import buttonField, { defaultButtonValue } from "../../fields/link-button";
 
+import { defaultProductValue } from "./product-card-config";
+
 export type ProductsProps = {
   products: Slot;
 } & ContentProps;
 
+const defaultCards = Array.from({
+  length: 4,
+}).map(() => ({ type: "ProductCard", props: defaultProductValue }));
+
 const productsConfig: ComponentConfig<ProductsProps> = {
+  ai: {
+    instructions:
+      "Shows a grid of product cards. In desktop shows 4 columns, in tablet 2 columns, and in mobile 1 column.",
+  },
   fields: {
     ...sectionTextField.objectFields,
     buttons: {
@@ -24,7 +35,7 @@ const productsConfig: ComponentConfig<ProductsProps> = {
   defaultProps: {
     ...defaultSectionTextValue,
     buttons: [],
-    products: [],
+    products: defaultCards,
   },
   render: ({ title, description, buttons, products: Products }) => (
     <Content
