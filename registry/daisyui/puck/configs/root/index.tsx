@@ -17,7 +17,11 @@ const rootConfig: RootConfig = {
   render: ({ theme }) => {
     return (
       <div className="min-h-[100dvh] flex flex-col" data-theme={theme}>
-        <DropZone zone="default-zone" className="flex-1" />
+        <DropZone
+          zone="default-zone"
+          className="flex-1"
+          disallow={["ProductCard"]}
+        />
       </div>
     );
   },
