@@ -1,4 +1,4 @@
-import { RootConfig } from "@puckeditor/core";
+import { RootConfig, DropZone } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
 import { THEME } from "./theme";
@@ -14,13 +14,10 @@ const rootConfig: RootConfig = {
   ai: {
     defaultZone: { disallow: ["ProductCard"] },
   },
-  render: ({ children, theme }) => {
+  render: ({ theme }) => {
     return (
-      <div
-        className="overflow-auto min-h-[100dvh] [&>*]:!h-[100%] [&>*]:!min-h-[100dvh]"
-        data-theme={theme}
-      >
-        {children}
+      <div className="min-h-[100dvh] flex flex-col" data-theme={theme}>
+        <DropZone zone="default-zone" className="flex-1" />
       </div>
     );
   },
