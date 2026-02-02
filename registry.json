@@ -1420,6 +1420,505 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "daisyui-configs",
+      "type": "registry:item",
+      "title": "DaisyUI Puck Config Object",
+      "description": "The main Puck config object for DaisyUI. Can be passed to the Puck or Render component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-configs-components-accordion.json",
+        "http://localhost:3000/r/daisyui-configs-components-callout.json",
+        "http://localhost:3000/r/daisyui-configs-components-navbar.json",
+        "http://localhost:3000/r/daisyui-configs-components-footer.json",
+        "http://localhost:3000/r/daisyui-configs-components-hero.json",
+        "http://localhost:3000/r/daisyui-configs-components-products.json",
+        "http://localhost:3000/r/daisyui-configs-components-stats.json",
+        "http://localhost:3000/r/daisyui-configs-components-timeline.json",
+        "http://localhost:3000/r/daisyui-configs-components-rich-text.json",
+        "http://localhost:3000/r/daisyui-configs-root.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-styles",
+      "type": "registry:item",
+      "title": "DaisyUI Styles",
+      "description": "Tailwind CSS configuration with DaisyUI plugin and typography support.",
+      "dependencies": ["daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/styles.css",
+          "type": "registry:item",
+          "target": "~/puck/styles.css"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-lib-utils",
+      "type": "registry:item",
+      "title": "Utils Library",
+      "description": "Utility functions for class name merging with clsx and tailwind-merge.",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "registry/daisyui/lib/utils.ts",
+          "type": "registry:item",
+          "target": "~/lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-hooks-use-portal",
+      "type": "registry:item",
+      "title": "Use Portal Hook",
+      "description": "A React hook to register overlay portals for Puck components.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/hooks/use-portal.ts",
+          "type": "registry:item",
+          "target": "~/puck/hooks/use-portal.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-button",
+      "type": "registry:item",
+      "title": "Button Component",
+      "description": "A DaisyUI button component with multiple variants, and that can work as a link or a button.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": ["http://localhost:3000/r/daisyui-styles.json"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/button.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-collapse",
+      "type": "registry:item",
+      "title": "Collapse Component",
+      "description": "A DaisyUI collapse component for creating expandable/collapsible items.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/collapse.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/collapse.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-content",
+      "type": "registry:item",
+      "title": "Content Component",
+      "description": "A content wrapper component for DaisyUI with title, description, and CTA buttons.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-components-card",
+      "type": "registry:item",
+      "title": "Card Component",
+      "description": "A reusable DaisyUI card component with optional image and link navigation.",
+      "dependencies": ["react", "daisyui"],
+      "devDependencies": ["tailwindcss", "@tailwindcss/typography"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/components/card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-image",
+      "type": "registry:item",
+      "title": "Image Field",
+      "description": "Puck field configuration for images with src and alt fields.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/image.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/image.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-link-button",
+      "type": "registry:item",
+      "title": "Link Button Field",
+      "description": "Puck field configuration for link buttons with label, href, and variant fields.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/link-button.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/link-button.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-logo-content",
+      "type": "registry:item",
+      "title": "Logo Field",
+      "description": "Puck field configuration for logos with company name, tagline, and image fields.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-configs-fields-image.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/logo-content.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/logo-content.ts"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-fields-section-text",
+      "type": "registry:item",
+      "title": "Section Text Field",
+      "description": "Puck field configuration for section text with title and description fields.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/fields/section-text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/fields/section-text.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-accordion",
+      "type": "registry:item",
+      "title": "Accordion Config",
+      "description": "Puck component configuration for creating accordions with multiple collapsible items using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-collapse.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/accordion/accordion.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/accordion/accordion.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/accordion/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/accordion/index.tsx"
+        }
+      ]
+    },
+
+    {
+      "name": "daisyui-configs-components-callout",
+      "type": "registry:item",
+      "title": "Callout Config",
+      "description": "Puck component configuration for a full-width callout section using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/callout/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/callout/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/callout/callout.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/callout/callout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-footer",
+      "type": "registry:item",
+      "title": "Footer Config",
+      "description": "Puck component configuration for footer with sections, logo, and social links using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/footer/footer.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/footer.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/footer/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/footer/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-hero",
+      "type": "registry:item",
+      "title": "Hero Config",
+      "description": "Puck component configuration for hero sections with multiple image layout options using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-lib-utils.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/hero/hero.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/hero/hero.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/hero/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/hero/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-navbar",
+      "type": "registry:item",
+      "title": "Navbar Config",
+      "description": "Puck component configuration for navbar with logo, cart, user account link, and navigation links using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui", "lucide-react"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-configs-fields-logo-content.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/navbar.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/navbar.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/navbar/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/navbar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-products",
+      "type": "registry:item",
+      "title": "Products Config",
+      "description": "Puck component configuration for showing products (product grid and featured products carousel) using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-card.json",
+        "http://localhost:3000/r/daisyui-components-button.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-hooks-use-portal.json",
+        "http://localhost:3000/r/daisyui-configs-fields-image.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/products/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/product-card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/product-card.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/product-card-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/product-card-config.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/featured-products.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/featured-products.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/products/featured-products-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/products/featured-products-config.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-rich-text",
+      "type": "registry:item",
+      "title": "Rich Text Config",
+      "description": "Puck component configuration for rich text content using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": ["@tailwindcss/typography", "tailwindcss"],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/rich-text/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/rich-text/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-stats",
+      "type": "registry:item",
+      "title": "Stats Config",
+      "description": "Puck component configuration for a statistics section displaying key metrics using DaisyUI.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json",
+        "http://localhost:3000/r/daisyui-configs-fields-link-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/stats/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/stats/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/stats/stats.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/stats/stats.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-components-timeline",
+      "type": "registry:item",
+      "title": "Timeline Config",
+      "description": "Puck component configuration for a timeline section displaying events chronologically using DaisyUI.",
+      "dependencies": ["react", "@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/daisyui-styles.json",
+        "http://localhost:3000/r/daisyui-components-content.json",
+        "http://localhost:3000/r/daisyui-configs-fields-section-text.json"
+      ],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/components/timeline/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/timeline/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/components/timeline/timeline.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/components/timeline/timeline.tsx"
+        }
+      ]
+    },
+    {
+      "name": "daisyui-configs-root",
+      "type": "registry:item",
+      "title": "DaisyUI Root Config",
+      "description": "Component config for the DaisyUI twblocks page root. Supports theming.",
+      "dependencies": ["@puckeditor/core", "daisyui"],
+      "devDependencies": [
+        "@tailwindcss/typography",
+        "tailwindcss",
+        "@puckeditor/ai-types"
+      ],
+      "registryDependencies": ["http://localhost:3000/r/daisyui-styles.json"],
+      "files": [
+        {
+          "path": "registry/daisyui/puck/configs/root/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/configs/root/index.tsx"
+        },
+        {
+          "path": "registry/daisyui/puck/configs/root/theme.ts",
+          "type": "registry:item",
+          "target": "~/puck/configs/root/theme.ts"
+        }
+      ]
     }
   ]
 }

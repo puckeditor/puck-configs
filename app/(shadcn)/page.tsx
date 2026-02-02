@@ -1,6 +1,18 @@
 import * as React from "react";
+import { libraries } from "@/lib/constants/libraries";
 
 export default function Home() {
+  const libraryLinks = libraries.map((lib) => (
+    <li key={lib.href}>
+      <a
+        href={`/demo/${lib.href}/edit`}
+        className="text-sky-800 hover:underline font-semibold"
+      >
+        {lib.label}
+      </a>
+    </li>
+  ));
+
   return (
     <div className="max-w-3xl mx-auto flex flex-col min-h-svh px-4 py-8 gap-4">
       <header className="flex flex-col gap-1">
@@ -22,24 +34,7 @@ export default function Home() {
           </a>{" "}
           to get started.
         </p>
-        <ul className="list-disc list-inside flex flex-col">
-          <li>
-            <a
-              href="/demo/shadcn/edit"
-              className="text-sky-800 hover:underline font-semibold"
-            >
-              Shadcn
-            </a>
-          </li>
-          <li>
-            <a
-              href="/demo/react-email/edit"
-              className="text-sky-800 hover:underline font-semibold"
-            >
-              React Email
-            </a>
-          </li>
-        </ul>
+        <ul className="list-disc list-inside flex flex-col">{libraryLinks}</ul>
       </main>
     </div>
   );
