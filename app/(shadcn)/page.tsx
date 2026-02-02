@@ -6,14 +6,13 @@ export default function Home() {
       <header className="flex flex-col gap-1">
         <h1 className="text-3xl font-bold tracking-tight">Puck Registry</h1>
         <p className="text-muted-foreground">
-          A shadcn registry for distributing puck configs.
+          A shadcn registry for distributing Puck components.
         </p>
       </header>
       <hr />
       <main className="flex flex-col flex-1 gap-1">
         <p>
-          This page is under construction. In the meantime, you can check out
-          the{" "}
+          Try out the demo for each library below, or visit the{" "}
           <a
             href="https://puckeditor.com/docs"
             rel="noopener noreferrer"
@@ -21,7 +20,7 @@ export default function Home() {
           >
             docs
           </a>{" "}
-          or demos for the distributed Puck configs:
+          to get started.
         </p>
         <ul className="list-disc list-inside flex flex-col">
           <li>
