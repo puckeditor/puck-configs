@@ -1,6 +1,6 @@
 "use client";
 
-import conf from "@/registry/react-email/puck/configs";
+import conf from "@/registry/react-email/puck/config";
 
 import LocalStorageEditor from "@/components/local-storage-editor";
 

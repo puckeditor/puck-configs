@@ -9,7 +9,7 @@ import LoadingIndicator from "@/components/loading-indicator";
 import FloatingButton from "@/components/floating-button";
 import { emptyData } from "@/lib/puck-data/empty-data";
 
-import conf from "@/registry/react-email/puck/configs";
+import conf from "@/registry/react-email/puck/config";
 
 export default function Renderer() {
   const [data] = useLocalStorageJson<Data>("react-email-puck-data", emptyData);

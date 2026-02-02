@@ -2,7 +2,7 @@
 
 import { Render } from "@puckeditor/core";
 
-import conf from "@/registry/shadcn/puck/configs";
+import conf from "@/registry/shadcn/puck/config";
 import { useLocalStorageJson } from "@/hooks/use-local-storage-json";
 import LoadingIndicator from "@/components/loading-indicator";
 import FloatingButton from "@/components/floating-button";
