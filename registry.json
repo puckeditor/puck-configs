@@ -1,7 +1,7 @@
 {
   "$schema": "http://ui.shadcn.com/schema/registry.json",
-  "name": "puck-configs",
-  "homepage": "http://configs.puckeditor.com",
+  "name": "puckeditor",
+  "homepage": "https://registry.puckeditor.com",
   "items": [
     {
       "name": "lib-create-summary-func",
