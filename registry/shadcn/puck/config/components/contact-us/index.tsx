@@ -32,7 +32,7 @@ export const conf: ComponentConfig<ContactUsProps> = {
         icon: "check",
         name: feature,
         description: "We've made it easy to use and understand.",
-      })
+      }),
     ),
     form: formDefaults,
     padding: paddingDefaults,

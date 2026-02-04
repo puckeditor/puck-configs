@@ -1,10 +1,5 @@
 import { ComponentConfig } from "@puckeditor/core";
-import {
-  padding,
-  paddingDefaults,
-  contentFields,
-  cards,
-} from "../../fields";
+import { padding, paddingDefaults, contentFields, cards } from "../../fields";
 
 import { Bento, BentoProps } from "./bento";
 

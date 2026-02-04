@@ -5,10 +5,7 @@ import { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
 import { cn } from "../../../../../../lib//utils";
 import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Badge, BadgeProps } from "../../../../components/badge";
 import { Button, ButtonProps } from "../../../../components/button";
 import { Image, ImageProps } from "../../../../components/ui/image";
@@ -117,7 +114,7 @@ const HeroContent = ({
             "text-5xl md:text-7xl max-w-2xl tracking-tighter font-regular",
             {
               "lg:max-w-lg": isTwoColumnLayout,
-            }
+            },
           )}
         >
           <span>{heading}</span>
@@ -134,7 +131,7 @@ const HeroContent = ({
               "text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl",
               {
                 "lg:max-w-md": isTwoColumnLayout,
-              }
+              },
             )}
           >
             {description}
@@ -169,7 +166,7 @@ const HeroAnimatedAdjectives = ({
   const prefersReducedMotion = usePrefersReducedMotion();
   const titles = useMemo(
     () => adjectives.map((adjective) => adjective.adjective),
-    [adjectives]
+    [adjectives],
   );
   const [titleNumber, setTitleNumber] = useState(0);
 
@@ -193,7 +190,7 @@ const HeroAnimatedAdjectives = ({
     "relative flex w-full overflow-hidden text-center md:pb-4 md:pt-1 justify-center",
     {
       "lg:justify-start": isTwoColumnLayout,
-    }
+    },
   );
 
   if (prefersReducedMotion) {

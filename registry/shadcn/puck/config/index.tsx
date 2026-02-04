@@ -1,43 +1,21 @@
 import { Config as PuckConfig, Data as PuckData } from "@puckeditor/core";
 
-import Header, {
-  HeaderProps,
-} from "./components/header";
+import Header, { HeaderProps } from "./components/header";
 import Hero, { HeroProps } from "./components/hero";
-import Customers, {
-  CustomersProps,
-} from "./components/customers";
-import Testimonials, {
-  TestimonialsProps,
-} from "./components/testimonials";
-import TwoColumn, {
-  TwoColumnProps,
-} from "./components/two-column";
+import Customers, { CustomersProps } from "./components/customers";
+import Testimonials, { TestimonialsProps } from "./components/testimonials";
+import TwoColumn, { TwoColumnProps } from "./components/two-column";
 import Bento, { BentoProps } from "./components/bento";
-import FeatureCards, {
-  FeatureCardsProps,
-} from "./components/feature-cards";
-import CardGrid, {
-  CardGridProps,
-} from "./components/card-grid";
+import FeatureCards, { FeatureCardsProps } from "./components/feature-cards";
+import CardGrid, { CardGridProps } from "./components/card-grid";
 import Stats, { StatsProps } from "./components/stats";
-import ArticleCard, {
-  ArticleCardProps,
-} from "./components/article-card";
-import Articles, {
-  ArticlesProps,
-} from "./components/articles";
+import ArticleCard, { ArticleCardProps } from "./components/article-card";
+import Articles, { ArticlesProps } from "./components/articles";
 import Faq, { FaqProps } from "./components/faq";
 import Cta, { CtaProps } from "./components/cta";
-import Pricing, {
-  PricingProps,
-} from "./components/pricing";
-import ContactUs, {
-  ContactUsProps,
-} from "./components/contact-us";
-import Footer, {
-  FooterProps,
-} from "./components/footer";
+import Pricing, { PricingProps } from "./components/pricing";
+import ContactUs, { ContactUsProps } from "./components/contact-us";
+import Footer, { FooterProps } from "./components/footer";
 
 import Root from "./root";
 

@@ -7,10 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Content, ContentProps } from "../../../../components/content";
 
 export interface FaqProps extends ContentProps {

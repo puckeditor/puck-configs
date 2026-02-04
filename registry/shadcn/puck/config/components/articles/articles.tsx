@@ -1,8 +1,5 @@
 import { PuckComponent, Slot } from "@puckeditor/core";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Button, ButtonProps } from "../../../../components/button";
 
 export interface ArticlesProps {

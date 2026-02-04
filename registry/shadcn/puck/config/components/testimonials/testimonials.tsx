@@ -16,10 +16,7 @@ import {
 } from "../../../../components/ui/avatar";
 import { ImageProps } from "../../../../components/ui/image";
 import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 
 export interface TestimonialsProps {
   padding?: ContainerProps["padding"];

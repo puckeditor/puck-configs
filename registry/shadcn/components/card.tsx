@@ -28,7 +28,7 @@ export const Card = ({
           "justify-between": hasIcon,
           "justify-end": !hasIcon,
         },
-        className
+        className,
       )}
     >
       {hasIcon ? <DynamicIcon name={icon} className="w-4 h-4" /> : null}

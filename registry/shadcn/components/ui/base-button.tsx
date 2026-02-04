@@ -30,11 +30,12 @@ const baseButtonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 export interface BaseButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  extends
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof baseButtonVariants> {
   asChild?: boolean;
 }
@@ -46,14 +47,14 @@ const BaseButton = React.forwardRef<HTMLButtonElement, BaseButtonProps>(
       <Comp
         className={cn(
           baseButtonVariants({ variant, size, className }),
-          disabled ? " opacity-50 pointer-events-none" : "cursor-pointer"
+          disabled ? " opacity-50 pointer-events-none" : "cursor-pointer",
         )}
         ref={ref}
         disabled={disabled}
         {...props}
       />
     );
-  }
+  },
 );
 BaseButton.displayName = "BaseButton";
 

@@ -1,9 +1,5 @@
 import { MoveRightIcon } from "lucide-react";
-import {
-  BaseBadge,
-  baseBadgeVariants,
-  BaseBadgeProps,
-} from "./ui/base-badge";
+import { BaseBadge, baseBadgeVariants, BaseBadgeProps } from "./ui/base-badge";
 import { cn } from "../../../lib/utils";
 
 export interface BadgeProps {

@@ -1,9 +1,6 @@
 import { WithPuckProps } from "@puckeditor/core";
 import { cn } from "../../../../../../lib/utils";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Content, ContentProps } from "../../../../components/content";
 import { Card, CardProps } from "../../../../components/card";
 

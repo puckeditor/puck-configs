@@ -1,12 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import {
-  padding,
-  image,
-  paddingDefaults,
-  heading,
-} from "../../fields";
+import { padding, image, paddingDefaults, heading } from "../../fields";
 
 import { Testimonials, TestimonialsProps } from "./testimonials";
 
@@ -33,7 +28,7 @@ export const conf: ComponentConfig<TestimonialsProps> = {
       max: 10,
       getItemSummary: (
         item: TestimonialsProps["testimonials"][number],
-        index = 0
+        index = 0,
       ) => item.author.name || `Testimonial ${index + 1}`,
       arrayFields: {
         title: { type: "text" },

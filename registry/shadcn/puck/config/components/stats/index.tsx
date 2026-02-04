@@ -1,11 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import {
-  padding,
-  paddingDefaults,
-  contentFields,
-} from "../../fields";
+import { padding, paddingDefaults, contentFields } from "../../fields";
 
 import { Stats, StatsProps } from "./stats";
 

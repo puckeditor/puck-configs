@@ -1,8 +1,5 @@
 import { MoveDownLeft, MoveUpRight } from "lucide-react";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Content, ContentProps } from "../../../../components/content";
 import { cn } from "../../../../../../lib//utils";
 import { WithPuckProps } from "@puckeditor/core";
@@ -27,7 +24,7 @@ export const Stats = ({
   description,
   buttons,
   statistics,
-  puck
+  puck,
 }: WithPuckProps<StatsProps>) => {
   return (
     <Container padding={padding}>

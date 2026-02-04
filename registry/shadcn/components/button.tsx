@@ -43,7 +43,7 @@ export const Button = (props: ButtonProps) => {
         className={cn(
           baseButtonVariants({ variant: props.variant, size: props.size }),
           "gap-4",
-          props.className
+          props.className,
         )}
       >
         {content}

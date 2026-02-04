@@ -1,9 +1,5 @@
 import { ComponentConfig } from "@puckeditor/core";
-import {
-  padding,
-  paddingDefaults,
-  contentFields,
-} from "../../fields";
+import { padding, paddingDefaults, contentFields } from "../../fields";
 
 import { Faq, FaqProps } from "./faq";
 

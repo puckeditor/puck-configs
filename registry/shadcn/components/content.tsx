@@ -55,7 +55,7 @@ export const Content = ({
           "gap-4": spacing === "tight",
         },
         colPositionClassNames,
-        className
+        className,
       )}
     >
       {!!heading || !!description || !!badge || !!features ? (
@@ -80,7 +80,7 @@ export const Content = ({
               <h2
                 className={cn(
                   "text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular",
-                  textAlignClassnames
+                  textAlignClassnames,
                 )}
               >
                 {heading}
@@ -95,7 +95,7 @@ export const Content = ({
                       alignContent === "start" || alignContent === "end",
                     "lg:max-w-xl": alignContent === "center",
                   },
-                  textAlignClassnames
+                  textAlignClassnames,
                 )}
               >
                 {description}

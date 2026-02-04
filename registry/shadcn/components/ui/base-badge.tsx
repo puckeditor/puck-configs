@@ -20,11 +20,12 @@ const baseBadgeVariants = cva(
     defaultVariants: {
       variant: "default",
     },
-  }
+  },
 );
 
 export interface BaseBadgeProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends
+    React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof baseBadgeVariants> {}
 
 function BaseBadge({ className, variant, ...props }: BaseBadgeProps) {

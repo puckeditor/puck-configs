@@ -10,10 +10,7 @@ import {
 } from "../../../../components/ui/carousel";
 import { Image, ImageProps } from "../../../../components/ui/image";
 
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 import { Content, ContentProps } from "../../../../components/content";
 
 type ImageWithAspectRatio = ImageProps & {
@@ -103,7 +100,7 @@ const ColumnImage = (props: ImageWithAspectRatio & { className?: string }) => (
         "aspect-video h-full": props.aspectRatio === "16x9",
         "aspect-square": props.aspectRatio === "1x1",
       },
-      props.className
+      props.className,
     )}
   >
     <Image src={props.src} alt={props.alt} className="h-full" />

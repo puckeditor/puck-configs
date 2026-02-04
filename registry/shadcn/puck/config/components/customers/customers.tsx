@@ -10,10 +10,7 @@ import {
   CarouselItem,
 } from "../../../../components/ui/carousel";
 import { Image, ImageProps } from "../../../../components/ui/image";
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 
 export interface CustomersProps {
   padding?: ContainerProps["padding"];
@@ -70,7 +67,7 @@ export const Customers = ({
             "text-xl tracking-tighter lg:max-w-xl font-regular text-start",
             {
               "md:text-5xl": isSectionLayout,
-            }
+            },
           )}
         >
           {heading}

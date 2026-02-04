@@ -5,7 +5,7 @@ TODO:
 - Write a proper README.md for this repo
 - Create branch for reference configs
 - Add docs for components
-- *Maybe* create a script to automatically generate the registry.json based on the files under "/registry/**"
+- _Maybe_ create a script to automatically generate the registry.json based on the files under "/registry/\*\*"
   - This would make it easier to maintain
   - Would also make it easier to add new configs
   - Would also make it easier to avoid mistakes and re organizing files
@@ -17,7 +17,7 @@ TODO:
     - We would need to resolve dependencies
     - We would need to stablish rules for how our configs should be organized (configs/component-name/index.tsx + configs/component-name/component-name.tsx, etc.)
   - Basic algorithm idea:
-    - Scan the "/registry/**" folder for files
+    - Scan the "/registry/\*\*" folder for files
     - For each file, determine what file type it is (component, lib, etc.)
     - For each file, resolve its name based on its path
     - For each file, resolve dependencies (imports)

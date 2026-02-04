@@ -12,11 +12,7 @@ export interface ContainerProps {
   className?: string;
 }
 
-export const Container = ({
-  children,
-  padding,
-  className,
-}: ContainerProps) => {
+export const Container = ({ children, padding, className }: ContainerProps) => {
   const { top = "large", bottom = "large" } = padding ?? {};
 
   return (
@@ -31,7 +27,7 @@ export const Container = ({
           "pt-10 lg:pt-20": top === "small",
           "pb-10 lg:pb-20": bottom === "small",
         },
-        className
+        className,
       )}
     >
       <div className="container mx-auto">{children}</div>

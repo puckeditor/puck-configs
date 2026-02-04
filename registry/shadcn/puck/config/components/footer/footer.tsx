@@ -1,7 +1,4 @@
-import {
-  Container,
-  ContainerProps,
-} from "../../../../components/container";
+import { Container, ContainerProps } from "../../../../components/container";
 
 interface Link {
   label: string;
