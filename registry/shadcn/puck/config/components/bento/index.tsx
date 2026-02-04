@@ -4,7 +4,7 @@ import {
   paddingDefaults,
   contentFields,
   cards,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Bento, BentoProps } from "./bento";
 

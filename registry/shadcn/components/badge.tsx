@@ -3,8 +3,8 @@ import {
   BaseBadge,
   baseBadgeVariants,
   BaseBadgeProps,
-} from "@/registry/shadcn/components/ui/base-badge";
-import { cn } from "@/lib/utils";
+} from "./ui/base-badge";
+import { cn } from "../../../lib/utils";
 
 export interface BadgeProps {
   label: string;

@@ -6,7 +6,7 @@ import {
   image,
   paddingDefaults,
   heading,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Testimonials, TestimonialsProps } from "./testimonials";
 

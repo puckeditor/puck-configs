@@ -9,7 +9,7 @@ import {
   images,
   image1x1Placeholder,
   image9x16Placeholder,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 import { Hero, HeroProps } from "./hero";
 
 const adjectives = ["amazing", "new", "wonderful", "beautiful", "smart"];

@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import { RootConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import { createColorField } from "@/registry/shadcn/puck/config/fields";
+import { createColorField } from "../fields";
 
 import { FONT_FAMILIES, THEME_VARIABLES } from "./theme";
 import styles from "./root.module.css";
@@ -61,79 +61,79 @@ const rootConfig: RootConfig<RootProps> = {
     },
     background: createColorField(
       "background",
-      "Main application background color, keep it neutral (Very high luminance for light themes, Very low luminance for dark themes). Start from here when designing the color palette. Calculate contrast ratios with related colors using WCAG guidelines, aim for a contrast ratio of at least 7:1."
+      "Main application background color, keep it neutral (Very high luminance for light themes, Very low luminance for dark themes). Start from here when designing the color palette. Calculate contrast ratios with related colors using WCAG guidelines, aim for a contrast ratio of at least 7:1.",
     ),
     foreground: createColorField(
       "foreground",
-      "Main text color on the application background. Related contrast colors: HIGH contrast with background color; HIGH contrast with muted color."
+      "Main text color on the application background. Related contrast colors: HIGH contrast with background color; HIGH contrast with muted color.",
     ),
     primary: createColorField(
       "primary (buttons, links, highlights)",
-      "Brand color for primary actions (buttons, links, highlights). Related contrast colors: VERY HIGH contrast with background color; HIGH contrast with muted color; VERY HIGH contrast with primary foreground color. Could be same luminance as foreground."
+      "Brand color for primary actions (buttons, links, highlights). Related contrast colors: VERY HIGH contrast with background color; HIGH contrast with muted color; VERY HIGH contrast with primary foreground color. Could be same luminance as foreground.",
     ),
     primaryForeground: createColorField(
       "primary foreground",
-      "Text and icons color on primary-colored elements. Related contrast colors: VERY HIGH contrast with primary color."
+      "Text and icons color on primary-colored elements. Related contrast colors: VERY HIGH contrast with primary color.",
     ),
     secondary: createColorField(
       "secondary",
-      "Less prominent action color for secondary buttons and highlights. Related contrast colors: LOW to HIGH contrast with background color; HIGH contrast with secondary foreground color."
+      "Less prominent action color for secondary buttons and highlights. Related contrast colors: LOW to HIGH contrast with background color; HIGH contrast with secondary foreground color.",
     ),
     secondaryForeground: createColorField(
       "secondary foreground",
-      "Text and icons on secondary-colored elements. Related contrast colors: HIGH contrast with secondary color."
+      "Text and icons on secondary-colored elements. Related contrast colors: HIGH contrast with secondary color.",
     ),
     destructive: createColorField(
       "destructive",
-      "Error and deletion action color"
+      "Error and deletion action color",
     ),
     destructiveForeground: createColorField(
       "destructive foreground",
-      "Text and icons color on destructive-colored elements. Related contrast colors: HIGH contrast with destructive color."
+      "Text and icons color on destructive-colored elements. Related contrast colors: HIGH contrast with destructive color.",
     ),
     muted: createColorField(
       "muted background",
-      "Subdued background (used in card backgrounds, etc.). Related contrast colors: HIGH contrast with muted foreground; HIGH contrast with foreground (main text); HIGH contrast with primary. Should be the same color as background with a 10% to 5% less luminance for light themes and a 10% to 5% more luminance for dark themes."
+      "Subdued background (used in card backgrounds, etc.). Related contrast colors: HIGH contrast with muted foreground; HIGH contrast with foreground (main text); HIGH contrast with primary. Should be the same color as background with a 10% to 5% less luminance for light themes and a 10% to 5% more luminance for dark themes.",
     ),
     mutedForeground: createColorField(
       "muted foreground",
-      "De-emphasized text (captions, labels) and icons on muted background and page background. Related contrast colors: VERY HIGH contrast with muted color; VERY HIGH contrast with background. Should be the same color as foreground with a 5% to 2% less luminance."
+      "De-emphasized text (captions, labels) and icons on muted background and page background. Related contrast colors: VERY HIGH contrast with muted color; VERY HIGH contrast with background. Should be the same color as foreground with a 5% to 2% less luminance.",
     ),
     accent: createColorField(
       "accent (active elements)",
-      "Highlight color for active or focused elements. Should be a distinct color used to draw attention to interactive elements."
+      "Highlight color for active or focused elements. Should be a distinct color used to draw attention to interactive elements.",
     ),
     accentForeground: createColorField(
       "accent foreground",
-      "Text and icons on accent-colored elements"
+      "Text and icons on accent-colored elements",
     ),
     border: createColorField(
       "border",
-      "General border color. Related contrast colors: HIGH contrast with background colors."
+      "General border color. Related contrast colors: HIGH contrast with background colors.",
     ),
     input: createColorField(
       "input and button borders",
-      "Form inputs and button borders. Related contrast colors: HIGH contrast with background colors."
+      "Form inputs and button borders. Related contrast colors: HIGH contrast with background colors.",
     ),
     ring: createColorField(
       "focus indicator",
-      "Focus indicator color. Should be a distinct color used to outline focused elements."
+      "Focus indicator color. Should be a distinct color used to outline focused elements.",
     ),
     card: createColorField(
       "pricing card background",
-      "Pricing Card background color. Related contrast colors: HIGH contrast with pricing card foreground color; LOW to MEDIUM contrast with main background color."
+      "Pricing Card background color. Related contrast colors: HIGH contrast with pricing card foreground color; LOW to MEDIUM contrast with main background color.",
     ),
     cardForeground: createColorField(
       "pricing card foreground",
-      "Pricing Card text color. Related contrast colors: HIGH contrast with pricing card background color."
+      "Pricing Card text color. Related contrast colors: HIGH contrast with pricing card background color.",
     ),
     popover: createColorField(
       "popover background",
-      "Background color for dropdown menus and popovers. Related contrast colors: HIGH contrast with popover foreground color."
+      "Background color for dropdown menus and popovers. Related contrast colors: HIGH contrast with popover foreground color.",
     ),
     popoverForeground: createColorField(
       "popover foreground",
-      "Text and icons color within popovers and dropdown menus. Related contrast colors: HIGH contrast with popover background color."
+      "Text and icons color within popovers and dropdown menus. Related contrast colors: HIGH contrast with popover background color.",
     ),
   },
   defaultProps: {

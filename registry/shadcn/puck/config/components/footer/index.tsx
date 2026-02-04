@@ -1,7 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import { padding, paddingDefaults } from "@/registry/shadcn/puck/config/fields";
+import { padding, paddingDefaults } from "../../fields";
 import { Footer, FooterProps } from "./footer";
 
 export type { FooterProps };

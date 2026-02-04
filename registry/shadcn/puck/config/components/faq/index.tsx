@@ -3,7 +3,7 @@ import {
   padding,
   paddingDefaults,
   contentFields,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Faq, FaqProps } from "./faq";
 

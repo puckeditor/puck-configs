@@ -6,7 +6,7 @@ import {
   getPlaceholderImageUrl,
   paddingDefaults,
   heading,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Customers, CustomersProps } from "./customers";
 

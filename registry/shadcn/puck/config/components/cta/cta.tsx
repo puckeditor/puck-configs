@@ -1,10 +1,10 @@
 import { WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../../../../lib//utils";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
 
 export interface CtaProps extends ContentProps {
   padding?: ContainerProps["padding"];

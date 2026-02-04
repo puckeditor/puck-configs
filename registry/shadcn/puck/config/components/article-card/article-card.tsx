@@ -2,7 +2,7 @@ import { PuckComponent } from "@puckeditor/core";
 import {
   ArticleCard as CompoundArticleCard,
   ArticleCardProps,
-} from "@/registry/shadcn/components/article-card";
+} from "../../../../components/article-card";
 
 export const ArticleCard: PuckComponent<ArticleCardProps> = ({
   puck,

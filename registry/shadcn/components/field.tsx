@@ -1,5 +1,5 @@
-import { Label } from "@/registry/shadcn/components/ui/label";
-import { Input } from "@/registry/shadcn/components/ui/input";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
 
 export const fieldTypes = [
   "text",

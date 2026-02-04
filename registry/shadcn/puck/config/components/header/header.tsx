@@ -2,8 +2,8 @@
 import { Fragment, useState } from "react";
 import { Menu, MoveRight, X } from "lucide-react";
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/lib/utils";
-import { BaseButton } from "@/registry/shadcn/components/ui/base-button";
+import { cn } from "../../../../../../lib//utils";
+import { BaseButton } from "../../../../components/ui/base-button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,8 +11,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/registry/shadcn/components/ui/navigation-menu";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
+} from "../../../../components/ui/navigation-menu";
+import { Button, ButtonProps } from "../../../../components/button";
 
 type NavigationLink = { label: string };
 

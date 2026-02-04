@@ -7,7 +7,7 @@
  * In next.js, you can add it to the app/layout.tsx file like this:
  *
  * ```tsx
- * import FontLinks from "@/registry/shadcn/components/font-links";
+ * import FontLinks from "../puck/config/root/font-links";
  *
  * export const metadata = {
  *   title: "My App",

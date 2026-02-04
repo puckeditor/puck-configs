@@ -1,7 +1,7 @@
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
+} from "../../../../components/container";
 
 interface Link {
   label: string;

@@ -1,12 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import {
-  cards,
-  image,
-  image16x9Placeholder,
-  card,
-} from "@/registry/shadcn/puck/config/fields";
+import { cards, image, image16x9Placeholder, card } from "../../fields";
 import { ArticleCard, ArticleCardProps } from "./article-card";
 
 const { icon: defaultIcon, ...cardsDefaultItemProps } = cards.defaultItemProps;

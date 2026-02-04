@@ -1,9 +1,9 @@
 import { PuckComponent, Slot } from "@puckeditor/core";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
+import { Content, ContentProps } from "../../../../components/content";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
+} from "../../../../components/container";
 
 export interface FeatureCardsProps extends ContentProps {
   padding?: ContainerProps["padding"];

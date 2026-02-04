@@ -1,7 +1,7 @@
-import { cn } from "@/lib/utils";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
+import { cn } from "../../../lib/utils";
+import { Button, ButtonProps } from "./button";
 
-import { Image, ImageProps } from "@/registry/shadcn/components/ui/image";
+import { Image, ImageProps } from "./ui/image";
 
 export interface ArticleCardProps {
   image?: ImageProps;

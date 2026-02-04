@@ -5,7 +5,7 @@ import {
   padding,
   paddingDefaults,
   contentFields,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Stats, StatsProps } from "./stats";
 

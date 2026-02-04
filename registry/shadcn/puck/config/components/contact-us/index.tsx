@@ -5,7 +5,7 @@ import {
   contentFieldsWithFeatures,
   form,
   formDefaults,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { ContactUs, ContactUsProps } from "./contact-us";
 

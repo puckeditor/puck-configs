@@ -8,18 +8,18 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "@/registry/shadcn/components/ui/carousel";
+} from "../../../../components/ui/carousel";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/shadcn/components/ui/avatar";
-import { ImageProps } from "@/registry/shadcn/components/ui/image";
-import { usePrefersReducedMotion } from "@/registry/shadcn/hooks/use-prefers-reduced-motion";
+} from "../../../../components/ui/avatar";
+import { ImageProps } from "../../../../components/ui/image";
+import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
+} from "../../../../components/container";
 
 export interface TestimonialsProps {
   padding?: ContainerProps["padding"];

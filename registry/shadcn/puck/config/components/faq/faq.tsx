@@ -1,17 +1,17 @@
 "use client";
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../../../../lib//utils";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/registry/shadcn/components/ui/accordion";
+} from "../../../../components/ui/accordion";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
 
 export interface FaqProps extends ContentProps {
   padding?: ContainerProps["padding"];

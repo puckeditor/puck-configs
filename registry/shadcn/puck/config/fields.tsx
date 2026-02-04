@@ -3,16 +3,9 @@ import "@puckeditor/ai-types";
 
 import { iconNames } from "lucide-react/dynamic";
 
-import {
-  FormProps,
-  FormMethods,
-  formMethods,
-} from "@/registry/shadcn/components/form";
-import {
-  FieldProps,
-  fieldTypes,
-} from "@/registry/shadcn/components/field";
-import ColorPicker from "@/registry/shadcn/components/ui/color-picker";
+import { FormProps, FormMethods, formMethods } from "../../components/form";
+import { FieldProps, fieldTypes } from "../../components/field";
+import ColorPicker from "../../components/ui/color-picker";
 
 export const icon = {
   ai: {
@@ -112,10 +105,10 @@ export const image = {
 
 export const getPlaceholderImageUrl = (
   size: string,
-  text = "Placeholder Image"
+  text = "Placeholder Image",
 ) =>
   `https://dummyimage.com/${size}/f5f4f4/101010.png&text=${encodeURIComponent(
-    text
+    text,
   )}`;
 
 export const image16x9Placeholder = {
@@ -313,7 +306,7 @@ export const formDefaults: FormProps = {
 export const createColorField = (
   label: string,
   instructions: string,
-  required = true
+  required = true,
 ): Field<string> => ({
   type: "custom",
   label,

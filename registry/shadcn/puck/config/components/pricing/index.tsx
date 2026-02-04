@@ -5,7 +5,7 @@ import {
   paddingDefaults,
   features,
   button,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { Pricing, PricingProps } from "./pricing";
 

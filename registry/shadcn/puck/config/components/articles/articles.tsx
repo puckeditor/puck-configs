@@ -2,8 +2,8 @@ import { PuckComponent, Slot } from "@puckeditor/core";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
+} from "../../../../components/container";
+import { Button, ButtonProps } from "../../../../components/button";
 
 export interface ArticlesProps {
   padding?: ContainerProps["padding"];

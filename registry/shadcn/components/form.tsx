@@ -1,5 +1,5 @@
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
-import { FieldProps, Field } from "@/registry/shadcn/components/field";
+import { Button, ButtonProps } from "./button";
+import { FieldProps, Field } from "./field";
 
 export const formMethods = ["get", "post", "put", "patch", "delete"] as const;
 

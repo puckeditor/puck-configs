@@ -5,7 +5,7 @@ import {
   contentFieldsWithFeatures,
   images,
   getPlaceholderImageUrl,
-} from "@/registry/shadcn/puck/config/fields";
+} from "../../fields";
 
 import { TwoColumn, TwoColumnProps } from "./two-column";
 

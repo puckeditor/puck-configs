@@ -1,11 +1,11 @@
 import { WithPuckProps } from "@puckeditor/core";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../../../../lib/utils";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
-import { Card, CardProps } from "@/registry/shadcn/components/card";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
+import { Card, CardProps } from "../../../../components/card";
 
 export interface BentoProps extends ContentProps {
   padding?: ContainerProps["padding"];

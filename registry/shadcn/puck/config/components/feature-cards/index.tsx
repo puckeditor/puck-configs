@@ -5,8 +5,8 @@ import {
   contentFields,
   cards,
   image16x9Placeholder,
-} from "@/registry/shadcn/puck/config/fields";
-import { ArticleCardProps } from "@/registry/shadcn/components/article-card";
+} from "../../fields";
+import { ArticleCardProps } from "../../../../components/article-card";
 
 import { FeatureCards, FeatureCardsProps } from "./feature-cards";
 

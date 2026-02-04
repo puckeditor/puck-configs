@@ -6,14 +6,14 @@ import {
   BaseCardDescription,
   BaseCardHeader,
   BaseCardTitle,
-} from "@/registry/shadcn/components/ui/base-card";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
+} from "../../../../components/ui/base-card";
+import { Button, ButtonProps } from "../../../../components/button";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
-import { Feature } from "@/registry/shadcn/puck/types";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
+import { Feature } from "../../../types";
 
 export interface PricingProps extends ContentProps {
   padding?: ContainerProps["padding"];

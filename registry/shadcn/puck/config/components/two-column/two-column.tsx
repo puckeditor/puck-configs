@@ -1,20 +1,20 @@
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../../../../../lib//utils";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/registry/shadcn/components/ui/carousel";
-import { Image, ImageProps } from "@/registry/shadcn/components/ui/image";
+} from "../../../../components/ui/carousel";
+import { Image, ImageProps } from "../../../../components/ui/image";
 
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
 
 type ImageWithAspectRatio = ImageProps & {
   aspectRatio?: "16x9" | "1x1";

@@ -1,11 +1,11 @@
 import { WithPuckProps } from "@puckeditor/core";
-import { Form, FormProps } from "@/registry/shadcn/components/form";
+import { Form, FormProps } from "../../../../components/form";
 
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Content, ContentProps } from "@/registry/shadcn/components/content";
+} from "../../../../components/container";
+import { Content, ContentProps } from "../../../../components/content";
 
 export interface ContactUsProps extends ContentProps {
   padding?: ContainerProps["padding"];

@@ -1,19 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/registry/shadcn/hooks/use-prefers-reduced-motion";
+import { cn } from "../../../../../../lib//utils";
+import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
 import {
   Carousel,
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "@/registry/shadcn/components/ui/carousel";
-import { Image, ImageProps } from "@/registry/shadcn/components/ui/image";
+} from "../../../../components/ui/carousel";
+import { Image, ImageProps } from "../../../../components/ui/image";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
+} from "../../../../components/container";
 
 export interface CustomersProps {
   padding?: ContainerProps["padding"];

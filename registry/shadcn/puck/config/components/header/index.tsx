@@ -1,7 +1,7 @@
 import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import { button } from "@/registry/shadcn/puck/config/fields";
+import { button } from "../../fields";
 import { Header, HeaderProps } from "./header";
 
 export type { HeaderProps };

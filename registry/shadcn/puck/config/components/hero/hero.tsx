@@ -3,15 +3,15 @@
 import { WithPuckProps } from "@puckeditor/core";
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/registry/shadcn/hooks/use-prefers-reduced-motion";
+import { cn } from "../../../../../../lib//utils";
+import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
 import {
   Container,
   ContainerProps,
-} from "@/registry/shadcn/components/container";
-import { Badge, BadgeProps } from "@/registry/shadcn/components/badge";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
-import { Image, ImageProps } from "@/registry/shadcn/components/ui/image";
+} from "../../../../components/container";
+import { Badge, BadgeProps } from "../../../../components/badge";
+import { Button, ButtonProps } from "../../../../components/button";
+import { Image, ImageProps } from "../../../../components/ui/image";
 
 export interface HeroProps {
   padding?: ContainerProps["padding"];

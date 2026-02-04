@@ -1,9 +1,9 @@
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import { cn } from "@/lib/utils";
-import { Badge, BadgeProps } from "@/registry/shadcn/components/badge";
-import { Button, ButtonProps } from "@/registry/shadcn/components/button";
-import { Feature } from "@/registry/shadcn/puck/types";
+import { cn } from "../../../lib/utils";
+import { Badge, BadgeProps } from "./badge";
+import { Button, ButtonProps } from "./button";
+import { Feature } from "../puck/types";
 
 export interface ContentProps {
   badge?: BadgeProps;
