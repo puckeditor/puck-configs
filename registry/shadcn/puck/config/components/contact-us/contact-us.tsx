@@ -1,8 +1,8 @@
 import { WithPuckProps } from "@puckeditor/core";
-import { Form, FormProps } from "../../../../components/form";
+import { Form, FormProps } from "../../../components/form";
 
-import { Container, ContainerProps } from "../../../../components/container";
-import { Content, ContentProps } from "../../../../components/content";
+import { Container, ContainerProps } from "../../../components/container";
+import { Content, ContentProps } from "../../../components/content";
 
 export interface ContactUsProps extends ContentProps {
   padding?: ContainerProps["padding"];

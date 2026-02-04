@@ -8,15 +8,15 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "../../../../components/ui/carousel";
+} from "../../../components/ui/carousel";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../../../components/ui/avatar";
-import { ImageProps } from "../../../../components/ui/image";
-import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
-import { Container, ContainerProps } from "../../../../components/container";
+} from "../../../components/ui/avatar";
+import { ImageProps } from "../../../components/ui/image";
+import { usePrefersReducedMotion } from "../../../hooks/use-prefers-reduced-motion";
+import { Container, ContainerProps } from "../../../components/container";
 
 export interface TestimonialsProps {
   padding?: ContainerProps["padding"];

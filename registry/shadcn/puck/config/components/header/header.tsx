@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import { Menu, MoveRight, X } from "lucide-react";
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
 import { cn } from "../../../../../../lib//utils";
-import { BaseButton } from "../../../../components/ui/base-button";
+import { BaseButton } from "../../../components/ui/base-button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,8 +11,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../../../../components/ui/navigation-menu";
-import { Button, ButtonProps } from "../../../../components/button";
+} from "../../../components/ui/navigation-menu";
+import { Button, ButtonProps } from "../../../components/button";
 
 type NavigationLink = { label: string };
 

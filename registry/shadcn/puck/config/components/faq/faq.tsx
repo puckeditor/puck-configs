@@ -6,9 +6,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../../../components/ui/accordion";
-import { Container, ContainerProps } from "../../../../components/container";
-import { Content, ContentProps } from "../../../../components/content";
+} from "../../../components/ui/accordion";
+import { Container, ContainerProps } from "../../../components/container";
+import { Content, ContentProps } from "../../../components/content";
 
 export interface FaqProps extends ContentProps {
   padding?: ContainerProps["padding"];

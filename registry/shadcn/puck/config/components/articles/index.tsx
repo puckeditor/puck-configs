@@ -7,7 +7,7 @@ import {
   cards,
   image16x9Placeholder,
 } from "../../fields";
-import { ArticleCardProps } from "../../../../components/article-card";
+import { ArticleCardProps } from "../../../components/article-card";
 import { Articles, ArticlesProps } from "./articles";
 
 export type { ArticlesProps };

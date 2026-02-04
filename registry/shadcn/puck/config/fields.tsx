@@ -3,9 +3,9 @@ import "@puckeditor/ai-types";
 
 import { iconNames } from "lucide-react/dynamic";
 
-import { FormProps, FormMethods, formMethods } from "../../components/form";
-import { FieldProps, fieldTypes } from "../../components/field";
-import ColorPicker from "../../components/ui/color-picker";
+import { FormProps, FormMethods, formMethods } from "../components/form";
+import { FieldProps, fieldTypes } from "../components/field";
+import ColorPicker from "../components/ui/color-picker";
 
 export const icon = {
   ai: {

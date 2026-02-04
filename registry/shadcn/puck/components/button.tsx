@@ -1,12 +1,12 @@
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import { cn } from "../../../lib/utils";
+import { cn } from "../../../../lib/utils";
 import {
   BaseButton,
   BaseButtonProps,
   baseButtonVariants,
 } from "./ui/base-button";
-import { IconName } from "../puck/types";
+import { IconName } from "../types";
 
 export interface ButtonProps {
   label: string;

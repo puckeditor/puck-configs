@@ -1,4 +1,4 @@
-import { cn } from "../../../lib/utils";
+import { cn } from "../../../../lib/utils";
 import { Button, ButtonProps } from "./button";
 
 import { Image, ImageProps } from "./ui/image";

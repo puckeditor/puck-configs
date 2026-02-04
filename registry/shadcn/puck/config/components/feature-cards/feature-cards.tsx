@@ -1,6 +1,6 @@
 import { PuckComponent, Slot } from "@puckeditor/core";
-import { Content, ContentProps } from "../../../../components/content";
-import { Container, ContainerProps } from "../../../../components/container";
+import { Content, ContentProps } from "../../../components/content";
+import { Container, ContainerProps } from "../../../components/container";
 
 export interface FeatureCardsProps extends ContentProps {
   padding?: ContainerProps["padding"];

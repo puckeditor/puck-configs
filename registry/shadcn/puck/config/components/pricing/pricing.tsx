@@ -6,10 +6,10 @@ import {
   BaseCardDescription,
   BaseCardHeader,
   BaseCardTitle,
-} from "../../../../components/ui/base-card";
-import { Button, ButtonProps } from "../../../../components/button";
-import { Container, ContainerProps } from "../../../../components/container";
-import { Content, ContentProps } from "../../../../components/content";
+} from "../../../components/ui/base-card";
+import { Button, ButtonProps } from "../../../components/button";
+import { Container, ContainerProps } from "../../../components/container";
+import { Content, ContentProps } from "../../../components/content";
 import { Feature } from "../../../types";
 
 export interface PricingProps extends ContentProps {

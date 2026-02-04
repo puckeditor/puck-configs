@@ -7,11 +7,11 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../../../../components/ui/carousel";
-import { Image, ImageProps } from "../../../../components/ui/image";
+} from "../../../components/ui/carousel";
+import { Image, ImageProps } from "../../../components/ui/image";
 
-import { Container, ContainerProps } from "../../../../components/container";
-import { Content, ContentProps } from "../../../../components/content";
+import { Container, ContainerProps } from "../../../components/container";
+import { Content, ContentProps } from "../../../components/content";
 
 type ImageWithAspectRatio = ImageProps & {
   aspectRatio?: "16x9" | "1x1";

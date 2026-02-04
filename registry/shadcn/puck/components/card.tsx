@@ -1,6 +1,6 @@
 import { DynamicIcon } from "lucide-react/dynamic";
-import { IconName } from "../puck/types";
-import { cn } from "../../../lib/utils";
+import { IconName } from "../types";
+import { cn } from "../../../../lib/utils";
 import { Button, ButtonProps } from "./button";
 
 export interface CardProps {

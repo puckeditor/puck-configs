@@ -2,15 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { cn } from "../../../../../../lib//utils";
-import { usePrefersReducedMotion } from "../../../../hooks/use-prefers-reduced-motion";
+import { usePrefersReducedMotion } from "../../../hooks/use-prefers-reduced-motion";
 import {
   Carousel,
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "../../../../components/ui/carousel";
-import { Image, ImageProps } from "../../../../components/ui/image";
-import { Container, ContainerProps } from "../../../../components/container";
+} from "../../../components/ui/carousel";
+import { Image, ImageProps } from "../../../components/ui/image";
+import { Container, ContainerProps } from "../../../components/container";
 
 export interface CustomersProps {
   padding?: ContainerProps["padding"];
