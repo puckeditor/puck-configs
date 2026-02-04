@@ -1,7 +1,7 @@
 import { MoveDownLeft, MoveUpRight } from "lucide-react";
 import { Container, ContainerProps } from "../../../components/container";
 import { Content, ContentProps } from "../../../components/content";
-import { cn } from "../../../../../../lib//utils";
+import { cn } from "../../../lib/utils";
 import { WithPuckProps } from "@puckeditor/core";
 
 export interface StatsProps extends ContentProps {

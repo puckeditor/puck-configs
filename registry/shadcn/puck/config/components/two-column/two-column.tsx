@@ -1,6 +1,6 @@
 import { registerOverlayPortal, WithPuckProps } from "@puckeditor/core";
 
-import { cn } from "../../../../../../lib//utils";
+import { cn } from "../../../lib/utils";
 import {
   Carousel,
   CarouselContent,

@@ -2,7 +2,7 @@ import { WithPuckProps } from "@puckeditor/core";
 import { Content, ContentProps } from "../../../components/content";
 import { Card, CardProps } from "../../../components/card";
 import { Container, ContainerProps } from "../../../components/container";
-import { cn } from "../../../../../../lib//utils";
+import { cn } from "../../../lib/utils";
 
 export interface CardGridProps extends ContentProps {
   padding?: ContainerProps["padding"];

@@ -3,7 +3,7 @@
 import { WithPuckProps } from "@puckeditor/core";
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
-import { cn } from "../../../../../../lib//utils";
+import { cn } from "../../../lib/utils";
 import { usePrefersReducedMotion } from "../../../hooks/use-prefers-reduced-motion";
 import { Container, ContainerProps } from "../../../components/container";
 import { Badge, BadgeProps } from "../../../components/badge";
