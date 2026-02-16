@@ -693,6 +693,7 @@
         "http://localhost:3000/r/shadcn-lib-utils.json",
         "http://localhost:3000/r/shadcn-lib-constants.json",
         "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
         "http://localhost:3000/r/shadcn-components-content.json",
         "http://localhost:3000/r/shadcn-components-card.json",
         "http://localhost:3000/r/shadcn-components-container.json",
@@ -717,11 +718,15 @@
       "title": "Puck Contact Us Config",
       "description": "Component config for the shadcn twblocks Contact Us component.",
       "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
         "http://localhost:3000/r/shadcn-components-form.json",
+        "http://localhost:3000/r/shadcn-components-field.json",
         "http://localhost:3000/r/shadcn-components-container.json",
         "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-config-fields.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
       "files": [

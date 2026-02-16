@@ -1,8 +1,9 @@
-import { ComponentConfig, SelectField } from "@puckeditor/core";
+import { ComponentConfig, ObjectField, SelectField } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
 import { ICON_OPTIONS, PADDING_OPTIONS } from "../../../lib/constants";
 import { SIZES, VARIANTS } from "../../../components/ui/base-button";
+import { ButtonProps } from "../../../components/button";
 
 import { CardGrid, CardGridProps } from "./card-grid";
 
@@ -17,7 +18,7 @@ const icon: SelectField = {
   options: ICON_OPTIONS,
 };
 
-const button = {
+const button: ObjectField<ButtonProps> = {
   type: "object",
   objectFields: {
     label: { type: "text" },
@@ -32,15 +33,15 @@ const button = {
     },
     icon,
   },
-} as const;
+};
 
-const buttonDefaults = {
+const buttonDefaults: ButtonProps = {
   label: "Button",
   url: "",
   variant: "default",
   size: "default",
   icon: "none",
-} as const;
+};
 
 const paddingLevel: SelectField = {
   type: "select",
