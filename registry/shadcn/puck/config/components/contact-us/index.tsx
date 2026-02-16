@@ -1,6 +1,5 @@
 import {
   ComponentConfig,
-  Field,
   ObjectField,
   SelectField,
 } from "@puckeditor/core";
@@ -91,7 +90,7 @@ export const conf: ComponentConfig<ContactUsProps> = {
         description: { type: "textarea", contentEditable: true },
       },
       defaultItemProps: {
-        icon: "check",
+        icon: "none",
         name: "Feature name",
         description: "Description of the feature",
       },
@@ -176,7 +175,7 @@ export const conf: ComponentConfig<ContactUsProps> = {
     buttons: [],
     features: ["Easy to use", "Fast and reliable", "Beautiful and modern"].map(
       (feature) => ({
-        icon: "check",
+        icon: "none",
         name: feature,
         description: "We've made it easy to use and understand.",
       }),
@@ -194,7 +193,7 @@ export const conf: ComponentConfig<ContactUsProps> = {
         label: "Book the meeting",
         variant: "default",
         size: "default",
-        icon: "move-right",
+        icon: "none",
       },
     },
     padding: {
