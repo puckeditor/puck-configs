@@ -2,10 +2,24 @@ import { ComponentConfig } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
 import { SIZES, VARIANTS } from "../../../components/ui/base-button";
-import { ICON_OPTIONS } from "../../../lib/constants";
+import { ICON_OPTIONS, IMAGE_16x9_PLACEHOLDER } from "../../../lib/constants";
 import { ArticleCard, ArticleCardProps } from "./article-card";
 
 export type { ArticleCardProps };
+
+export const defaultArticleCardProps: ArticleCardProps = {
+  heading: "Heading",
+  description: "Description",
+  button: {
+    label: "Button",
+    url: "",
+    variant: "default",
+    size: "default",
+    icon: "none",
+  },
+  image: IMAGE_16x9_PLACEHOLDER,
+};
+
 
 export const conf: ComponentConfig<ArticleCardProps> = {
   fields: {
@@ -67,10 +81,7 @@ export const conf: ComponentConfig<ArticleCardProps> = {
       size: "default",
       icon: "none",
     },
-    image: {
-      alt: "16/9 aspect ratio accessible description of the image",
-      src: `https://dummyimage.com/1920x1080/f5f4f4/101010.png&text=${encodeURIComponent("Placeholder Image")}`,
-    },
+    image: IMAGE_16x9_PLACEHOLDER,
   },
   render: ArticleCard,
 };

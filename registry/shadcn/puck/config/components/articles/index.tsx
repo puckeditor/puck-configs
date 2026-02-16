@@ -1,52 +1,91 @@
-import { ComponentConfig } from "@puckeditor/core";
+import { ComponentConfig, SelectField } from "@puckeditor/core";
+import "@puckeditor/ai-types";
+
 import {
-  padding,
-  paddingDefaults,
-  heading,
-  button,
-  cards,
-  image16x9Placeholder,
-} from "../../fields";
-import { ArticleCardProps } from "../../../components/article-card";
+  ICON_OPTIONS,
+  PADDING_OPTIONS,
+} from "../../../lib/constants";
+import { SIZES, VARIANTS } from "../../../components/ui/base-button";
+import { defaultArticleCardProps } from "../article-card";
+
 import { Articles, ArticlesProps } from "./articles";
 
 export type { ArticlesProps };
 
-const defaultButton: ArticlesProps["button"] = {
-  label: "",
-  url: "",
-  variant: "default",
-  size: "default",
-  icon: "none",
-};
-
-const { icon: defaultIcon, ...defaultCardProps } = cards.defaultItemProps;
-
-const defaultCard: NonNullable<ArticleCardProps> = {
-  ...defaultCardProps,
-  image: image16x9Placeholder,
+export const paddingLevel: SelectField = {
+  type: "select",
+  options: PADDING_OPTIONS,
+  ai: {
+    instructions: "Never select none as an option",
+  },
 };
 
 export const conf: ComponentConfig<ArticlesProps> = {
   fields: {
-    heading,
-    button,
+    heading: {
+      type: "text",
+      contentEditable: true,
+    },
+    button: {
+      type: "object",
+      objectFields: {
+        label: { type: "text" },
+        url: { type: "text" },
+        variant: {
+          type: "select",
+          options: VARIANTS.map((variant) => ({
+            label: variant,
+            value: variant,
+          })),
+        },
+        size: {
+          type: "select",
+          options: SIZES.map((size) => ({
+            label: size,
+            value: size,
+          })),
+        },
+        icon: {
+          ai: {
+            instructions:
+              "Add icons sparingly, usually only on one CTA per page. Only apply an appropriate icon, otherwise use `none`",
+          },
+          type: "select",
+          options: ICON_OPTIONS,
+        },
+      },
+    },
     cards: {
       type: "slot",
       allow: ["ArticleCard"],
     },
-    padding,
+    padding: {
+      type: "object",
+      objectFields: {
+        top: paddingLevel,
+        bottom: paddingLevel,
+      },
+      ai: {
+        exclude: true,
+      },
+    },
   },
   defaultProps: {
-    padding: paddingDefaults,
+    padding: {
+      top: "medium",
+      bottom: "medium",
+    },
     heading: "Something new!",
-    button: defaultButton,
-    cards: Array.from({ length: 1 }).map((_, index) => ({
+    button: {
+      label: "",
+      url: "",
+      variant: "default",
+      size: "default",
+      icon: "none",
+    },
+    cards: Array.from({ length: 1 }).map(() => ({
       type: "ArticleCard",
-      props: {
-        ...defaultCard,
-        heading: `Card ${index + 1}`,
-      },
+      props: defaultArticleCardProps,
     })),
   },
   render: Articles,
