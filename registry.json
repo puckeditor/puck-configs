@@ -606,7 +606,8 @@
       "dependencies": ["@puckeditor/core"],
       "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
-        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
         "http://localhost:3000/r/shadcn-components-article-card.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
@@ -1076,6 +1077,20 @@
           "path": "registry/shadcn/puck/hooks/use-prefers-reduced-motion.ts",
           "type": "registry:item",
           "target": "~/puck/hooks/use-prefers-reduced-motion.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-lib-constants",
+      "type": "registry:item",
+      "title": "Constants for shadcn twblocks",
+      "description": "Constant values for shadcn twblocks components and configs.",
+      "dependencies": ["@puckeditor/core", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/lib/constants.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/constants.ts"
         }
       ]
     },
