@@ -1,10 +1,18 @@
-import { ComponentConfig } from "@puckeditor/core";
+import { ComponentConfig, SelectField } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import { padding, paddingDefaults } from "../../fields";
+import { PADDING_OPTIONS } from "../../../lib/constants";
 import { Footer, FooterProps } from "./footer";
 
 export type { FooterProps };
+
+const paddingLevel: SelectField = {
+  type: "select",
+  options: PADDING_OPTIONS,
+  ai: {
+    instructions: "Never select none as an option",
+  },
+};
 
 export const conf: ComponentConfig<FooterProps> = {
   ai: {
@@ -72,10 +80,22 @@ export const conf: ComponentConfig<FooterProps> = {
         url: "",
       },
     },
-    padding,
+    padding: {
+      type: "object",
+      objectFields: {
+        top: paddingLevel,
+        bottom: paddingLevel,
+      },
+      ai: {
+        exclude: true,
+      },
+    },
   },
   defaultProps: {
-    padding: paddingDefaults,
+    padding: {
+      top: "medium",
+      bottom: "medium",
+    },
     companyName: "Puck Visual Editor",
     tagLine: "Build visually. Launch instantly.",
     address: "1 Puck Avenue\nVisual Park\nCA 123123\n© 2024 Puck, Inc.",
