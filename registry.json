@@ -805,12 +805,14 @@
       "title": "Puck FAQ Config",
       "description": "Component config for the shadcn twblocks FAQ component.",
       "dependencies": ["@puckeditor/core", "react"],
+      "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
         "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
         "http://localhost:3000/r/shadcn-ui-accordion.json",
         "http://localhost:3000/r/shadcn-components-container.json",
         "http://localhost:3000/r/shadcn-components-content.json",
-        "http://localhost:3000/r/shadcn-config-fields.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
       "files": [

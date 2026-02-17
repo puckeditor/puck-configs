@@ -14,7 +14,7 @@ export interface FaqProps extends ContentProps {
   padding?: ContainerProps["padding"];
   layout?: "single-col" | "two-col";
   type?: "single" | "multiple";
-  collapsible?: "true" | "false";
+  collapsible?: boolean;
   faqs: {
     question: string;
     answer: string;
@@ -29,7 +29,7 @@ export const Faq = ({
   description,
   buttons,
   type = "single",
-  collapsible = "true",
+  collapsible = true,
   faqs,
   puck,
 }: WithPuckProps<FaqProps>) => (
@@ -50,7 +50,7 @@ export const Faq = ({
       />
       <Accordion
         type={type}
-        collapsible={collapsible === "true"}
+        collapsible={type === "multiple" ? undefined : collapsible}
         className="w-full"
       >
         {faqs.map((faq, index) => (
