@@ -1,50 +1,27 @@
-## What is this?
+# Puck configs registry
 
-This repository serves as a reference for integrating Puck and Puck AI with component libraries.
+TODO:
 
-You can use it to:
-
-- Get ready-to-use Puck component configs for your project
-- Understand how to integrate your own components
-- Bootstrap a new project from scratch
-
-We currently have references for the following component libraries:
-
-- [shadcn](https://github.com/FedericoBonel/puck-configs/tree/main/shadcn-twblocks)
-- [React Email](https://github.com/FedericoBonel/puck-configs/tree/main/react-email)
-
-## Quick Start
-
-1. Install the component library you want in your project.
-
-2. Clone the repository:
-
-   ```sh
-   git clone {link}
-   ```
-
-3. Copy or move any folders/files you need into your project.
-
-### Folder Structure
-
-Each component library has its own subfolder. Inside, you'll find a basic app bootstrapped with our [Next.js recipe](https://github.com/puckeditor/puck/tree/main/recipes/next).
-
-All Puck component integration-related code lives under the `./puck` directory.
-
-#### Puck Configs
-
-- Main [Puck config](https://puckeditor.com/docs/api-reference/configuration/config): `./puck/index.tsx`
-- [Component configs](https://puckeditor.com/docs/api-reference/configuration/component-config): `./puck/config/components`
-- [Root config](https://puckeditor.com/docs/integrating-puck/root-configuration): `./puck/config/root/index.tsx`
-- [Reusable field configs](https://puckeditor.com/docs/api-reference/fields): `./puck/config/fields`
-
-#### Utilities
-
-- Shared components (e.g., heading, link, button): `./puck/components`
-- Shared constants (e.g., theme palette, numbers): `./puck/constants`
-- Shared helpers (e.g., `getItemSummary`, `add`): `./puck/lib`
-
-For detailed steps on how to reuse the Puck config, component configs, or other parts of the codebase, check out the subfolders for each component library:
-
-- [shadcn](https://github.com/FedericoBonel/puck-configs/tree/main/shadcn-twblocks)
-- [React Email](https://github.com/FedericoBonel/puck-configs/tree/main/react-email)
+- Write a proper README.md for this repo
+- Create branch for reference configs
+- Add docs for components
+- _Maybe_ create a script to automatically generate the registry.json based on the files under "/registry/\*\*"
+  - This would make it easier to maintain
+  - Would also make it easier to add new configs
+  - Would also make it easier to avoid mistakes and re organizing files
+  - Considerations:
+    - We would need to make assumptions about file structure
+    - We would need to map file structure to names
+    - We would still need to handle titles and descriptions, OR, we could annotate them with comments in the code files
+    - We would still need to review the generated registry.json, there could be things that we want to group/deliver differently
+    - We would need to resolve dependencies
+    - We would need to stablish rules for how our configs should be organized (configs/component-name/index.tsx + configs/component-name/component-name.tsx, etc.)
+  - Basic algorithm idea:
+    - Scan the "/registry/\*\*" folder for files
+    - For each file, determine what file type it is (component, lib, etc.)
+    - For each file, resolve its name based on its path
+    - For each file, resolve dependencies (imports)
+      - Any imports that start with @/ are registry dependencies (assumption)
+      - Any imports that start with @ are dependencies (assumption)
+      - Any relative imports are registry dependencies
+    - For each file, if its a component config file, group the index.tsx and the component.tsx together in a single entry

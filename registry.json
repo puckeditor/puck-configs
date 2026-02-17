@@ -1,0 +1,1494 @@
+{
+  "$schema": "http://ui.shadcn.com/schema/registry.json",
+  "name": "puckeditor",
+  "homepage": "https://registry.puckeditor.com",
+  "items": [
+    {
+      "name": "lib-create-summary-func",
+      "type": "registry:item",
+      "title": "Summary Function Creator",
+      "description": "A utility function to create summary functions for array items with customizable labels and truncation.",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/react-email/puck/lib/create-summary-func.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/create-summary-func.ts"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config",
+      "type": "registry:item",
+      "title": "React Email Puck Config Object",
+      "description": "The main Puck config object for react-email. Can be passed to the Puck or Render component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-root.json",
+        "http://localhost:3000/r/react-email-config-components-header.json",
+        "http://localhost:3000/r/react-email-config-components-footer.json",
+        "http://localhost:3000/r/react-email-config-components-heading.json",
+        "http://localhost:3000/r/react-email-config-components-text.json",
+        "http://localhost:3000/r/react-email-config-components-bento-grid.json",
+        "http://localhost:3000/r/react-email-config-components-cards-grid.json",
+        "http://localhost:3000/r/react-email-config-components-content-item.json",
+        "http://localhost:3000/r/react-email-config-components-feature-list.json",
+        "http://localhost:3000/r/react-email-config-components-pricing.json",
+        "http://localhost:3000/r/react-email-config-components-shopping-cart.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/index.ts",
+          "type": "registry:item",
+          "target": "~/puck/config/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "react-email-lib-constants-theme",
+      "type": "registry:item",
+      "title": "React Email Theme Constants",
+      "description": "Theme constants for react-email components including color palette for light and dark modes.",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/react-email/puck/lib/constants/theme.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/constants/theme.ts"
+        }
+      ]
+    },
+    {
+      "name": "react-email-components-heading",
+      "type": "registry:item",
+      "title": "React Email Heading",
+      "description": "A heading component wrapper for react-email with consistent font weight styling.",
+      "dependencies": ["@react-email/components"],
+      "files": [
+        {
+          "path": "registry/react-email/puck/components/heading.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/heading.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-components-link",
+      "type": "registry:item",
+      "title": "React Email Link",
+      "description": "A link component for react-email with button and anchor variants, supporting optional icons.",
+      "dependencies": ["react", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/components/link.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/link.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-components-logo",
+      "type": "registry:item",
+      "title": "React Email Logo",
+      "description": "A logo component for react-email displaying an image with an optional label.",
+      "dependencies": ["@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/components/logo.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/logo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-components-card",
+      "type": "registry:item",
+      "title": "React Email Card",
+      "description": "A versatile card component for react-email supporting product and article variants with inline (row) or featured (column) layouts.",
+      "dependencies": ["@react-email/components", "react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-components-link.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/components/card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-components-content-section",
+      "type": "registry:item",
+      "title": "React Email Content Section",
+      "description": "A content section component for react-email with tag, title, and description fields.",
+      "dependencies": ["@react-email/components", "react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/components/content-section.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/content-section.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-types",
+      "type": "registry:item",
+      "title": "React Email Field Types",
+      "description": "TypeScript utility types for field config objects used with react-email components.",
+      "dependencies": ["@puckeditor/core"],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/types.ts",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/types.ts"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-image",
+      "type": "registry:item",
+      "title": "React Email Image Field",
+      "description": "Puck field configuration for image values with src and alt.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/image-url.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/image-url.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-link",
+      "type": "registry:item",
+      "title": "React Email Link Field",
+      "description": "Puck field configuration for link values with label, href, and icon.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-image.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/rich-link.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/rich-link.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-logo",
+      "type": "registry:item",
+      "title": "React Email Logo Field",
+      "description": "Puck field configuration for logo values with label and image.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-image.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/logo-content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/logo-content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-section-text",
+      "type": "registry:item",
+      "title": "React Email Section Text Field",
+      "description": "Puck field configuration for section text values with tag, title, and description.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/section-text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/section-text.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-width",
+      "type": "registry:item",
+      "title": "React Email Width Field",
+      "description": "Puck field configuration for width values with full width/max width toggle.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-types.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/width.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/width.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-fields-card",
+      "type": "registry:item",
+      "title": "React Email Card Field",
+      "description": "Puck field configuration for card values with product and article types and inline or featured variants.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-components-card.json",
+        "http://localhost:3000/r/react-email-config-fields-image.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/fields/card-content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields/card-content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-root",
+      "type": "registry:item",
+      "title": "React Email Root Config",
+      "description": "Puck root config object for react-email with width settings for the whole email.",
+      "dependencies": ["@puckeditor/core", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-width.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/root/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/root/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-header",
+      "type": "registry:item",
+      "title": "Puck Header Config",
+      "description": "Component config for the react-email Header component with logo, navigation links, and layout variants.",
+      "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-logo.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-components-logo.json",
+        "http://localhost:3000/r/react-email-components-link.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/header/Header.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/header/Header.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/header/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/header/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-footer",
+      "type": "registry:item",
+      "title": "Puck Footer Config",
+      "description": "Component config for the react-email Footer component with logo, tagline, links, and address.",
+      "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-logo.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-components-logo.json",
+        "http://localhost:3000/r/react-email-components-link.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/footer/Footer.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/footer/Footer.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/footer/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/footer/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-heading",
+      "type": "registry:item",
+      "title": "Puck Heading Config",
+      "description": "Component config for the react-email Heading component with configurable heading levels.",
+      "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-components-heading.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/heading/Heading.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/heading/Heading.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/heading/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/heading/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-text",
+      "type": "registry:item",
+      "title": "Puck Text Config",
+      "description": "Component config for the react-email Text component with editable content.",
+      "dependencies": ["@puckeditor/core", "@react-email/components"],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/text/Text.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/text/Text.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/text/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/text/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-bento-grid",
+      "type": "registry:item",
+      "title": "Puck Bento Grid Config",
+      "description": "Component config for the react-email Bento Grid component displaying a main content and product grid.",
+      "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-config-fields-image.json",
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-components-link.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/bento-grid/BentoGrid.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/bento-grid/BentoGrid.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/bento-grid/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/bento-grid/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-cards-grid",
+      "type": "registry:item",
+      "title": "Puck Cards Grid Config",
+      "description": "Component config for the react-email Cards Grid component displaying multiple cards in a grid layout.",
+      "dependencies": ["@puckeditor/core", "@react-email/components"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-section-text.json",
+        "http://localhost:3000/r/react-email-config-fields-card.json",
+        "http://localhost:3000/r/react-email-components-content-section.json",
+        "http://localhost:3000/r/react-email-components-card.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/cards-grid/CardsGrid.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/cards-grid/CardsGrid.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/cards-grid/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/cards-grid/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-content-item",
+      "type": "registry:item",
+      "title": "Puck Content Item Config",
+      "description": "Component config for the react-email Card component for displaying one off product or article cards.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-card.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-config-fields-image.json",
+        "http://localhost:3000/r/react-email-components-card.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/content-item/ContentItem.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/content-item/ContentItem.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/content-item/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/content-item/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-feature-list",
+      "type": "registry:item",
+      "title": "Puck Feature List Config",
+      "description": "Component config for the react-email Feature List component displaying a list of features with titles and descriptions.",
+      "dependencies": ["@puckeditor/core", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-section-text.json",
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-components-content-section.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/feature-list/FeatureList.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/feature-list/FeatureList.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/feature-list/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/feature-list/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-pricing",
+      "type": "registry:item",
+      "title": "Puck Pricing Config",
+      "description": "Component config for the react-email Pricing component that accepts nested pricing tiers.",
+      "dependencies": ["@puckeditor/core", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/react-email-config-fields-width.json",
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json",
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-components-link.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/pricing/Pricing.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/Pricing.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/pricing/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/index.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/pricing/PricingTier.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/PricingTier.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/pricing/pricing-tier-config.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/pricing-tier-config.tsx"
+        }
+      ]
+    },
+    {
+      "name": "react-email-config-components-shopping-cart",
+      "type": "registry:item",
+      "title": "Puck Shopping Cart Config",
+      "description": "Component config for the react-email Shopping Cart component displaying cart items with images, quantities, prices, and a CTA.",
+      "dependencies": ["react", "@puckeditor/core", "@react-email/components"],
+      "registryDependencies": [
+        "http://localhost:3000/r/lib-create-summary-func.json",
+        "http://localhost:3000/r/react-email-config-fields-link.json",
+        "http://localhost:3000/r/react-email-config-fields-image.json",
+        "http://localhost:3000/r/react-email-components-link.json",
+        "http://localhost:3000/r/react-email-components-heading.json",
+        "http://localhost:3000/r/react-email-lib-constants-theme.json"
+      ],
+      "files": [
+        {
+          "path": "registry/react-email/puck/config/components/shopping-cart/ShoppingCart.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/shopping-cart/ShoppingCart.tsx"
+        },
+        {
+          "path": "registry/react-email/puck/config/components/shopping-cart/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/shopping-cart/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config",
+      "type": "registry:item",
+      "title": "Puck Component Config Object",
+      "description": "The main Puck config object for shadcn. Can be passed to the Puck or Render component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-config-components-header.json",
+        "http://localhost:3000/r/shadcn-config-components-hero.json",
+        "http://localhost:3000/r/shadcn-config-components-customers.json",
+        "http://localhost:3000/r/shadcn-config-components-testimonials.json",
+        "http://localhost:3000/r/shadcn-config-components-two-column.json",
+        "http://localhost:3000/r/shadcn-config-components-bento.json",
+        "http://localhost:3000/r/shadcn-config-components-feature-cards.json",
+        "http://localhost:3000/r/shadcn-config-components-card-grid.json",
+        "http://localhost:3000/r/shadcn-config-components-cta.json",
+        "http://localhost:3000/r/shadcn-config-components-articles.json",
+        "http://localhost:3000/r/shadcn-config-components-article-card.json",
+        "http://localhost:3000/r/shadcn-config-components-pricing.json",
+        "http://localhost:3000/r/shadcn-config-components-faq.json",
+        "http://localhost:3000/r/shadcn-config-components-contact-us.json",
+        "http://localhost:3000/r/shadcn-config-components-footer.json",
+        "http://localhost:3000/r/shadcn-config-components-stats.json",
+        "http://localhost:3000/r/shadcn-config-root.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-fields",
+      "type": "registry:item",
+      "title": "Puck Field Config Objects",
+      "description": "Field configurations for shadcn twblocks components.",
+      "dependencies": ["@puckeditor/core", "lucide-react"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-form.json",
+        "http://localhost:3000/r/shadcn-components-field.json",
+        "http://localhost:3000/r/shadcn-ui-color-picker.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/fields.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/fields.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-article-card",
+      "type": "registry:item",
+      "title": "Puck Article Card Config",
+      "description": "Component config for the shadcn twblocks Article Card component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-components-article-card.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/article-card/article-card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/article-card/article-card.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/article-card/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/article-card/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-articles",
+      "type": "registry:item",
+      "title": "Puck Articles Config",
+      "description": "Component config for the shadcn twblocks Articles component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-config-components-article-card.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/articles/articles.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/articles/articles.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/articles/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/articles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-bento",
+      "type": "registry:item",
+      "title": "Puck Bento Config",
+      "description": "Component config for the shadcn twblocks Bento component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-card.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/bento/bento.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/bento/bento.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/bento/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/bento/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-card-grid",
+      "type": "registry:item",
+      "title": "Puck Card Grid Config",
+      "description": "Component config for the shadcn twblocks Card Grid component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-card.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/card-grid/card-grid.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/card-grid/card-grid.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/card-grid/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/card-grid/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-contact-us",
+      "type": "registry:item",
+      "title": "Puck Contact Us Config",
+      "description": "Component config for the shadcn twblocks Contact Us component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-form.json",
+        "http://localhost:3000/r/shadcn-components-field.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/contact-us/contact-us.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/contact-us/contact-us.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/contact-us/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/contact-us/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-cta",
+      "type": "registry:item",
+      "title": "Puck CTA Config",
+      "description": "Component config for the shadcn twblocks CTA component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/cta/cta.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/cta/cta.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/cta/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/cta/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-customers",
+      "type": "registry:item",
+      "title": "Puck Customers Config",
+      "description": "Component config for the shadcn twblocks Customers component.",
+      "dependencies": ["@puckeditor/core", "react"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/customers/customers.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/customers/customers.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/customers/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/customers/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-faq",
+      "type": "registry:item",
+      "title": "Puck FAQ Config",
+      "description": "Component config for the shadcn twblocks FAQ component.",
+      "dependencies": ["@puckeditor/core", "react"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-ui-accordion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/faq/faq.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/faq/faq.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/faq/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/faq/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-feature-cards",
+      "type": "registry:item",
+      "title": "Puck Feature Cards Config",
+      "description": "Component config for the shadcn twblocks Feature Cards component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-article-card.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/feature-cards/feature-cards.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/feature-cards/feature-cards.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/feature-cards/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/feature-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-footer",
+      "type": "registry:item",
+      "title": "Puck Footer Config",
+      "description": "Component config for the shadcn twblocks Footer component.",
+      "dependencies": ["@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/footer/footer.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/footer/footer.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/footer/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/footer/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-header",
+      "type": "registry:item",
+      "title": "Puck Header Config",
+      "description": "Component config for the shadcn twblocks Header component.",
+      "dependencies": ["react", "lucide-react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-ui-navigation-menu.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/header/header.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/header/header.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/header/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/header/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-hero",
+      "type": "registry:item",
+      "title": "Puck Hero Config",
+      "description": "Component config for the shadcn twblocks Hero component.",
+      "dependencies": ["react", "motion", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-badge.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/hero/hero.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/hero/hero.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/hero/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/hero/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-pricing",
+      "type": "registry:item",
+      "title": "Puck Pricing Config",
+      "description": "Component config for the shadcn twblocks Pricing component.",
+      "dependencies": ["lucide-react", "@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-ui-card.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-types.json",
+        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/pricing/pricing.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/pricing.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/pricing/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/pricing/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-stats",
+      "type": "registry:item",
+      "title": "Puck Stats Config",
+      "description": "Component config for the shadcn twblocks Stats component.",
+      "dependencies": ["lucide-react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/stats/stats.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/stats/stats.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/stats/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/stats/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-testimonials",
+      "type": "registry:item",
+      "title": "Puck Testimonials Config",
+      "description": "Component config for the shadcn twblocks Testimonials component.",
+      "dependencies": ["react", "lucide-react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-avatar.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/testimonials/testimonials.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/testimonials/testimonials.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/testimonials/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/testimonials/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-components-two-column",
+      "type": "registry:item",
+      "title": "Puck Two Column Config",
+      "description": "Component config for the shadcn twblocks Two Column component.",
+      "dependencies": ["@puckeditor/core"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-ui-carousel.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-container.json",
+        "http://localhost:3000/r/shadcn-components-content.json",
+        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/components/two-column/two-column.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/two-column/two-column.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/components/two-column/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/components/two-column/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-config-root",
+      "type": "registry:item",
+      "title": "Puck Root Config",
+      "description": "Component config for the shadcn twblocks page root. Supports theming and font picking.",
+      "dependencies": ["react", "@puckeditor/core"],
+      "devDependencies": ["@puckeditor/ai-types"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-config-fields.json",
+        "http://localhost:3000/r/shadcn-styles.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/config/root/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/root/index.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/config/root/root.module.css",
+          "type": "registry:item",
+          "target": "~/puck/config/root/root.module.css"
+        },
+        {
+          "path": "registry/shadcn/puck/config/root/theme.ts",
+          "type": "registry:item",
+          "target": "~/puck/config/root/theme.ts"
+        },
+        {
+          "path": "registry/shadcn/puck/config/root/font-links.tsx",
+          "type": "registry:item",
+          "target": "~/puck/config/root/font-links.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-hooks-use-prefers-reduced-motion",
+      "type": "registry:item",
+      "title": "usePrefersReducedMotion Hook",
+      "description": "A React hook that detects if the user has enabled the 'prefers-reduced-motion' setting in their system preferences.",
+      "dependencies": ["react"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/hooks/use-prefers-reduced-motion.ts",
+          "type": "registry:item",
+          "target": "~/puck/hooks/use-prefers-reduced-motion.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-lib-constants",
+      "type": "registry:item",
+      "title": "Constants for shadcn twblocks",
+      "description": "Constant values for shadcn twblocks components and configs.",
+      "dependencies": ["@puckeditor/core", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/lib/constants.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/constants.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-lib-utils",
+      "type": "registry:item",
+      "title": "Utils for shadcn twblocks",
+      "description": "Utility functions for shadcn twblocks components and configs.",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/lib/utils.ts",
+          "type": "registry:item",
+          "target": "~/puck/lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-types",
+      "type": "registry:item",
+      "title": "Shadcn twblocks reusable types",
+      "description": "Type definitions for shadcn components.",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/types.ts",
+          "type": "registry:item",
+          "target": "~/puck/types.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-styles",
+      "type": "registry:item",
+      "title": "Shadcn twblocks styles",
+      "description": "Styles needed for shadcn twblocks config objects and components.",
+      "devDependencies": ["tailwindcss", "tw-animate-css"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/styles.css",
+          "type": "registry:item",
+          "target": "~/puck/styles.css"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-accordion",
+      "type": "registry:item",
+      "title": "Accordion",
+      "description": "An accordion component that allows users to toggle the visibility of sections of content.",
+      "dependencies": ["react", "@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/accordion.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/accordion.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-avatar",
+      "type": "registry:item",
+      "title": "Avatar",
+      "description": "A set of avatar components that display user profile images or initials.",
+      "dependencies": ["react", "@radix-ui/react-avatar"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/avatar.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/avatar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-carousel",
+      "type": "registry:item",
+      "title": "Carousel",
+      "description": "A carousel component that allows users to scroll through a set of items horizontally or vertically.",
+      "dependencies": ["react", "embla-carousel-react", "lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-ui-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/carousel.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/carousel.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-color-picker",
+      "type": "registry:item",
+      "title": "Color Picker",
+      "description": "A color picker component that allows users to select a color from a predefined set of colors or input a custom hex color code.",
+      "dependencies": ["lucide-react", "react", "@puckeditor/core"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/color-picker/index.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/color-picker/index.tsx"
+        },
+        {
+          "path": "registry/shadcn/puck/components/ui/color-picker/color-field.module.css",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/color-picker/color-field.module.css"
+        },
+        {
+          "path": "registry/shadcn/puck/components/ui/color-picker/is-hex-color.ts",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/color-picker/is-hex-color.ts"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-badge",
+      "type": "registry:item",
+      "title": "Base Badge",
+      "description": "A base badge component with predefined styles and variants to be used as a building block for other badge components.",
+      "dependencies": ["react", "class-variance-authority"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/base-badge.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/base-badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-button",
+      "type": "registry:item",
+      "title": "Base Button",
+      "description": "A base button component with predefined styles and variants to be used as a building block for other button components.",
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "react"
+      ],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/base-button.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/base-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-card",
+      "type": "registry:item",
+      "title": "Card",
+      "description": "A set of card components with predefined styles and variants to be used as building blocks for cards.",
+      "dependencies": ["react"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/base-card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/base-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-image",
+      "type": "registry:item",
+      "title": "Image",
+      "description": "An image component that displays an image with optional alt text and styling.",
+      "dependencies": [],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/image.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/image.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-input",
+      "type": "registry:item",
+      "title": "Input",
+      "description": "An input component with predefined styles for consistent appearance across the application.",
+      "dependencies": ["react"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/input.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-label",
+      "type": "registry:item",
+      "title": "Label",
+      "description": "A label component with predefined styles for consistent appearance across the application.",
+      "dependencies": [
+        "@radix-ui/react-label",
+        "class-variance-authority",
+        "react"
+      ],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/label.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/label.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-ui-navigation-menu",
+      "type": "registry:item",
+      "title": "Navigation Menu",
+      "description": "A set of navigation menu components to build menus in navbars and more.",
+      "dependencies": [
+        "react",
+        "@radix-ui/react-navigation-menu",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/ui/navigation-menu.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/ui/navigation-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-article-card",
+      "type": "registry:item",
+      "title": "Article Card",
+      "description": "A card component to showcase articles with an image, heading, description, and a call-to-action button.",
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-ui-image.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/article-card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/article-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-badge",
+      "type": "registry:item",
+      "title": "Badge",
+      "description": "A badge component that displays a label with different variants and optional link functionality.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-ui-badge.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/badge.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-button",
+      "type": "registry:item",
+      "title": "Button",
+      "description": "A customizable button component with various styles and sizes.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
+        "http://localhost:3000/r/shadcn-types.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/button.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-card",
+      "type": "registry:item",
+      "title": "Card",
+      "description": "A card component that combines an icon, heading, description, and a button into a cohesive card layout.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-types.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/card.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-container",
+      "type": "registry:item",
+      "title": "Container",
+      "description": "A flexible container component that provides padding and centers its content within the viewport.",
+      "dependencies": ["react"],
+      "registryDependencies": ["http://localhost:3000/r/shadcn-lib-utils.json"],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/container.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/container.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-content",
+      "type": "registry:item",
+      "title": "Content",
+      "description": "A versatile content component that can display a badge, heading, description, features list, and action buttons with customizable layout options.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-components-badge.json",
+        "http://localhost:3000/r/shadcn-components-button.json",
+        "http://localhost:3000/r/shadcn-types.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/content.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-field",
+      "type": "registry:item",
+      "title": "Field",
+      "description": "A form field component that includes a label and an input element.",
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-ui-label.json",
+        "http://localhost:3000/r/shadcn-ui-input.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/field.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/field.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shadcn-components-form",
+      "type": "registry:item",
+      "title": "Form",
+      "description": "A form component that accepts multiple fields, a form action endpoint, a submit button, and the HTTP method to be used when submitting.",
+      "registryDependencies": [
+        "http://localhost:3000/r/shadcn-components-field.json",
+        "http://localhost:3000/r/shadcn-components-button.json"
+      ],
+      "files": [
+        {
+          "path": "registry/shadcn/puck/components/form.tsx",
+          "type": "registry:item",
+          "target": "~/puck/components/form.tsx"
+        }
+      ]
+    }
+  ]
+}
