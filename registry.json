@@ -776,13 +776,14 @@
       "title": "Puck Customers Config",
       "description": "Component config for the shadcn twblocks Customers component.",
       "dependencies": ["@puckeditor/core", "react"],
+      "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
         "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
         "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
         "http://localhost:3000/r/shadcn-ui-carousel.json",
         "http://localhost:3000/r/shadcn-ui-image.json",
         "http://localhost:3000/r/shadcn-components-container.json",
-        "http://localhost:3000/r/shadcn-config-fields.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
       "files": [
