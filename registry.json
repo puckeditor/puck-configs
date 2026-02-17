@@ -891,10 +891,10 @@
       "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
         "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
         "http://localhost:3000/r/shadcn-ui-button.json",
         "http://localhost:3000/r/shadcn-ui-navigation-menu.json",
         "http://localhost:3000/r/shadcn-components-button.json",
-        "http://localhost:3000/r/shadcn-config-fields.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
       "files": [

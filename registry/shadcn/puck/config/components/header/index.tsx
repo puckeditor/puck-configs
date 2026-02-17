@@ -1,10 +1,37 @@
-import { ComponentConfig } from "@puckeditor/core";
+import { ComponentConfig, ObjectField } from "@puckeditor/core";
 import "@puckeditor/ai-types";
 
-import { button } from "../../fields";
+import { ICON_OPTIONS } from "../../../lib/constants";
+import { ButtonProps } from "../../../components/button";
+import { SIZES, VARIANTS } from "../../../components/ui/base-button";
+
 import { Header, HeaderProps } from "./header";
 
 export type { HeaderProps };
+
+const button: ObjectField<ButtonProps> = {
+  type: "object",
+  objectFields: {
+    label: { type: "text" },
+    url: { type: "text" },
+    variant: {
+      type: "select",
+      options: VARIANTS.map((variant) => ({ label: variant, value: variant })),
+    },
+    size: {
+      type: "select",
+      options: SIZES.map((size) => ({ label: size, value: size })),
+    },
+    icon: {
+      ai: {
+        instructions:
+          "Add icons sparingly, usually only on one CTA per page. Only apply an appropriate icon, otherwise use `none`",
+      },
+      type: "select",
+      options: ICON_OPTIONS,
+    },
+  },
+};
 
 export const defaultPrimaryNavigationItems = [
   {
