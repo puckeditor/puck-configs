@@ -919,12 +919,13 @@
       "devDependencies": ["@puckeditor/ai-types"],
       "registryDependencies": [
         "http://localhost:3000/r/shadcn-lib-utils.json",
+        "http://localhost:3000/r/shadcn-lib-constants.json",
+        "http://localhost:3000/r/shadcn-ui-button.json",
         "http://localhost:3000/r/shadcn-hooks-use-prefers-reduced-motion.json",
         "http://localhost:3000/r/shadcn-components-container.json",
         "http://localhost:3000/r/shadcn-components-badge.json",
         "http://localhost:3000/r/shadcn-components-button.json",
         "http://localhost:3000/r/shadcn-ui-image.json",
-        "http://localhost:3000/r/shadcn-config-fields.json",
         "http://localhost:3000/r/shadcn-styles.json"
       ],
       "files": [

@@ -35,3 +35,8 @@ export const IMAGE_1x1_PLACEHOLDER = {
   alt: "1/1 aspect ratio accessible description of the image",
   src: createPlaceholderImageUrl("1000x1000"),
 };
+
+export const IMAGE_9x16_PLACEHOLDER = {
+  alt: "9/16 aspect ratio accessible description of the image",
+  src: createPlaceholderImageUrl("1080x1920"),
+};
