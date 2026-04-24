@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import { Header, HeaderProps } from "./header";
 import { button } from "@/puck/config/fields";
@@ -107,6 +107,9 @@ const defaultSecondaryNavigationItems = [
 ];
 
 const conf: ComponentConfig<HeaderProps> = {
+  ai: {
+    instructions: "Always include a header",
+  },
   fields: {
     companyName: {
       label: "company name",

@@ -2,12 +2,15 @@ import {
   CompoundContent,
   CompoundContentProps,
 } from "@/puck/components/content";
-import { CompoundCard, CompoundCardProps } from "@/puck/components/card";
+import {
+  CompoundCard,
+  CompoundCardProps,
+} from "@/puck/components/card";
 import {
   CompoundContainer,
   CompoundContainerProps,
 } from "@/puck/components/container";
-import { cn } from "@/lib/utils";
+import { cn } from "@/puck/lib/utils";
 
 export interface CardGridProps extends CompoundContentProps {
   padding?: CompoundContainerProps["padding"];

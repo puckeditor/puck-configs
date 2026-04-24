@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+import { cn } from "@/puck/lib/utils";
+import { usePrefersReducedMotion } from "@/puck/hooks/use-prefers-reduced-motion";
 import {
   Carousel,
   CarouselApi,
@@ -13,7 +13,10 @@ import {
   CompoundContainer,
   CompoundContainerProps,
 } from "@/puck/components/container";
-import { CompoundImage, CompoundImageProps } from "@/puck/components/image";
+import {
+  CompoundImage,
+  CompoundImageProps,
+} from "@/puck/components/image";
 
 export interface CustomersProps {
   padding?: CompoundContainerProps["padding"];
@@ -70,7 +73,7 @@ export const Customers = ({
             "text-xl tracking-tighter lg:max-w-xl font-regular text-start",
             {
               "md:text-5xl": isSectionLayout,
-            },
+            }
           )}
         >
           {heading}

@@ -8,8 +8,12 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { User } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar";
+import { usePrefersReducedMotion } from "@/puck/hooks/use-prefers-reduced-motion";
 import {
   CompoundContainer,
   CompoundContainerProps,

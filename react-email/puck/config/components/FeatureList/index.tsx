@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import FeatureList, { FeatureListProps } from "./FeatureList";
 import sectionTextField, {

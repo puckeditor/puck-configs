@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/puck/lib/utils";
 import {
   CompoundContainer,
   CompoundContainerProps,
@@ -7,7 +7,10 @@ import {
   CompoundContent,
   CompoundContentProps,
 } from "@/puck/components/content";
-import { CompoundCard, CompoundCardProps } from "@/puck/components/card";
+import {
+  CompoundCard,
+  CompoundCardProps,
+} from "@/puck/components/card";
 
 export interface BentoProps extends CompoundContentProps {
   padding?: CompoundContainerProps["padding"];
@@ -42,10 +45,10 @@ export const Bento = ({
               description={card.description}
               button={card.button}
               className={cn({
-                "[grid-area:1/1/2/3]": index === 0,
-                "[grid-area:1/3/2/4] aspect-square": index === 1,
-                "[grid-area:2/1/3/2] aspect-square": index === 2,
-                "[grid-area:2/2/3/4]": index === 3,
+                "lg:[grid-area:1/1/2/3]": index === 0,
+                "lg:[grid-area:1/3/2/4] aspect-square": index === 1,
+                "lg:[grid-area:2/1/3/2] aspect-square": index === 2,
+                "lg:[grid-area:2/2/3/4]": index === 3,
               })}
             />
           ))}

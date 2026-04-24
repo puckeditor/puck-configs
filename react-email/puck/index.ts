@@ -1,4 +1,4 @@
-import { Config as PuckConfig, Data as PuckData } from "@measured/puck";
+import { Config as PuckConfig, Data as PuckData } from "@puckeditor/core";
 
 import root, { RootProps } from "@/puck/config/root";
 import Header, { HeaderProps } from "@/puck/config/components/Header";

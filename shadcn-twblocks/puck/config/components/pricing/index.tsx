@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 import { Pricing, PricingProps } from "./pricing";
 import {
   contentFields,
@@ -17,7 +17,10 @@ export const conf: ComponentConfig<PricingProps> = {
       getItemSummary: (item, index = 0) => item.name || `Tier ${index + 1}`,
       arrayFields: {
         name: { type: "text", contentEditable: true },
-        description: { type: "textarea", contentEditable: true },
+        description: {
+          type: "textarea",
+          contentEditable: true,
+        },
         cost: { type: "text", contentEditable: true },
         cycle: { type: "text", contentEditable: true },
         features,

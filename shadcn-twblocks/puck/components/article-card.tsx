@@ -1,6 +1,12 @@
-import { cn } from "@/lib/utils";
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
-import { CompoundImage, CompoundImageProps } from "@/puck/components/image";
+import { cn } from "@/puck/lib/utils";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
+import {
+  CompoundImage,
+  CompoundImageProps,
+} from "@/puck/components/image";
 
 export interface CompoundArticleCardProps {
   image?: CompoundImageProps;
@@ -28,9 +34,9 @@ export const CompoundArticleCard = ({
             <h3 className="text-xl tracking-tight">{heading}</h3>
           ) : null}
           {description ? (
-            <p className="text-muted-foreground max-w-xs text-base">
+            <div className="text-muted-foreground max-w-xs text-base">
               {description}
-            </p>
+            </div>
           ) : null}
           {button?.label ? (
             <div>

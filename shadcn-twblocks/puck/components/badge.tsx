@@ -1,5 +1,9 @@
-import { Badge, badgeVariants, BadgeProps } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
+import {
+  Badge,
+  badgeVariants,
+  BadgeProps,
+} from "@/components/ui/badge";
+import { cn } from "@/puck/lib/utils";
 import { MoveRightIcon } from "lucide-react";
 
 export interface CompoundBadgeProps {

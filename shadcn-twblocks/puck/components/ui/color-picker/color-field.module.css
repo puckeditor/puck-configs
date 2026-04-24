@@ -1,0 +1,65 @@
+.Color-Field-Container {
+  position: relative;
+}
+
+.Color-Text-Input {
+  padding: 12px 15px 12px 45px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.Color-Input {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 1.8rem;
+  width: 1.8rem;
+  box-shadow: none;
+}
+
+.Color-Text-Input,
+.Color-Input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--puck-color-grey-09);
+  border-radius: 4px;
+  transition: border-color 50ms ease-in;
+}
+
+.Color-Text-Input:focus,
+.Color-Input:focus {
+  outline: 2px solid var(--puck-color-azure-05);
+}
+
+.Color-Input::-webkit-color-swatch-wrapper {
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+.Color-Input::-webkit-color-swatch {
+  border: none;
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.Color-Input::-moz-color-swatch {
+  border: none;
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .Color-Field-Container:hover .Color-Text-Input {
+    border-color: var(--puck-color-grey-05);
+    transition: none;
+  }
+}
+
+@media (min-width: 458px) {
+  .Color-Text-Input {
+    font-size: 14px;
+  }
+}

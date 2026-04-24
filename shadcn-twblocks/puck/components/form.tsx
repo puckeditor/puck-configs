@@ -1,5 +1,11 @@
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
-import { CompoundFieldProps, CompoundField } from "@/puck/components/field";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
+import {
+  CompoundFieldProps,
+  CompoundField,
+} from "@/puck/components/field";
 import { useIsEditorMode } from "@/puck/context/is-editor-mode-context";
 
 export const formMethods = ["get", "post", "put", "patch", "delete"] as const;

@@ -1,4 +1,7 @@
-import { CompoundForm, CompoundFormProps } from "@/puck/components/form";
+import {
+  CompoundForm,
+  CompoundFormProps,
+} from "@/puck/components/form";
 
 import {
   CompoundContainer,

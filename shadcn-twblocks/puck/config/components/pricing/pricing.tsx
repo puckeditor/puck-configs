@@ -5,7 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
 import {
   CompoundContainer,
   CompoundContainerProps,

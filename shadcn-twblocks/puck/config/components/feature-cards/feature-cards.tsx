@@ -7,7 +7,7 @@ import {
   CompoundContainerProps,
 } from "@/puck/components/container";
 import { CompoundArticleCard } from "@/puck/components/article-card";
-import { PuckComponent, Slot } from "@measured/puck";
+import { PuckComponent, Slot } from "@puckeditor/core";
 
 export interface FeatureCardsProps extends CompoundContentProps {
   padding?: CompoundContainerProps["padding"];

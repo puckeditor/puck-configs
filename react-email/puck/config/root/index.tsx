@@ -1,4 +1,4 @@
-import { RootConfig } from "@measured/puck";
+import { RootConfig } from "@puckeditor/core";
 import { Container } from "@react-email/components";
 
 import widthField, {

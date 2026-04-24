@@ -1,20 +1,32 @@
-import { Field } from "@measured/puck";
+import { Field } from "@puckeditor/core";
 import { iconNames } from "lucide-react/dynamic";
 import {
   CompoundFormProps,
   FormMethods,
   formMethods,
 } from "@/puck/components/form";
-import { CompoundFieldProps, fieldTypes } from "@/puck/components/field";
+import {
+  CompoundFieldProps,
+  fieldTypes,
+} from "@/puck/components/field";
+import ColorPicker from "@/puck/components/ui/color-picker/color-picker";
 
 export const icon = {
+  ai: {
+    instructions:
+      "Add icons sparingly, usually only on one CTA per page. Only apply an appropriate icon, otherwise use `none`",
+  },
   type: "select",
   options: [
     { label: "none", value: "none" },
-    ...iconNames.map((iconName) => ({
-      label: iconName,
-      value: iconName,
-    })),
+    ...iconNames
+      .filter((_, index) => index % 10 === 0)
+      .map((iconName) => {
+        return {
+          label: iconName,
+          value: iconName,
+        };
+      }),
   ],
 } as const;
 
@@ -93,14 +105,15 @@ export const image = {
     src: { type: "text", ai: { stream: false } },
     alt: { type: "text" },
   },
+  ai: { bind: "puck:unsplash" },
 } as const;
 
 export const getPlaceholderImageUrl = (
   size: string,
-  text = "Placeholder Image",
+  text = "Placeholder Image"
 ) =>
   `https://dummyimage.com/${size}/f5f4f4/101010.png&text=${encodeURIComponent(
-    text,
+    text
   )}`;
 
 export const image16x9Placeholder = {
@@ -117,24 +130,6 @@ export const image9x16Placeholder = {
   alt: "9/16 accessible description of the image",
   src: getPlaceholderImageUrl("1080x1920"),
 };
-
-export const images = {
-  type: "array",
-  max: 10,
-  // TODO: Why can index be undefined for array types?
-  //  Also would be nice for the summary to default to <LABEL + INDEX>
-  getItemSummary: (item: { alt?: string }, index = 0) => {
-    if (item.alt) {
-      return `${item.alt.slice(0, 12)}${item.alt.length > 12 ? "..." : ""}`;
-    }
-
-    return `Image ${index + 1}`;
-  },
-  arrayFields: {
-    ...image.objectFields,
-  },
-  defaultItemProps: image16x9Placeholder,
-} as const;
 
 export const paddingLevel = {
   type: "select",
@@ -171,10 +166,7 @@ export const heading = {
   contentEditable: true,
 } as const;
 
-export const description = {
-  type: "textarea",
-  contentEditable: true,
-} as const;
+export const description = { type: "text", contentEditable: true } as const;
 
 export const features = {
   type: "array",
@@ -297,3 +289,30 @@ export const formDefaults: CompoundFormProps = {
     icon: "move-right",
   },
 };
+
+export const createColorField = (
+  label: string,
+  instructions: string,
+  required = true
+): Field<string> => ({
+  type: "custom",
+  label,
+  render: ({ field, value, onChange, name }) => (
+    <ColorPicker
+      value={value}
+      onChange={onChange}
+      name={name}
+      label={field.label || name}
+    />
+  ),
+  ai: {
+    instructions: `${instructions}. ${
+      required
+        ? ""
+        : "DON'T change this field unless explicitly asked to do so by the user or updating a related contrast color."
+    }. The value should be provided in hex format (e.g., #RRGGBB). Calculate contrast ratios with related contrast colors using WCAG guidelines, aim for a contrast ratio of at least 8:1.`,
+    schema: { type: "string" },
+    required,
+    stream: false,
+  },
+});

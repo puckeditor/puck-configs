@@ -2,15 +2,25 @@
 
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+import { cn } from "@/puck/lib/utils";
+import { usePrefersReducedMotion } from "@/puck/hooks/use-prefers-reduced-motion";
 import {
   CompoundContainer,
   CompoundContainerProps,
 } from "@/puck/components/container";
-import { CompoundBadge, CompoundBadgeProps } from "@/puck/components/badge";
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
-import { CompoundImage, CompoundImageProps } from "@/puck/components/image";
+import {
+  CompoundBadge,
+  CompoundBadgeProps,
+} from "@/puck/components/badge";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
+import {
+  CompoundImage,
+  CompoundImageProps,
+  ImageData,
+} from "@/puck/components/image";
 
 export interface HeroProps {
   padding?: CompoundContainerProps["padding"];
@@ -19,7 +29,7 @@ export interface HeroProps {
   adjectives?: { adjective: string }[];
   description?: string;
   buttons?: CompoundButtonProps[];
-  images?: CompoundImageProps[];
+  images?: { image: ImageData }[];
   imageLayout: "1x1" | "1x1-9x16-1x1" | "16x9";
 }
 
@@ -111,7 +121,7 @@ const HeroContent = ({
             "text-5xl md:text-7xl max-w-2xl tracking-tighter font-regular",
             {
               "lg:max-w-lg": isTwoColumnLayout,
-            },
+            }
           )}
         >
           <span>{heading}</span>
@@ -123,16 +133,16 @@ const HeroContent = ({
           ) : null}
         </h1>
         {description ? (
-          <p
+          <div
             className={cn(
               "text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl",
               {
                 "lg:max-w-md": isTwoColumnLayout,
-              },
+              }
             )}
           >
             {description}
-          </p>
+          </div>
         ) : null}
       </div>
       {Array.isArray(buttons) && buttons.length > 0 ? (
@@ -162,7 +172,7 @@ const HeroAnimatedAdjectives = ({
   const prefersReducedMotion = usePrefersReducedMotion();
   const titles = useMemo(
     () => adjectives.map((adjective) => adjective.adjective),
-    [adjectives],
+    [adjectives]
   );
   const [titleNumber, setTitleNumber] = useState(0);
 
@@ -186,7 +196,7 @@ const HeroAnimatedAdjectives = ({
     "relative flex w-full overflow-hidden text-center md:pb-4 md:pt-1 justify-center",
     {
       "lg:justify-start": isTwoColumnLayout,
-    },
+    }
   );
 
   if (prefersReducedMotion) {
@@ -251,17 +261,29 @@ const ImageCluster = ({ images }: Pick<HeroProps, "images">) => {
     <div className="grid grid-cols-2 gap-8">
       <div className="bg-muted rounded-md aspect-square">
         {image1 ? (
-          <CompoundImage src={image1.src} alt={image1.alt} className="h-full" />
+          <CompoundImage
+            src={image1.image.src}
+            alt={image1.image.alt}
+            className="h-full"
+          />
         ) : null}
       </div>
       <div className="bg-muted rounded-md row-span-2">
         {image2 ? (
-          <CompoundImage src={image2.src} alt={image2.alt} className="h-full" />
+          <CompoundImage
+            src={image2.image.src}
+            alt={image2.image.alt}
+            className="h-full"
+          />
         ) : null}
       </div>
       <div className="bg-muted rounded-md aspect-square">
         {image3 ? (
-          <CompoundImage src={image3.src} alt={image3.alt} className="h-full" />
+          <CompoundImage
+            src={image3.image.src}
+            alt={image3.image.alt}
+            className="h-full"
+          />
         ) : null}
       </div>
     </div>

@@ -1,10 +1,11 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 import {
   padding,
   paddingDefaults,
   contentFieldsWithFeatures,
-  images,
+  image,
   getPlaceholderImageUrl,
+  image16x9Placeholder,
 } from "@/puck/config/fields";
 
 import { TwoColumn, TwoColumnProps } from "./two-column";
@@ -15,9 +16,13 @@ export const conf: ComponentConfig<TwoColumnProps> = {
   fields: {
     ...contentFieldsWithFeatures,
     images: {
-      ...images,
+      type: "array",
+      max: 10,
+      getItemSummary: (_, index = 0) => {
+        return `Image ${index + 1}`;
+      },
       arrayFields: {
-        ...images.arrayFields,
+        image,
         aspectRatio: {
           label: "aspect ratio",
           type: "radio",
@@ -34,7 +39,7 @@ export const conf: ComponentConfig<TwoColumnProps> = {
         },
       },
       defaultItemProps: {
-        ...images.defaultItemProps,
+        image: image16x9Placeholder,
         aspectRatio: "16x9",
       },
     },
@@ -75,18 +80,24 @@ export const conf: ComponentConfig<TwoColumnProps> = {
     border: "false",
     images: [
       {
-        alt: "1: 16/9 aspect ratio accessible description of the image",
-        src: getPlaceholderImageUrl("1920x1080", "Feature 1"),
+        image: {
+          alt: "1: 16/9 aspect ratio accessible description of the image",
+          src: getPlaceholderImageUrl("1920x1080", "Feature 1"),
+        },
         aspectRatio: "16x9",
       },
       {
-        alt: "2: 16/9 aspect ratio accessible description of the image",
-        src: getPlaceholderImageUrl("1920x1080", "Feature 2"),
+        image: {
+          alt: "2: 16/9 aspect ratio accessible description of the image",
+          src: getPlaceholderImageUrl("1920x1080", "Feature 2"),
+        },
         aspectRatio: "16x9",
       },
       {
-        alt: "3: 16/9 aspect ratio accessible description of the image",
-        src: getPlaceholderImageUrl("1920x1080", "Feature 3"),
+        image: {
+          alt: "3: 16/9 aspect ratio accessible description of the image",
+          src: getPlaceholderImageUrl("1920x1080", "Feature 3"),
+        },
         aspectRatio: "16x9",
       },
     ],

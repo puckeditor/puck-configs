@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/puck/lib/utils";
 import { ErrorBoundary } from "@/puck/components/error-boundary";
 
 type PaddingLevel = "none" | "small" | "medium" | "large";
@@ -33,7 +33,7 @@ export const CompoundContainer = ({
             "pt-10 lg:pt-20": top === "small",
             "pb-10 lg:pb-20": bottom === "small",
           },
-          className,
+          className
         )}
       >
         <div className="container mx-auto">{children}</div>

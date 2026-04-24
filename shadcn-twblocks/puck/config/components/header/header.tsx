@@ -1,6 +1,6 @@
 "use client";
 import { Fragment, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/puck/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -11,8 +11,11 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Menu, MoveRight, X } from "lucide-react";
-import { registerOverlayPortal } from "@measured/puck";
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
+import { registerOverlayPortal } from "@puckeditor/core";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
 import { ErrorBoundary } from "@/puck/components/error-boundary";
 
 type NavigationLink = { label: string };

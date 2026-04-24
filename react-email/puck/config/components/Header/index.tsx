@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import logoField, { defaultLogoValue } from "@/puck/config/fields/logo";
 import linkField, { defaultLinkValue } from "@/puck/config/fields/link";

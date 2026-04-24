@@ -1,5 +1,5 @@
-import { registerOverlayPortal } from "@measured/puck";
-import { cn } from "@/lib/utils";
+import { registerOverlayPortal } from "@puckeditor/core";
+import { cn } from "@/puck/lib/utils";
 import {
   Accordion,
   AccordionContent,
