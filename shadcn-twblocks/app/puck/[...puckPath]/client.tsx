@@ -9,7 +9,7 @@ const aiPlugin = createAiPlugin();
 
 export function Client({ path, data }: { path: string; data: Partial<Data> }) {
   return (
-    <EditorModeProvider>
+    <EditorModeProvider isEditor>
       <Puck
         config={config}
         data={data}

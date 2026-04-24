@@ -8,8 +8,35 @@ import {
 import { createColorField } from "@/puck/config/fields";
 import styles from "./root.module.css";
 
+export type SeoImageProps = {
+  src: string;
+  alt: string;
+};
+
+export type SeoOverrideProps = {
+  title: string;
+  description: string;
+  image: SeoImageProps;
+};
+
+export type TwitterCardType = "summary" | "summary_large_image";
+
+export type TwitterSeoOverrideProps = SeoOverrideProps & {
+  card: TwitterCardType;
+};
+
+export type SeoProps = {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  image: SeoImageProps;
+  openGraph: SeoOverrideProps;
+  twitter: TwitterSeoOverrideProps;
+};
+
 export type RootProps = {
   title: string;
+  seo: SeoProps;
   family: string;
   radius: number;
   background: string;
@@ -43,6 +70,78 @@ const rootConfig: RootConfig<RootProps> = {
   },
   fields: {
     title: { type: "text", ai: { instructions: "Page title" } },
+    seo: {
+      type: "object",
+      label: "SEO",
+      objectFields: {
+        title: {
+          type: "text",
+          label: "SEO Title",
+          ai: { instructions: "SEO title override for the page" },
+        },
+        description: {
+          type: "textarea",
+          label: "Meta Description",
+          ai: { instructions: "Meta description for search and social cards" },
+        },
+        canonicalUrl: {
+          type: "text",
+          label: "Canonical URL",
+          ai: { instructions: "Canonical URL for the page" },
+        },
+        image: {
+          type: "object",
+          label: "Shared Social Image",
+          objectFields: {
+            src: { type: "text", label: "Image URL" },
+            alt: { type: "text", label: "Image Alt Text" },
+          },
+        },
+        openGraph: {
+          type: "object",
+          label: "Open Graph overrides",
+          objectFields: {
+            title: { type: "text", label: "Title" },
+            description: { type: "textarea", label: "Description" },
+            image: {
+              type: "object",
+              label: "Image",
+              objectFields: {
+                src: { type: "text", label: "Image URL" },
+                alt: { type: "text", label: "Image Alt Text" },
+              },
+            },
+          },
+        },
+        twitter: {
+          type: "object",
+          label: "Twitter overrides",
+          objectFields: {
+            title: { type: "text", label: "Title" },
+            description: { type: "textarea", label: "Description" },
+            image: {
+              type: "object",
+              label: "Image",
+              objectFields: {
+                src: { type: "text", label: "Image URL" },
+                alt: { type: "text", label: "Image Alt Text" },
+              },
+            },
+            card: {
+              type: "select",
+              label: "Card Type",
+              options: [
+                { label: "summary", value: "summary" },
+                {
+                  label: "summary large image",
+                  value: "summary_large_image",
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
     family: {
       label: "font family",
       type: "select",
@@ -139,6 +238,32 @@ const rootConfig: RootConfig<RootProps> = {
   },
   defaultProps: {
     title: "",
+    seo: {
+      title: "",
+      description: "",
+      canonicalUrl: "",
+      image: {
+        src: "",
+        alt: "",
+      },
+      openGraph: {
+        title: "",
+        description: "",
+        image: {
+          src: "",
+          alt: "",
+        },
+      },
+      twitter: {
+        title: "",
+        description: "",
+        image: {
+          src: "",
+          alt: "",
+        },
+        card: "summary_large_image",
+      },
+    },
     family: "Inter",
     radius: 8,
     background: "#ffffff",
