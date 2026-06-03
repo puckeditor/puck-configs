@@ -1,5 +1,5 @@
 import { Container, Hr, Section, Text } from "@react-email/components";
-import { SlotComponent } from "@measured/puck";
+import { SlotComponent } from "@puckeditor/core";
 
 import Heading from "@/puck/components/heading";
 import { WidthFieldProps } from "@/puck/config/fields/width";

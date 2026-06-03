@@ -10,10 +10,80 @@
  * will invalidate the cache as the page is written in /api/puck/route.ts
  */
 
+import type { Metadata } from "next";
+import type {
+  RootProps,
+  SeoImageProps,
+  SeoProps,
+} from "@/puck/components/root";
 import { Client } from "./client";
-import { notFound } from "next/navigation";
-import { Metadata } from "next";
 import { getPage } from "../../lib/get-page";
+import { notFound } from "next/navigation";
+
+const hasValue = (value?: string) => Boolean(value?.trim());
+
+const getResolvedValue = (...values: Array<string | undefined>) =>
+  values.find(hasValue);
+
+const getResolvedImage = (
+  primary?: Partial<SeoImageProps>,
+  fallback?: Partial<SeoImageProps>
+) => {
+  const src = getResolvedValue(primary?.src, fallback?.src);
+
+  if (!src) {
+    return undefined;
+  }
+
+  const alt = getResolvedValue(primary?.alt, fallback?.alt);
+
+  return {
+    url: src,
+    ...(alt ? { alt } : {}),
+  };
+};
+
+const getOpenGraphMetadata = (
+  seo?: Partial<SeoProps>,
+  fallbackTitle?: string
+): Metadata["openGraph"] => {
+  const openGraph = seo?.openGraph;
+  const image = getResolvedImage(openGraph?.image, seo?.image);
+  const title = getResolvedValue(openGraph?.title, seo?.title, fallbackTitle);
+  const description = getResolvedValue(openGraph?.description, seo?.description);
+
+  if (!title && !description && !image) {
+    return undefined;
+  }
+
+  return {
+    ...(title ? { title } : {}),
+    ...(description ? { description } : {}),
+    ...(image ? { images: [image] } : {}),
+  };
+};
+
+const getTwitterMetadata = (
+  seo?: Partial<SeoProps>,
+  fallbackTitle?: string
+): Metadata["twitter"] => {
+  const twitter = seo?.twitter;
+  const image = getResolvedImage(twitter?.image, seo?.image);
+  const title = getResolvedValue(twitter?.title, seo?.title, fallbackTitle);
+  const description = getResolvedValue(twitter?.description, seo?.description);
+  const card = twitter?.card;
+
+  if (!title && !description && !image && !card) {
+    return undefined;
+  }
+
+  return {
+    ...(card ? { card } : {}),
+    ...(title ? { title } : {}),
+    ...(description ? { description } : {}),
+    ...(image ? { images: [image] } : {}),
+  };
+};
 
 export async function generateMetadata({
   params,
@@ -22,9 +92,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { puckPath = [] } = await params;
   const path = `/${puckPath.join("/")}`;
+  const page = getPage(path);
+  const rootProps = page?.root.props as Partial<RootProps> | undefined;
+  const seo = rootProps?.seo as Partial<SeoProps> | undefined;
+  const title = getResolvedValue(seo?.title, rootProps?.title);
+  const description = getResolvedValue(seo?.description);
+  const canonicalUrl = getResolvedValue(seo?.canonicalUrl);
+  const openGraph = getOpenGraphMetadata(seo, rootProps?.title);
+  const twitter = getTwitterMetadata(seo, rootProps?.title);
 
   return {
-    title: getPage(path)?.root.props?.title,
+    ...(title ? { title } : {}),
+    ...(description ? { description } : {}),
+    ...(canonicalUrl
+      ? {
+          alternates: {
+            canonical: canonicalUrl,
+          },
+        }
+      : {}),
+    ...(openGraph ? { openGraph } : {}),
+    ...(twitter ? { twitter } : {}),
   };
 }
 

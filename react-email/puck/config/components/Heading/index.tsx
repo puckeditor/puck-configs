@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import Heading, { headingLevels, HeadingProps } from "./Heading";
 

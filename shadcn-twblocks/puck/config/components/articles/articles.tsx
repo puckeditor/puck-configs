@@ -2,8 +2,11 @@ import {
   CompoundContainer,
   CompoundContainerProps,
 } from "@/puck/components/container";
-import { CompoundButton, CompoundButtonProps } from "@/puck/components/button";
-import { PuckComponent, Slot } from "@measured/puck";
+import {
+  CompoundButton,
+  CompoundButtonProps,
+} from "@/puck/components/button";
+import { PuckComponent, Slot } from "@puckeditor/core";
 
 export interface ArticlesProps {
   padding?: CompoundContainerProps["padding"];

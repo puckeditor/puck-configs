@@ -1,4 +1,4 @@
-import { ComponentConfig, Slot } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import sectionTextField, {
   defaultSectionTextValue,

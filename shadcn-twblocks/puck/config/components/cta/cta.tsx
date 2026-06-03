@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/puck/lib/utils";
 import {
   CompoundContainer,
   CompoundContainerProps,

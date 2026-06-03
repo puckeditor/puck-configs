@@ -1,10 +1,16 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 import { Footer, FooterProps } from "./footer";
-import { padding, paddingDefaults } from "@/puck/config/fields";
+import {
+  padding,
+  paddingDefaults,
+} from "@/puck/config/fields";
 
 export type { FooterProps };
 
 export const conf: ComponentConfig<FooterProps> = {
+  ai: {
+    instructions: "Always include a footer",
+  },
   fields: {
     companyName: {
       label: "company name",
@@ -29,6 +35,10 @@ export const conf: ComponentConfig<FooterProps> = {
         label: { type: "text", contentEditable: true },
         url: { type: "text" },
         items: {
+          ai: {
+            required: true,
+            instructions: "Always include items with relevant links",
+          },
           type: "array",
           max: 9,
           getItemSummary: (item, index = 0) =>

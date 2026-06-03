@@ -1,4 +1,4 @@
-import { Fields, DefaultComponentProps } from "@measured/puck";
+import { Fields, DefaultComponentProps } from "@puckeditor/core";
 
 export type FieldResolver<FieldProps> = <
   ComponentProps extends DefaultComponentProps,

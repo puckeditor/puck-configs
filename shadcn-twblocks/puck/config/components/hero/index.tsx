@@ -1,22 +1,34 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 import {
   padding,
   paddingDefaults,
   badge,
   buttons,
-  images,
+  image,
   image1x1Placeholder,
   image9x16Placeholder,
+  image16x9Placeholder,
 } from "@/puck/config/fields";
 import { Hero, HeroProps } from "./hero";
-import { getRandomAdjective } from "@/puck/lib/utils";
+import { getAdjective } from "@/puck/lib/utils";
 
 export type { HeroProps };
 
 export const conf: ComponentConfig<HeroProps> = {
   fields: {
     heading: { type: "text", contentEditable: true },
-    description: { type: "textarea", contentEditable: true },
+    description: {
+      type: "richtext",
+      contentEditable: true,
+      options: {
+        heading: false,
+        textAlign: false,
+        blockquote: false,
+      },
+      ai: {
+        instructions: "Keep under 35 words.",
+      },
+    },
     adjectives: {
       type: "array",
       max: 5,
@@ -26,13 +38,12 @@ export const conf: ComponentConfig<HeroProps> = {
         adjective: { type: "text" },
       },
       defaultItemProps: {
-        adjective: getRandomAdjective(),
+        adjective: getAdjective(),
       },
     },
     badge,
     buttons,
     imageLayout: {
-      // TODO: puck should format labels automatically so I don't have to define this
       label: "image layout",
       type: "select",
       options: [
@@ -45,12 +56,22 @@ export const conf: ComponentConfig<HeroProps> = {
           "Never select the 'single image 16x9' option. Always include 3 images when selecting the 'three images 1x1, 9:16, 1x1' option.",
       },
     },
-    images: { ...images, max: 3 },
+    images: {
+      type: "array",
+      max: 3,
+      getItemSummary: (_, index = 0) => {
+        return `Image ${index + 1}`;
+      },
+      arrayFields: {
+        image,
+      },
+      defaultItemProps: { image: image16x9Placeholder },
+    },
     padding,
   },
   defaultProps: {
     heading: "Heading",
-    description: "Description",
+    description: "<p>Description</p>",
     adjectives: [],
     badge: {
       label: "Badge",
@@ -70,7 +91,11 @@ export const conf: ComponentConfig<HeroProps> = {
       },
     ],
     imageLayout: "1x1-9x16-1x1",
-    images: [image1x1Placeholder, image9x16Placeholder, image1x1Placeholder],
+    images: [
+      { image: image1x1Placeholder },
+      { image: image9x16Placeholder },
+      { image: image1x1Placeholder },
+    ],
     padding: paddingDefaults,
   },
   render: Hero,

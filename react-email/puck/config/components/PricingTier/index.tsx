@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import linkField, { defaultLinkValue } from "@/puck/config/fields/link";
 import createSummaryFunc from "@/puck/lib/create-summary-func";

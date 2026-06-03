@@ -1,5 +1,5 @@
-import { registerOverlayPortal } from "@measured/puck";
-import { cn } from "@/lib/utils";
+import { registerOverlayPortal } from "@puckeditor/core";
+import { cn } from "@/puck/lib/utils";
 import {
   Carousel,
   CarouselContent,
@@ -16,9 +16,13 @@ import {
   CompoundContentProps,
 } from "@/puck/components/content";
 
-import { CompoundImage, CompoundImageProps } from "@/puck/components/image";
+import {
+  CompoundImage,
+  ImageData,
+} from "@/puck/components/image";
 
-type ImageWithAspectRatio = CompoundImageProps & {
+type ImageWithAspectRatio = {
+  image: ImageData;
   aspectRatio?: "16x9" | "1x1";
 };
 
@@ -77,11 +81,7 @@ export const TwoColumn = ({
                 <CarouselContent>
                   {images?.map((image, index) => (
                     <CarouselItem key={index}>
-                      <ColumnImage
-                        src={image.src}
-                        alt={image.alt}
-                        aspectRatio={image.aspectRatio}
-                      />
+                      <ColumnImage {...image} />
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -103,9 +103,13 @@ const ColumnImage = (props: ImageWithAspectRatio & { className?: string }) => (
         "aspect-video h-full": props.aspectRatio === "16x9",
         "aspect-square": props.aspectRatio === "1x1",
       },
-      props.className,
+      props.className
     )}
   >
-    <CompoundImage src={props.src} alt={props.alt} className="h-full" />
+    <CompoundImage
+      src={props.image.src}
+      alt={props.image.alt}
+      className="h-full"
+    />
   </div>
 );

@@ -1,7 +1,7 @@
 "use client";
 
-import type { Data } from "@measured/puck";
-import { Puck } from "@measured/puck";
+import type { Data } from "@puckeditor/core";
+import { Puck } from "@puckeditor/core";
 import { createAiPlugin } from "@puckeditor/plugin-ai";
 import config, { EditorModeProvider } from "@/puck";
 
@@ -9,7 +9,7 @@ const aiPlugin = createAiPlugin();
 
 export function Client({ path, data }: { path: string; data: Partial<Data> }) {
   return (
-    <EditorModeProvider>
+    <EditorModeProvider isEditor>
       <Puck
         config={config}
         data={data}

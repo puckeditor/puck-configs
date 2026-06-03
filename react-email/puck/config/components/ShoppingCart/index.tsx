@@ -1,4 +1,4 @@
-import { ComponentConfig } from "@measured/puck";
+import { ComponentConfig } from "@puckeditor/core";
 
 import ShoppingCart, { ShoppingCartProps } from "./ShoppingCart";
 import linkField, { defaultLinkValue } from "@/puck/config/fields/link";

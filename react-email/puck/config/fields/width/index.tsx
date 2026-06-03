@@ -1,4 +1,4 @@
-import { ObjectField } from "@measured/puck";
+import { ObjectField } from "@puckeditor/core";
 
 import { FieldResolver } from "@/puck/config/fields/types";
 

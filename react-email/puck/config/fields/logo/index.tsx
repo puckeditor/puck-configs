@@ -1,4 +1,4 @@
-import { ObjectField } from "@measured/puck";
+import { ObjectField } from "@puckeditor/core";
 import imageField, { ImageFieldProps } from "@/puck/config/fields/image";
 
 export type LogoFieldProps = {

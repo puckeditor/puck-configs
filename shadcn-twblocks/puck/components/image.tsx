@@ -1,10 +1,13 @@
 import { cn } from "../../lib/utils";
 
-export interface CompoundImageProps {
+export type ImageData = {
   src: string;
   alt?: string;
+};
+
+export type CompoundImageProps = ImageData & {
   className?: string;
-}
+};
 
 export const CompoundImage = (props: CompoundImageProps) => {
   return (
